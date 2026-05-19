@@ -200,7 +200,7 @@ export default function Home() {
                 <div className="text-3xl font-extrabold text-primary mt-2 mb-1">{t("pricing.p5_price")}</div>
                 <div className="text-slate-500 text-sm mb-5">{t("pricing.p5_suffix")}</div>
                 <ul className="space-y-2.5 text-sm text-slate-700 flex-1">
-                  {["p5_b1", "p5_b2", "p5_b3"].map((k) => (
+                  {["p5_b1", "p5_b2"].map((k) => (
                     <li key={k} className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
                       <span>{t(`pricing.${k}`)}</span>
@@ -215,7 +215,7 @@ export default function Home() {
                 <div className="text-3xl font-extrabold text-primary mt-2 mb-1">{t("pricing.p7_price")}</div>
                 <div className="text-slate-500 text-sm mb-5">{t("pricing.p7_suffix")}</div>
                 <ul className="space-y-2.5 text-sm text-slate-700 flex-1">
-                  {["p7_b1", "p7_b2", "p7_b3", "p7_b4"].map((k) => (
+                  {["p7_b1", "p7_b2", "p7_b3"].map((k) => (
                     <li key={k} className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
                       <span>{t(`pricing.${k}`)}</span>
