@@ -5,23 +5,17 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://images.unsplash.com data:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' 'unsafe-inline'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="text/javascript">
-      // First-visit browser-language auto-detection. Runs BEFORE the SPA decoder
-      // and BEFORE React bundles, to avoid a flash of wrong language.
-      // - Respects an existing language choice (manual toggle wins permanently).
-      // - Skips when already on /en/* (URL is authoritative).
-      // - GDPR-safe: navigator.language only, no IP lookup, no third-party.
-      // - Manual toggle stores its choice under gastrohub_lang via i18next; this
-      //   block reads the same key so the two paths agree.
+      // First-visit root redirect. Runs only on the exact root path "/".
+      // Any other URL is authoritative — including /en/*, /preise, etc.
+      // navigator.language is the only signal; no localStorage read, no cookie.
+      //   "de*"      → stay on /
+      //   "en*"      → redirect to /en/
+      //   anything   → stay on / (German default)
       (function () {
-        try {
-          if (localStorage.getItem('gastrohub_lang')) return;
-        } catch (e) { /* private mode etc, fail open to DE */ return; }
-        var path = window.location.pathname;
-        if (path === '/en' || path.indexOf('/en/') === 0) return;
-        var lang = (navigator.language || 'de').toLowerCase();
+        if (window.location.pathname !== '/') return;
+        var lang = (navigator.language || '').toLowerCase();
         if (lang.indexOf('en') === 0) {
-          var target = '/en' + (path === '/' ? '' : path) + window.location.search + window.location.hash;
-          window.location.replace(target);
+          window.location.replace('/en' + window.location.search + window.location.hash);
         }
       })();
     </script>

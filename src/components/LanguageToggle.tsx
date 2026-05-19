@@ -21,7 +21,6 @@ export function LanguageToggle({ className = "" }: { className?: string }) {
     const target = next === "en"
       ? (stripped === "/" ? "/en" : `/en${stripped}`)
       : stripped;
-    if (typeof localStorage !== "undefined") localStorage.setItem("gastrohub_lang", next);
     window.location.assign(target + window.location.hash);
   }
 

@@ -1,6 +1,5 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import LanguageDetector from "i18next-browser-languagedetector";
 
 import deCommon from "@/locales/de/common.json";
 import enCommon from "@/locales/en/common.json";
@@ -32,24 +31,20 @@ function langFromUrl(): SupportedLang | null {
 const urlLang = langFromUrl();
 
 void i18n
-  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources: {
       de: { common: deCommon, home: deHome, demo: deDemo, contact: deContact, faq: deFaq, legal: deLegal, pricing: dePricing },
       en: { common: enCommon, home: enHome, demo: enDemo, contact: enContact, faq: enFaq, legal: enLegal, pricing: enPricing },
     },
-    lng: urlLang ?? undefined,
+    // URL is the only signal: /en/* renders English, everything else renders German.
+    // No LanguageDetector, no localStorage cache, no navigator fallback during runtime.
+    lng: urlLang ?? DEFAULT_LANG,
     fallbackLng: DEFAULT_LANG,
     supportedLngs: SUPPORTED_LANGS as unknown as string[],
     defaultNS: "common",
     ns: ["common", "home", "demo", "contact", "faq", "legal", "pricing"],
     interpolation: { escapeValue: false },
-    detection: {
-      order: ["localStorage", "navigator"],
-      lookupLocalStorage: "gastrohub_lang",
-      caches: ["localStorage"],
-    },
   });
 
 // Keep <html lang> in sync with the active language so screen readers + SEO see the right value.
