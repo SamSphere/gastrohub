@@ -194,8 +194,9 @@ export default function Home() {
                   ))}
                 </ul>
               </div>
-              {/* 5% Provision */}
-              <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-7 text-left flex flex-col">
+              {/* Growth (recommended) */}
+              <div className="bg-white rounded-2xl shadow-md border-2 border-primary p-7 text-left flex flex-col relative">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">{t("pricing.recommended")}</div>
                 <div className="text-xl font-extrabold text-slate-900 mb-1">{t("pricing.p5_label")}</div>
                 <div className="text-3xl font-extrabold text-primary mt-2 mb-1">{t("pricing.p5_price")}</div>
                 <div className="text-slate-500 text-sm mb-5">{t("pricing.p5_suffix")}</div>
@@ -208,9 +209,8 @@ export default function Home() {
                   ))}
                 </ul>
               </div>
-              {/* 7% All-Inclusive (recommended) */}
-              <div className="bg-white rounded-2xl shadow-md border-2 border-primary p-7 text-left flex flex-col relative">
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">{t("pricing.recommended")}</div>
+              {/* Pro (7% All-Inclusive) */}
+              <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-7 text-left flex flex-col">
                 <div className="text-xl font-extrabold text-slate-900 mb-1">{t("pricing.p7_label")}</div>
                 <div className="text-3xl font-extrabold text-primary mt-2 mb-1">{t("pricing.p7_price")}</div>
                 <div className="text-slate-500 text-sm mb-5">{t("pricing.p7_suffix")}</div>
