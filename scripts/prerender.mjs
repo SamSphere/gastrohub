@@ -31,6 +31,11 @@ const ROUTES = [
     en: { title: "Demo | GastroHub", description: "Interactive demo of the GastroHub restaurant platform. Try the customer view and admin dashboard without registering." },
   },
   {
+    path: "/preise",
+    de: { title: "Preise | GastroHub", description: "Drei Preismodelle für die GastroHub Restaurantplattform: Einmalzahlung, Growth (5 %) und Pro (7 % All-Inclusive). Einrichtungsgebühren ab 299 €. Keine monatliche Mindestgebühr." },
+    en: { title: "Pricing | GastroHub", description: "Three pricing models for the GastroHub restaurant platform: One-Time Payment, Growth (5%), and Pro (7% all-inclusive). Setup fees from €299. No monthly minimum." },
+  },
+  {
     path: "/faq",
     de: { title: "FAQ | GastroHub", description: "Häufig gestellte Fragen zu GastroHub: Preismodelle, Wechsel von Liefer-Apps, Datenschutz, Stripe-Zahlungen und Einrichtung. Antworten in Klartext.", extraHead: faqJsonLdScript("de") },
     en: { title: "FAQ | GastroHub", description: "Frequently asked questions about GastroHub: pricing models, switching from delivery apps, privacy, Stripe payments and setup. Answers in plain language.", extraHead: faqJsonLdScript("en") },

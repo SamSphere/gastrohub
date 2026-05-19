@@ -13,6 +13,7 @@ export function Navbar() {
   const links = [
     { key: "home", href: "/" },
     { key: "demo", href: "/demo" },
+    { key: "pricing", href: "/preise" },
     { key: "faq", href: "/faq" },
     { key: "contact", href: "/kontakt" },
   ] as const;
