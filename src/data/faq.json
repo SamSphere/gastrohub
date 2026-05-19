@@ -47,8 +47,8 @@
             "en": "How is GastroHub different from the big delivery apps?"
           },
           "a": {
-            "de": "Drei Dinge. Erstens: Die Bestellung läuft direkt bei Ihnen ein, nicht über ein fremdes System, das Ihre Marke verdeckt. Zweitens: Ihre Kunden sind Ihre Kunden. Sie sehen Namen, E-Mail-Adressen und Bestellhistorie und können diese Gäste für Wiederbestellungen oder Aktionen anschreiben. Drittens: Sie zahlen 0 %, 5 % oder 7 % je Bestellung statt 15 bis 30 % bei den großen Aggregatoren.",
-            "en": "Three things. First: the order lands directly with you, not through a foreign system that hides your brand. Second: your customers are your customers. You see names, email addresses and order history, and you can reach those guests for repeat orders or promotions. Third: you pay 0%, 5% or 7% per order instead of 15 to 30% at the big aggregators."
+            "de": "Drei Dinge. Erstens: Die Bestellung läuft direkt bei Ihnen ein, nicht über ein fremdes System, das Ihre Marke verdeckt. Zweitens: Ihre Kunden sind Ihre Kunden. Sie sehen Namen, E-Mail-Adressen und Bestellhistorie und können diese Gäste für Wiederbestellungen oder Aktionen anschreiben. Drittens: Sie zahlen 0 %, 5 % oder 7 % je Bestellung statt 13 bis 30 % bei den großen Aggregatoren.",
+            "en": "Three things. First: the order lands directly with you, not through a foreign system that hides your brand. Second: your customers are your customers. You see names, email addresses and order history, and you can reach those guests for repeat orders or promotions. Third: you pay 0%, 5% or 7% per order instead of 13 to 30% at the big aggregators."
           }
         }
       ]
@@ -74,8 +74,8 @@
         {
           "slug": "was-bedeuten-15-30-prozent",
           "q": {
-            "de": "Was bedeuten 15 bis 30% Provision in echtem Geld?",
-            "en": "What does 15 to 30% commission actually mean in money?"
+            "de": "Was bedeuten 13 bis 30% Provision in echtem Geld?",
+            "en": "What does 13 to 30% commission actually mean in money?"
           },
           "a": {
             "de": "Rechnen Sie es durch. Bei 10.000 Euro Monatsumsatz nimmt eine Plattform mit 20% Provision 2.000 Euro pro Monat. Das sind 24.000 Euro im Jahr. Bei 25% sind es 30.000 Euro. Restaurants arbeiten typischerweise mit 5 bis 8% Nettomarge. Die Plattform nimmt also oft mehr von der einzelnen Bestellung weg, als am Ende für Sie übrig bleibt. Bei GastroHub bleibt der gleiche Umsatz bei Ihnen, minus einer transparenten Einrichtungsgebühr oder 5 bis 7% Provision.",

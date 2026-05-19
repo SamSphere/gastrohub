@@ -14,7 +14,7 @@
     "competitor_title": "Aktuelle Plattform",
     "competitor_monthly": "Monatliche Kosten",
     "competitor_annual": "Jahreskosten",
-    "competitor_basis": "Basis: 20 % Provision (Mittelwert branchenüblicher 13–30 %)",
+    "competitor_basis": "Basis: 20 % Provision (konservative Annahme aus dem öffentlich berichteten Bereich 13–30 %)",
     "gh_title": "GastroHub Pro",
     "gh_monthly": "Monatliche Kosten",
     "gh_setup": "Einrichtungsgebühr (einmalig): 499 €",
@@ -22,6 +22,6 @@
     "gh_annual_year2": "Jahreskosten ab Jahr 2",
     "gh_basis": "Inkl. Support, Wartung, Hosting, Domain, E-Mail",
     "savings": "Ihre Ersparnis im Jahr",
-    "disclaimer": "Berechnung basiert auf 20 % Provision als Mittelwert öffentlich berichteter Konditionen großer Liefer-Plattformen in Deutschland (13–30 %). Tatsächliche Konditionen variieren je nach Vertrag, Region und Anbieter. § 6 UWG."
+    "disclaimer": "Berechnung basiert auf 20 % Provision als konservative Annahme aus dem öffentlich berichteten Bereich von 13–30 % bei großen Liefer-Plattformen in Deutschland. Tatsächliche Konditionen variieren je nach Vertrag, Region und Anbieter. § 6 UWG."
   }
 }

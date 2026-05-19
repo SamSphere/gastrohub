@@ -14,7 +14,7 @@
     "competitor_title": "Current platform",
     "competitor_monthly": "Monthly cost",
     "competitor_annual": "Annual cost",
-    "competitor_basis": "Based on 20% commission (midpoint of industry-standard 13-30%)",
+    "competitor_basis": "Based on 20% commission (conservative assumption within the publicly reported 13-30% range)",
     "gh_title": "GastroHub Pro",
     "gh_monthly": "Monthly cost",
     "gh_setup": "Setup fee (one-time): €499",
@@ -22,6 +22,6 @@
     "gh_annual_year2": "Annual cost from year 2 onwards",
     "gh_basis": "Incl. support, maintenance, hosting, domain, email",
     "savings": "Your annual savings",
-    "disclaimer": "Calculation based on 20% commission as midpoint of publicly reported rates of major delivery platforms in Germany (13-30%). Actual rates vary by contract, region, and platform. § 6 UWG."
+    "disclaimer": "Calculation based on 20% commission as a conservative assumption within the publicly reported 13-30% range of major delivery platforms in Germany. Actual rates vary by contract, region, and platform. § 6 UWG."
   }
 }
