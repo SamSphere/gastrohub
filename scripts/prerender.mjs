@@ -88,6 +88,26 @@ function faqJsonLdScript(lang) {
   return `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, "\\u003c")}</script>`;
 }
 
+function websiteJsonLdScript(lang) {
+  const isEn = lang === "en";
+  const url = isEn ? `${ORIGIN}/en` : `${ORIGIN}/`;
+  const description = isEn ? homeEn.meta.description : homeDe.meta.description;
+  const ld = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "GastroHub",
+    url,
+    inLanguage: isEn ? "en" : "de-DE",
+    description,
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: "kontakt@gastrohub.dev",
+      contactType: "customer service",
+    },
+  };
+  return `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, "\\u003c")}</script>`;
+}
+
 function hreflangBlock(path) {
   const deUrl = `${ORIGIN}${path}`;
   const enUrl = `${ORIGIN}/en${path === "/" ? "" : path}`;
@@ -111,7 +131,8 @@ function rewriteHead(html, { title, description, canonical, extraHead, hreflang,
     .replace(/<meta property="og:url" content="[^"]*"\s*\/>/, `<meta property="og:url" content="${canonical}" />`)
     .replace(/<meta name="twitter:title" content="[^"]*"\s*\/>/, `<meta name="twitter:title" content="${t}" />`)
     .replace(/<meta name="twitter:description" content="[^"]*"\s*\/>/, `<meta name="twitter:description" content="${d}" />`);
-  const headExtras = [hreflang, extraHead].filter(Boolean).join("\n    ");
+  const websiteLd = websiteJsonLdScript(lang);
+  const headExtras = [hreflang, websiteLd, extraHead].filter(Boolean).join("\n    ");
   if (headExtras) {
     out = out.replace(/<\/head>/, `${headExtras}\n  </head>`);
   }
