@@ -71,7 +71,6 @@ export default function AGB() {
 
         <h2 className="text-xl font-semibold mt-8 mb-4">{tk("p11_h")}</h2>
         <p>{tk("p11_body1")}</p>
-        <p>{tk("p11_body2")}</p>
         <p>{tk("p11_body3")}</p>
         <p>{tk("p11_body4")}</p>
 

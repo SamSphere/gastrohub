@@ -3,17 +3,16 @@ import { useTranslation } from "react-i18next";
 import { TrendingDown } from "lucide-react";
 
 const PRESETS = [
-  { key: "small",  value: 5000 },
-  { key: "medium", value: 20000 },
-  { key: "large",  value: 50000 },
+  { key: "small",  value: 1000 },
+  { key: "medium", value: 5000 },
+  { key: "large",  value: 10000 },
 ] as const;
 type PresetKey = (typeof PRESETS)[number]["key"];
 
 const COMPETITOR_RATE = 0.20;
 const GH_RATE = 0.07;
-const GH_MIN_MONTHLY = 249;
 const GH_SETUP = 499;
-const DEFAULT_REVENUE = 20000;
+const DEFAULT_REVENUE = 5000;
 
 export function CostCalculator() {
   const { t, i18n } = useTranslation("pricing");
@@ -31,8 +30,7 @@ export function CostCalculator() {
 
   const competitorMonthly = monthlyRevenue * COMPETITOR_RATE;
   const competitorAnnual = competitorMonthly * 12;
-  const ghCommission = monthlyRevenue * GH_RATE;
-  const ghMonthly = Math.max(ghCommission, GH_MIN_MONTHLY);
+  const ghMonthly = monthlyRevenue * GH_RATE;
   const ghAnnual = ghMonthly * 12;
   const ghAnnualYear1 = ghAnnual + GH_SETUP;
   const savings = competitorAnnual - ghAnnual;
