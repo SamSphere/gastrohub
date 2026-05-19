@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "GastroHub | Restaurant ordering app, admin & website",
-    "description": "GastroHub is a modern ordering and restaurant platform for delivery, menu management, customer accounts and a mobile owner dashboard. No dependency on third-party platforms, full control over your data."
+    "description": "Your own restaurant ordering platform instead of delivery apps. Three pricing models from €299. Full control, your customer data, Stripe Connect."
   },
   "hero": {
     "badge": "For restaurants and gastronomy",

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "GastroHub | Bestell-App, Admin & Restaurant Website",
-    "description": "GastroHub ist die moderne Bestell- und Restaurantplattform für Lieferungen, Menüverwaltung, Kundenkonto und mobiles Owner-Dashboard. Keine Abhängigkeit von Drittplattformen, volle Kontrolle über Ihre Daten."
+    "description": "Eigene Restaurant-Bestellplattform statt Liefer-Apps. Drei Preismodelle ab 299 €. Volle Kontrolle, eigene Kundendaten, Stripe Connect, DSGVO."
   },
   "hero": {
     "badge": "Für Restaurants und Gastronomie",
