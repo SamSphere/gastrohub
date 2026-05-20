@@ -5,7 +5,6 @@ import { TrendingDown } from "lucide-react";
 const PRESETS = [
   { key: "small",  value: 1000 },
   { key: "medium", value: 5000 },
-  { key: "large",  value: 10000 },
 ] as const;
 type PresetKey = (typeof PRESETS)[number]["key"];
 
