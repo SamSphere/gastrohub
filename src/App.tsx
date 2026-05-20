@@ -6,6 +6,7 @@ import NotFound from "@/pages/not-found";
 
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { ScrollToTop } from "@/components/ScrollToTop";
 
 import Home from "@/pages/Home";
 import Demo from "@/pages/Demo";
@@ -59,6 +60,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <WouterRouter base={routerBase()}>
+          <ScrollToTop />
           <Layout>
             <Router />
           </Layout>
