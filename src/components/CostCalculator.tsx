@@ -90,9 +90,6 @@ export function CostCalculator() {
 
         {/* Custom revenue input */}
         <div className="max-w-md mx-auto mb-10">
-          <label htmlFor="calc-custom-revenue" className="block text-sm text-slate-600 mb-2">
-            {tk("custom_label")}
-          </label>
           <div className="relative">
             <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 pointer-events-none">€</span>
             <input
@@ -103,6 +100,7 @@ export function CostCalculator() {
               onChange={(e) => handleCustomChange(e.target.value)}
               placeholder={tk("custom_placeholder")}
               autoComplete="off"
+              aria-label={tk("custom_label")}
               className="w-full rounded-xl border border-slate-200 bg-white py-3 pl-8 pr-3 text-base focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
               data-testid="calc-custom-revenue"
             />
