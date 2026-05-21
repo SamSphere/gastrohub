@@ -37,7 +37,7 @@ export default function Impressum() {
         <h2 className="text-xl font-semibold mt-8 mb-4">{tk("kontakt_h")}</h2>
         <p>
           {tk("kontakt_email_label")}: <a href="mailto:kontakt@gastrohub.dev">kontakt@gastrohub.dev</a><br />
-          {tk("kontakt_phone_label")}: +49 151 11017356
+          {tk("kontakt_phone_label")}: +49 179 1600038
         </p>
 
         <h2 className="text-xl font-semibold mt-8 mb-4">{tk("ustg_h")}</h2>

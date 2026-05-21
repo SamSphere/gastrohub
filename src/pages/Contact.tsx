@@ -39,7 +39,7 @@ export default function Contact() {
               </a>
 
               <a
-                href="https://wa.me/4915111017356"
+                href="https://wa.me/491791600038"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-start gap-4 rounded-xl border border-slate-200 p-5 transition-colors hover:bg-slate-50"
@@ -50,7 +50,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h2 className="font-semibold text-slate-900">{t("whatsapp_label")}</h2>
-                  <p className="mt-1 text-sm text-primary">+49 151 11017356</p>
+                  <p className="mt-1 text-sm text-primary">+49 179 1600038</p>
                 </div>
               </a>
             </div>

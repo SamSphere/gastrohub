@@ -36,7 +36,7 @@ export default function Datenschutz() {
           {tImp("diensteanbieter_city")}<br />
           {tImp("diensteanbieter_country")}<br />
           {tImp("kontakt_email_label")}: <a href="mailto:kontakt@gastrohub.dev">kontakt@gastrohub.dev</a><br />
-          {tImp("kontakt_phone_label")}: +49 151 11017356
+          {tImp("kontakt_phone_label")}: +49 179 1600038
         </p>
 
         <h2 className="text-xl font-semibold mt-8 mb-4">{tk("s3_h")}</h2>

@@ -115,7 +115,7 @@ export default function FAQ() {
                 <Link href="/kontakt" data-testid="button-faq-contact">{t("cta_contact")}</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="bg-white">
-                <a href="tel:+4915111017356">+49 151 11017356</a>
+                <a href="tel:+491791600038">+49 179 1600038</a>
               </Button>
             </div>
           </div>
