@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="text/javascript">
       // First-visit root redirect. Runs only on the exact root path "/".
-      // Any other URL is authoritative — including /en/*, /preise, etc.
-      // navigator.language is the only signal; no localStorage read, no cookie.
-      //   "de*"      → stay on /
-      //   "en*"      → redirect to /en/
-      //   anything   → stay on / (German default)
+      // Skipped once the user has explicitly picked a language via the toggle
+      // (gh:lang in localStorage) — otherwise an English-browser user clicking
+      // "DE" on /en would land on / and get bounced right back to /en.
+      //   no stored pick + "en*" → redirect to /en/
+      //   otherwise              → stay on / (German default)
       (function () {
         if (window.location.pathname !== '/') return;
+        try { if (localStorage.getItem('gh:lang')) return; } catch (e) {}
         var lang = (navigator.language || '').toLowerCase();
         if (lang.indexOf('en') === 0) {
           window.location.replace('/en' + window.location.search + window.location.hash);

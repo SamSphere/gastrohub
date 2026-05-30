@@ -14,6 +14,9 @@ export function LanguageToggle({ className = "" }: { className?: string }) {
 
   function setLang(next: SupportedLang) {
     if (next === current) return;
+    // Persist the explicit pick so the index.html auto-redirect (which sniffs
+    // navigator.language on "/") doesn't override the user when they go DE → /.
+    try { localStorage.setItem("gh:lang", next); } catch { /* private mode */ }
     // Switch language via real navigation so prerendered EN HTML loads and URL reflects state.
     const path = window.location.pathname;
     const onEn = path.startsWith("/en/") || path === "/en";
