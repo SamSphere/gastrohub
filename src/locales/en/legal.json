@@ -28,27 +28,6 @@
     "vsbg_h": "Consumer dispute resolution",
     "vsbg_body": "We are neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration board (§36 VSBG)."
   },
-  "cookie_richtlinie": {
-    "meta_description": "Cookie policy of GastroHub. We use only technically necessary cookies. No analytics, no tracking, no advertising.",
-    "title": "Cookie Policy",
-    "s1_h": "1. What are cookies?",
-    "s1_body": "Cookies are small text files placed in your browser when you visit a website. They enable technical functionality (for example, remembering a choice you've made). Local Storage and Session Storage in your browser perform similar functions and are also referred to as \"cookies\" below.",
-    "s2_h": "2. Which cookies do we use?",
-    "s2_intro": "On gastrohub.dev we use only technically necessary cookies. Currently these are:",
-    "s2_consent_strong": "Cookie consent (Local Storage):",
-    "s2_consent_body": "Stores your decision on the cookie banner (\"accepted\" or \"declined\") so the notice is not shown again. No personal data is stored. Storage duration: until you delete it yourself.",
-    "s2_no_analytics": "We use no analytics cookies, no tracking cookies, no marketing or advertising cookies, and no third-party cookies.",
-    "s3_h": "3. Legal basis",
-    "s3_body1": "The legal basis for using technically necessary cookies is § 25 para. 2 no. 2 TTDSG (German Telecommunications Telemedia Data Protection Act). Under that provision, consent is not required where storage of information, or access to information already stored, is strictly necessary so that the provider of a telemedia service can deliver a service the user has expressly requested.",
-    "s3_body2": "Because we use no cookies that would require consent, our cookie banner serves only to inform you and to obtain a voluntary acknowledgement of this notice.",
-    "s4_h": "4. Managing cookies in your browser",
-    "s4_body1": "You can view, individually or fully delete cookies and Local Storage at any time in your browser settings, and block the acceptance of new cookies. How this works depends on your browser. You will find instructions in the help section of your respective browser (for example Chrome, Firefox, Safari, Edge).",
-    "s4_body2": "If you delete the consent cookie, the cookie notice will be shown again on your next visit.",
-    "s5_h": "5. Further information",
-    "s5_body_prefix": "You will find further information on the processing of your personal data in our",
-    "s5_link": "privacy policy",
-    "stand": "Status: May 2026"
-  },
   "datenschutz": {
     "meta_description": "Privacy policy of GastroHub. GDPR-compliant, European servers, Stripe Connect as payment processor.",
     "title": "Privacy Policy",
@@ -88,9 +67,9 @@
     "s9_body": "We currently do not maintain profiles on social media platforms. If this changes, we will update this privacy policy accordingly.",
     "s10_h": "Electronic commerce",
     "s10_body": "The ordering platform constitutes an electronic commerce platform within the meaning of §312i BGB (German Civil Code). The requirements of the Button-Lösung (button solution) under §312j para. 3 BGB are implemented in the checkout flow.",
-    "s11_h": "Cookies",
-    "s11_body1": "This website uses only technically necessary cookies required for the operation of the website. No tracking, analytics or marketing cookies are used. As no consent-based cookies are deployed, no cookie banner is shown.",
-    "s11_body2": "Legal basis for technically necessary cookies: §25 para. 2 no. 2 TTDSG.",
+    "s11_h": "Cookies and browser storage",
+    "s11_body1": "gastrohub.dev sets no cookies — neither first-party nor third-party, and none for analytics, tracking or marketing purposes. Because no consent-requiring cookies are used, no cookie banner is shown.",
+    "s11_body2": "We only store your chosen display language (German or English) in your browser's Local Storage under the key \"gh:lang\", so you do not have to make that choice again on later visits. No personal data is stored. Storage duration: until you delete it yourself. Legal basis: § 25 para. 2 no. 2 TTDSG (technically necessary storage) in conjunction with Art. 6(1)(f) GDPR (legitimate interest). You can delete the entry at any time in your browser settings.",
     "s12_h": "Server log files",
     "s12_body": "Each time the website is accessed, technical access data (server log files) is automatically recorded by the hosting provider. This includes IP address, date and time, the URL accessed, transferred data volume, referrer URL, user agent. This data is processed exclusively to ensure faultless operation and to fend off misuse, and is deleted within 90 days at the latest. The legal basis is Art. 6 para. 1 lit. f GDPR.",
     "s13_h": "Data security",
@@ -120,10 +99,10 @@
     "s18_li3": "Contract and master data of restaurant customers: 10 years (§147 AO)",
     "s18_li4": "Invoice-related transaction metadata: 10 years (§147 AO)",
     "s18_li5": "End-customer data on the ordering platform: as instructed by the restaurant operator in the DPA",
-    "s18_li6": "Cookies (technically necessary): until end of browser session",
+    "s18_li6": "Local Storage entry \"gh:lang\" (language preference): until deleted by the user",
     "s19_h": "Changes to this privacy policy",
     "s19_body": "We reserve the right to update this privacy policy if legal changes or adjustments to our services make this necessary. The respective current version is always available on this page.",
-    "stand": "Status: May 2026"
+    "stand": "Status: June 2026"
   },
   "agb": {
     "meta_description": "Terms and conditions of GastroHub. Restaurant ordering platform with one-time payment or commission model.",

@@ -29,7 +29,6 @@ export function Footer() {
           <Link href="/impressum" className="hover:text-white transition-colors">{t("footer.impressum")}</Link>
           <Link href="/datenschutz" className="hover:text-white transition-colors">{t("footer.datenschutz")}</Link>
           <Link href="/agb" className="hover:text-white transition-colors">{t("footer.agb")}</Link>
-          <Link href="/cookie-richtlinie" className="hover:text-white transition-colors">{t("footer.cookie_policy")}</Link>
           <Link href="/kontakt" className="hover:text-white transition-colors">{t("footer.contact")}</Link>
         </div>
         <div className="w-full border-t border-slate-800 pt-6 mt-2 flex justify-center md:justify-end">

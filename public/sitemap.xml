@@ -144,22 +144,4 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/agb" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/agb" />
   </url>
-  <url>
-    <loc>https://gastrohub.dev/cookie-richtlinie</loc>
-    <lastmod>2026-05-18</lastmod>
-    <priority>0.3</priority>
-    <changefreq>yearly</changefreq>
-    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/cookie-richtlinie" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/cookie-richtlinie" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/cookie-richtlinie" />
-  </url>
-  <url>
-    <loc>https://gastrohub.dev/en/cookie-richtlinie</loc>
-    <lastmod>2026-05-18</lastmod>
-    <priority>0.3</priority>
-    <changefreq>yearly</changefreq>
-    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/cookie-richtlinie" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/cookie-richtlinie" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/cookie-richtlinie" />
-  </url>
 </urlset>

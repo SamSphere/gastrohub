@@ -81,7 +81,7 @@ export default function Datenschutz() {
         <h2 className="text-xl font-semibold mt-8 mb-4">{tk("s10_h")}</h2>
         <p>{tk("s10_body")}</p>
 
-        <h2 className="text-xl font-semibold mt-8 mb-4">{tk("s11_h")}</h2>
+        <h2 id="cookies" className="text-xl font-semibold mt-8 mb-4 scroll-mt-24">{tk("s11_h")}</h2>
         <p>{tk("s11_body1")}</p>
         <p>{tk("s11_body2")}</p>
 

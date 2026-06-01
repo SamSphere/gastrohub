@@ -60,11 +60,6 @@ const ROUTES = [
     de: { title: "AGB | GastroHub", description: "Allgemeine Geschäftsbedingungen von GastroHub. Restaurant-Bestellplattform mit Einmalzahlungs- oder Provisionsmodell." },
     en: { title: "Terms and Conditions | GastroHub", description: "Terms and conditions of GastroHub. Restaurant ordering platform with one-time payment or commission model." },
   },
-  {
-    path: "/cookie-richtlinie",
-    de: { title: "Cookie-Richtlinie | GastroHub", description: "Cookie-Richtlinie von GastroHub. Wir setzen ausschließlich technisch notwendige Cookies ein. Keine Analyse, kein Tracking, keine Werbung." },
-    en: { title: "Cookie Policy | GastroHub", description: "Cookie policy of GastroHub. We only use technically necessary cookies. No analytics, no tracking, no advertising." },
-  },
 ];
 
 function escapeHtmlAttr(s) {

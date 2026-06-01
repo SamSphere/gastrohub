@@ -16,7 +16,6 @@ import Contact from "@/pages/Contact";
 import Impressum from "@/pages/Impressum";
 import Datenschutz from "@/pages/Datenschutz";
 import AGB from "@/pages/AGB";
-import CookieRichtlinie from "@/pages/CookieRichtlinie";
 
 const queryClient = new QueryClient();
 
@@ -31,7 +30,6 @@ function Router() {
       <Route path="/impressum" component={Impressum} />
       <Route path="/datenschutz" component={Datenschutz} />
       <Route path="/agb" component={AGB} />
-      <Route path="/cookie-richtlinie" component={CookieRichtlinie} />
       <Route component={NotFound} />
     </Switch>
   );

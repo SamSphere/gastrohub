@@ -45,7 +45,7 @@
     "pay_title": "Payments",
     "pay_text": "Online payments via Stripe (credit card, PayPal) and optional cash on delivery or pickup.",
     "law_title": "Legal & GDPR",
-    "law_text": "Imprint, terms, privacy policy and a GDPR-compliant cookie notice are built in.",
+    "law_text": "Imprint, terms and a GDPR-compliant privacy policy are built in.",
     "contact_title": "Contact channels",
     "contact_text": "Email, phone and demo booking, for direct enquiries without detours."
   },

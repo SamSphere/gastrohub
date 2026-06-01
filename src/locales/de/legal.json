@@ -28,27 +28,6 @@
     "vsbg_h": "Verbraucherstreitbeilegung",
     "vsbg_body": "Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen (§36 VSBG)."
   },
-  "cookie_richtlinie": {
-    "meta_description": "Cookie-Richtlinie von GastroHub. Wir setzen ausschließlich technisch notwendige Cookies ein. Keine Analyse, kein Tracking, keine Werbung.",
-    "title": "Cookie-Richtlinie",
-    "s1_h": "1. Was sind Cookies?",
-    "s1_body": "Cookies sind kleine Textdateien, die beim Besuch einer Website in Ihrem Browser abgelegt werden. Sie ermöglichen es, technische Funktionen bereitzustellen (z.B. das Merken einer einmal getroffenen Auswahl). Ähnliche Funktionen erfüllen Local Storage und Session Storage Ihres Browsers, die im Folgenden ebenfalls als „Cookies\" bezeichnet werden.",
-    "s2_h": "2. Welche Cookies setzen wir ein?",
-    "s2_intro": "Wir setzen auf gastrohub.dev ausschließlich technisch notwendige Cookies ein. Aktuell sind dies:",
-    "s2_consent_strong": "Cookie-Einwilligung (Local Storage):",
-    "s2_consent_body": "Speichert Ihre Entscheidung über den Cookie-Banner („akzeptiert\" oder „abgelehnt\"), damit Ihnen der Hinweis nicht erneut angezeigt wird. Es werden keine personenbezogenen Daten gespeichert. Speicherdauer: bis zur Löschung durch Sie selbst.",
-    "s2_no_analytics": "Wir verwenden keine Analyse-Cookies, keine Tracking-Cookies, keine Marketing- oder Werbe-Cookies und keine Cookies von Drittanbietern.",
-    "s3_h": "3. Rechtsgrundlage",
-    "s3_body1": "Rechtsgrundlage für den Einsatz technisch notwendiger Cookies ist § 25 Abs. 2 Nr. 2 TTDSG. Danach ist eine Einwilligung nicht erforderlich, soweit die Speicherung von Informationen oder der Zugriff auf bereits gespeicherte Informationen unbedingt erforderlich ist, damit der Anbieter eines Telemediendienstes einen vom Nutzer ausdrücklich gewünschten Dienst zur Verfügung stellen kann.",
-    "s3_body2": "Da wir keine Cookies einsetzen, die eine Einwilligung erfordern würden, dient unser Cookie-Banner ausschließlich der Information und der freiwilligen Bestätigung dieses Hinweises.",
-    "s4_h": "4. Cookies in Ihrem Browser verwalten",
-    "s4_body1": "Sie können Cookies und Local Storage jederzeit in den Einstellungen Ihres Browsers anzeigen, einzeln oder vollständig löschen sowie die Annahme neuer Cookies blockieren. Wie das geht, hängt von Ihrem Browser ab. Anleitungen finden Sie in der Hilfe Ihres jeweiligen Browsers (z.B. Chrome, Firefox, Safari, Edge).",
-    "s4_body2": "Wenn Sie das Cookie zur Einwilligung löschen, wird Ihnen der Cookie-Hinweis beim nächsten Besuch erneut angezeigt.",
-    "s5_h": "5. Weitere Informationen",
-    "s5_body_prefix": "Weitere Informationen zur Verarbeitung Ihrer personenbezogenen Daten finden Sie in unserer",
-    "s5_link": "Datenschutzerklärung",
-    "stand": "Stand: Mai 2026"
-  },
   "datenschutz": {
     "meta_description": "Datenschutzerklärung von GastroHub. DSGVO-konform, europäische Server, Stripe Connect als Zahlungsdienstleister.",
     "title": "Datenschutzerklärung",
@@ -88,9 +67,9 @@
     "s9_body": "Wir unterhalten derzeit keine Profile auf Social-Media-Plattformen. Sollte sich dies ändern, werden wir diese Datenschutzerklärung entsprechend aktualisieren.",
     "s10_h": "Elektronischer Geschäftsverkehr",
     "s10_body": "Die Bestellplattform stellt eine elektronische Geschäftsverkehrs-Plattform im Sinne des §312i BGB dar. Die Anforderungen der Button-Lösung gemäß §312j Abs. 3 BGB werden im Bestellprozess umgesetzt.",
-    "s11_h": "Cookies",
-    "s11_body1": "Diese Website verwendet ausschließlich technisch notwendige Cookies, die für den Betrieb der Website erforderlich sind. Es werden keine Tracking-, Analyse- oder Marketing-Cookies eingesetzt. Da keine einwilligungspflichtigen Cookies zum Einsatz kommen, wird kein Cookie-Banner angezeigt.",
-    "s11_body2": "Rechtsgrundlage für technisch notwendige Cookies: §25 Abs. 2 Nr. 2 TTDSG.",
+    "s11_h": "Cookies und Browser-Speicher",
+    "s11_body1": "gastrohub.dev setzt keine Cookies ein – weder eigene noch von Drittanbietern, weder zu Analyse-, Tracking- noch zu Marketingzwecken. Da keine einwilligungspflichtigen Cookies verwendet werden, wird kein Cookie-Banner angezeigt.",
+    "s11_body2": "Wir speichern lediglich Ihre einmal gewählte Anzeigesprache (Deutsch oder Englisch) im Local Storage Ihres Browsers unter dem Schlüssel „gh:lang“, damit Sie diese Auswahl bei späteren Besuchen nicht erneut treffen müssen. Es werden keine personenbezogenen Daten gespeichert. Speicherdauer: bis zur Löschung durch Sie selbst. Rechtsgrundlage: § 25 Abs. 2 Nr. 2 TTDSG (technisch notwendige Speicherung) in Verbindung mit Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse). Sie können den Eintrag jederzeit in den Einstellungen Ihres Browsers löschen.",
     "s12_h": "Server-Logfiles",
     "s12_body": "Bei jedem Aufruf der Website werden technische Zugriffsdaten (Server-Logfiles) automatisiert durch den Hosting-Anbieter erfasst. Dazu zählen IP-Adresse, Datum und Uhrzeit, aufgerufene URL, übertragene Datenmenge, Referrer-URL, User-Agent. Diese Daten werden ausschließlich zur Sicherstellung des fehlerfreien Betriebs und zur Abwehr von Missbrauch verarbeitet und nach spätestens 90 Tagen gelöscht. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.",
     "s13_h": "Datensicherheit",
@@ -120,10 +99,10 @@
     "s18_li3": "Vertrags- und Stammdaten von Restaurantkunden: 10 Jahre (§147 AO)",
     "s18_li4": "Rechnungsbezogene Transaktionsmetadaten: 10 Jahre (§147 AO)",
     "s18_li5": "Endkundendaten auf der Bestellplattform: gemäß Weisung des Restaurantbetreibers im AVV",
-    "s18_li6": "Cookies (technisch notwendig): bis Ende der Browser-Session",
+    "s18_li6": "Local-Storage-Eintrag „gh:lang“ (Sprachpräferenz): bis zur Löschung durch die Nutzerin oder den Nutzer",
     "s19_h": "Änderung dieser Datenschutzerklärung",
     "s19_body": "Wir behalten uns vor, diese Datenschutzerklärung anzupassen, sofern dies rechtliche Änderungen oder Anpassungen unserer Dienste erforderlich machen. Die jeweils aktuelle Fassung finden Sie stets auf dieser Seite.",
-    "stand": "Stand: Mai 2026"
+    "stand": "Stand: Juni 2026"
   },
   "agb": {
     "meta_description": "Allgemeine Geschäftsbedingungen von GastroHub. Restaurant-Bestellplattform mit Einmalzahlungs- oder Provisionsmodell.",
