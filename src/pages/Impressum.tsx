@@ -32,7 +32,6 @@ export default function Impressum() {
           {tk("diensteanbieter_country")}
         </p>
         <p>{tk("business_location")}</p>
-        <p className="text-sm text-slate-500">{tk("diensteanbieter_note")}</p>
 
         <h2 className="text-xl font-semibold mt-8 mb-4">{tk("kontakt_h")}</h2>
         <p>
@@ -60,13 +59,6 @@ export default function Impressum() {
 
         <h2 className="text-xl font-semibold mt-8 mb-4">{tk("urheberrecht_h")}</h2>
         <p>{tk("urheberrecht_body")}</p>
-
-        <h2 className="text-xl font-semibold mt-8 mb-4">{tk("odr_h")}</h2>
-        <p>
-          {tk("odr_intro")}{" "}
-          <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>
-        </p>
-        <p>{tk("odr_outro")}</p>
 
         <h2 className="text-xl font-semibold mt-8 mb-4">{tk("vsbg_h")}</h2>
         <p>{tk("vsbg_body")}</p>
