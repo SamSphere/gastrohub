@@ -43,13 +43,7 @@ export default function Impressum() {
         <p>{tk("ustg_body")}</p>
 
         <h2 className="text-xl font-semibold mt-8 mb-4">{tk("mstv_h")}</h2>
-        <p>
-          {tk("diensteanbieter_name")}<br />
-          {tk("diensteanbieter_co")}<br />
-          {tk("diensteanbieter_street")}<br />
-          {tk("diensteanbieter_city")}<br />
-          {tk("diensteanbieter_country")}
-        </p>
+        <p>{tk("mstv_body")}</p>
 
         <h2 className="text-xl font-semibold mt-8 mb-4">{tk("haftung_content_h")}</h2>
         <p>{tk("haftung_content_body")}</p>
