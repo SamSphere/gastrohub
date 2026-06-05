@@ -134,7 +134,7 @@ export default function Datenschutz() {
         <h2 className="text-xl font-semibold mt-8 mb-4">{tk("s19_h")}</h2>
         <p>{tk("s19_body")}</p>
 
-        <p className="text-sm text-slate-400 mt-12">{tk("stand")}</p>
+        <p className="text-sm text-slate-500 mt-12">{tk("stand")}</p>
       </div>
     </div>
   );

@@ -97,17 +97,17 @@
   --sidebar: 40 65% 95%;
   --sidebar-foreground: 29 33% 12%;
   --sidebar-border: 41 45% 82%;
-  --sidebar-primary: 38 59% 45%;
+  --sidebar-primary: 38 59% 35%;
   --sidebar-primary-foreground: 40 65% 97%;
   --sidebar-accent: 41 67% 87%;
   --sidebar-accent-foreground: 29 33% 12%;
-  --sidebar-ring: 38 59% 45%;
+  --sidebar-ring: 38 59% 35%;
 
   --popover: 40 65% 97%;
   --popover-foreground: 29 33% 12%;
   --popover-border: 41 45% 82%;
 
-  --primary: 38 59% 45%;                 /* #B8852F brand */
+  --primary: 38 59% 35%;                 /* #8E6725 brand (darkened from #B8852F for WCAG AA on white/cream) */
   --primary-foreground: 40 65% 97%;
   --primary-hover: 29 53% 36%;           /* #8B5A2B hover */
 
@@ -124,7 +124,7 @@
   --destructive-foreground: 40 65% 97%;
 
   --input: 41 45% 82%;
-  --ring: 38 59% 45%;
+  --ring: 38 59% 35%;
 
   --app-font-sans: 'Inter', sans-serif;
   --app-font-serif: Georgia, serif;

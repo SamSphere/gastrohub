@@ -120,7 +120,7 @@ export default function FAQ() {
             </div>
           </div>
 
-          <p className="text-center text-xs text-slate-400 mt-6">{t("footer_note")}</p>
+          <p className="text-center text-xs text-slate-500 mt-6">{t("footer_note")}</p>
         </div>
       </div>
     </div>
