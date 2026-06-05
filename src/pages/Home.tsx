@@ -245,7 +245,7 @@ export default function Home() {
                   <div key={n} className="flex gap-4">
                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg">{n}</div>
                     <div>
-                      <h4 className="text-xl font-bold text-slate-900 mb-2">{t(`how.step${n}_title`)}</h4>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">{t(`how.step${n}_title`)}</h3>
                       <p className="text-slate-600">{t(`how.step${n}_body`)}</p>
                     </div>
                   </div>
