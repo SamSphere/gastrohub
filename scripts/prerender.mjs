@@ -131,20 +131,17 @@ function rewriteHead(html, { title, description, canonical, extraHead, hreflang,
   return out;
 }
 
-function deFilePath(routePath) {
-  return routePath === "/"
-    ? join(distDir, "index.html")
-    : join(distDir, routePath.replace(/^\//, ""), "index.html");
+function urlPath(routePath, lang) {
+  if (lang === "en") return routePath === "/" ? "/en" : `/en${routePath}`;
+  return routePath;
 }
-function enFilePath(routePath) {
-  const enRel = routePath === "/" ? "en" : `en${routePath}`;
-  return join(distDir, enRel, "index.html");
+function filePath(routePath, lang) {
+  const rel = urlPath(routePath, lang).replace(/^\//, "");
+  return rel ? join(distDir, rel, "index.html") : join(distDir, "index.html");
 }
-function deBrowserPath(routePath) {
-  return routePath === "/" ? "/" : `${routePath}/`;
-}
-function enBrowserPath(routePath) {
-  return routePath === "/" ? "/en/" : `/en${routePath}/`;
+function browserPath(routePath, lang) {
+  const u = urlPath(routePath, lang);
+  return u === "/" ? "/" : `${u}/`;
 }
 
 // Step 1 — head rewrite
@@ -153,32 +150,20 @@ let headCount = 0;
 for (const route of ROUTES) {
   const hreflang = hreflangBlock(route.path);
 
-  const deOut = rewriteHead(indexHtml, {
-    title: route.de.title,
-    description: route.de.description,
-    canonical: `${ORIGIN}${route.path}`,
-    extraHead: route.de.extraHead ?? route.extraHead,
-    hreflang,
-    lang: "de",
-  });
-  const dePath = deFilePath(route.path);
-  await mkdir(dirname(dePath), { recursive: true });
-  await writeFile(dePath, deOut, "utf8");
-  headCount++;
-
-  const enPathOnly = route.path === "/" ? "/en" : `/en${route.path}`;
-  const enOut = rewriteHead(indexHtml, {
-    title: route.en.title,
-    description: route.en.description,
-    canonical: `${ORIGIN}${enPathOnly}`,
-    extraHead: route.en.extraHead ?? route.extraHead,
-    hreflang,
-    lang: "en",
-  });
-  const enPath = enFilePath(route.path);
-  await mkdir(dirname(enPath), { recursive: true });
-  await writeFile(enPath, enOut, "utf8");
-  headCount++;
+  for (const lang of ["de", "en"]) {
+    const out = rewriteHead(indexHtml, {
+      title: route[lang].title,
+      description: route[lang].description,
+      canonical: `${ORIGIN}${urlPath(route.path, lang)}`,
+      extraHead: route[lang].extraHead,
+      hreflang,
+      lang,
+    });
+    const path = filePath(route.path, lang);
+    await mkdir(dirname(path), { recursive: true });
+    await writeFile(path, out, "utf8");
+    headCount++;
+  }
 }
 console.log(`head rewrite: ${headCount} files`);
 
@@ -239,11 +224,12 @@ const browser = await chromium.launch({ headless: true });
 const baseUrl = `http://127.0.0.1:${port}`;
 let bodyCount = 0;
 try {
+  const locales = { de: "de-DE", en: "en-US" };
   for (const route of ROUTES) {
-    await renderRoute(browser, baseUrl, deBrowserPath(route.path), deFilePath(route.path), "de-DE");
-    bodyCount++;
-    await renderRoute(browser, baseUrl, enBrowserPath(route.path), enFilePath(route.path), "en-US");
-    bodyCount++;
+    for (const lang of ["de", "en"]) {
+      await renderRoute(browser, baseUrl, browserPath(route.path, lang), filePath(route.path, lang), locales[lang]);
+      bodyCount++;
+    }
     console.log(`  rendered ${route.path}  (DE + EN)`);
   }
 } finally {
