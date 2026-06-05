@@ -1,11 +1,17 @@
-// Post-build prerender: emits dist/<route>/index.html (DE) + dist/en/<route>/index.html (EN)
-// per route with route-specific <title>, meta description, canonical, og/twitter, and hreflang
-// alternates. /faq additionally gets FAQPage JSON-LD injected.
-// React hydrates over the same body; only <head> differs. EN page bodies still render whatever
-// the React components produce in EN once i18n picks up the URL prefix; pages not yet
-// migrated to t() show DE bodies under EN URLs (transitional, harmless).
+// Post-build prerender:
+//   Step 1: emit dist/<route>/index.html (DE) + dist/en/<route>/index.html (EN) per
+//           route with route-specific <title>, meta description, canonical, og/twitter,
+//           hreflang alternates, WebSite JSON-LD, and FAQPage JSON-LD for /faq.
+//   Step 2: spin up a local static server over dist/, drive a headless chromium across
+//           every route, wait for hydration, capture the rendered DOM, and write it
+//           back to the same file. Bots/link-previewers/AI-search now see real body
+//           content instead of an empty SPA shell.
+// React still hydrates over the captured body on real visits — server output and
+// client hydration agree because the HTML written back is exactly what React rendered.
 
-import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { chromium } from "playwright";
+import { createServer } from "node:http";
+import { readFile, writeFile, mkdir, stat } from "node:fs/promises";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -17,8 +23,6 @@ const faqData = JSON.parse(await readFile(join(__dirname, "..", "src", "data", "
 const homeDe = JSON.parse(await readFile(join(__dirname, "..", "src", "locales", "de", "home.json"), "utf8"));
 const homeEn = JSON.parse(await readFile(join(__dirname, "..", "src", "locales", "en", "home.json"), "utf8"));
 
-// Per-route metadata in DE + EN. Routes without EN-specific copy yet inherit a sensible default
-// (matching the DE one until later sessions translate the body).
 const ROUTES = [
   {
     path: "/",
@@ -67,7 +71,6 @@ function escapeHtmlAttr(s) {
 }
 
 function faqJsonLdScript(lang) {
-  // faq.json schema is bilingual: q/a/title are { de, en } objects. Falls back to de if missing.
   const pick = (field) => field?.[lang] ?? field?.de ?? "";
   const ld = {
     "@context": "https://schema.org",
@@ -94,11 +97,7 @@ function websiteJsonLdScript(lang) {
     url,
     inLanguage: isEn ? "en" : "de-DE",
     description,
-    contactPoint: {
-      "@type": "ContactPoint",
-      email: "kontakt@gastrohub.dev",
-      contactType: "customer service",
-    },
+    contactPoint: { "@type": "ContactPoint", email: "kontakt@gastrohub.dev", contactType: "customer service" },
   };
   return `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, "\\u003c")}</script>`;
 }
@@ -128,53 +127,127 @@ function rewriteHead(html, { title, description, canonical, extraHead, hreflang,
     .replace(/<meta name="twitter:description" content="[^"]*"\s*\/>/, `<meta name="twitter:description" content="${d}" />`);
   const websiteLd = websiteJsonLdScript(lang);
   const headExtras = [hreflang, websiteLd, extraHead].filter(Boolean).join("\n    ");
-  if (headExtras) {
-    out = out.replace(/<\/head>/, `${headExtras}\n  </head>`);
-  }
+  if (headExtras) out = out.replace(/<\/head>/, `${headExtras}\n  </head>`);
   return out;
 }
 
-const indexHtml = await readFile(join(distDir, "index.html"), "utf8");
+function deFilePath(routePath) {
+  return routePath === "/"
+    ? join(distDir, "index.html")
+    : join(distDir, routePath.replace(/^\//, ""), "index.html");
+}
+function enFilePath(routePath) {
+  const enRel = routePath === "/" ? "en" : `en${routePath}`;
+  return join(distDir, enRel, "index.html");
+}
+function deBrowserPath(routePath) {
+  return routePath === "/" ? "/" : `${routePath}/`;
+}
+function enBrowserPath(routePath) {
+  return routePath === "/" ? "/en/" : `/en${routePath}/`;
+}
 
-let count = 0;
+// Step 1 — head rewrite
+const indexHtml = await readFile(join(distDir, "index.html"), "utf8");
+let headCount = 0;
 for (const route of ROUTES) {
   const hreflang = hreflangBlock(route.path);
 
-  // DE variant (default). extraHead can be a top-level prop OR a per-language prop.
-  const deCanonical = `${ORIGIN}${route.path}`;
   const deOut = rewriteHead(indexHtml, {
     title: route.de.title,
     description: route.de.description,
-    canonical: deCanonical,
+    canonical: `${ORIGIN}${route.path}`,
     extraHead: route.de.extraHead ?? route.extraHead,
     hreflang,
     lang: "de",
   });
-  if (route.path === "/") {
-    // Overwrite the SPA shell at dist/index.html with DE-localized meta + hreflang
-    await writeFile(join(distDir, "index.html"), deOut, "utf8");
-  } else {
-    const dir = join(distDir, route.path.replace(/^\//, ""));
-    await mkdir(dir, { recursive: true });
-    await writeFile(join(dir, "index.html"), deOut, "utf8");
-  }
-  count++;
+  const dePath = deFilePath(route.path);
+  await mkdir(dirname(dePath), { recursive: true });
+  await writeFile(dePath, deOut, "utf8");
+  headCount++;
 
-  // EN variant under /en/
   const enPathOnly = route.path === "/" ? "/en" : `/en${route.path}`;
-  const enCanonical = `${ORIGIN}${enPathOnly}`;
   const enOut = rewriteHead(indexHtml, {
     title: route.en.title,
     description: route.en.description,
-    canonical: enCanonical,
+    canonical: `${ORIGIN}${enPathOnly}`,
     extraHead: route.en.extraHead ?? route.extraHead,
     hreflang,
     lang: "en",
   });
-  const enDir = join(distDir, enPathOnly.replace(/^\//, ""));
-  await mkdir(enDir, { recursive: true });
-  await writeFile(join(enDir, "index.html"), enOut, "utf8");
-  count++;
+  const enPath = enFilePath(route.path);
+  await mkdir(dirname(enPath), { recursive: true });
+  await writeFile(enPath, enOut, "utf8");
+  headCount++;
+}
+console.log(`head rewrite: ${headCount} files`);
+
+// Step 2 — body render via Playwright
+const MIME = {
+  ".html": "text/html; charset=utf-8", ".js": "application/javascript", ".css": "text/css",
+  ".json": "application/json", ".svg": "image/svg+xml", ".png": "image/png",
+  ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".webp": "image/webp", ".ico": "image/x-icon",
+  ".woff": "font/woff", ".woff2": "font/woff2", ".txt": "text/plain", ".xml": "application/xml",
+  ".gif": "image/gif",
+};
+
+async function startServer(port) {
+  const server = createServer(async (req, res) => {
+    try {
+      let urlPath = decodeURIComponent((req.url || "/").split("?")[0]);
+      let filePath = join(distDir, urlPath);
+      const st = await stat(filePath).catch(() => null);
+      if (!st || st.isDirectory()) {
+        filePath = join(distDir, urlPath.replace(/\/$/, ""), "index.html");
+      }
+      const buf = await readFile(filePath).catch(() => null);
+      if (!buf) { res.writeHead(404); res.end("not found"); return; }
+      const dot = filePath.lastIndexOf(".");
+      const ext = dot >= 0 ? filePath.slice(dot).toLowerCase() : "";
+      res.writeHead(200, { "content-type": MIME[ext] || "application/octet-stream" });
+      res.end(buf);
+    } catch {
+      res.writeHead(500); res.end("error");
+    }
+  });
+  await new Promise((r) => server.listen(port, "127.0.0.1", r));
+  return server;
 }
 
-console.log(`prerender complete: ${count} files (${ROUTES.length} routes × 2 languages)`);
+async function renderRoute(browser, baseUrl, browserPath, filePath, locale) {
+  const ctx = await browser.newContext({ locale });
+  const page = await ctx.newPage();
+  try {
+    await page.goto(`${baseUrl}${browserPath}`, { waitUntil: "networkidle", timeout: 30000 });
+    await page.waitForFunction(
+      () => {
+        const r = document.getElementById("root");
+        return !!r && r.children.length > 0 && (r.innerText || "").trim().length > 80;
+      },
+      { timeout: 20000 },
+    );
+    const html = "<!doctype html>\n" + await page.evaluate(() => document.documentElement.outerHTML);
+    await writeFile(filePath, html, "utf8");
+  } finally {
+    await ctx.close();
+  }
+}
+
+const port = 4174;
+const server = await startServer(port);
+const browser = await chromium.launch({ headless: true });
+const baseUrl = `http://127.0.0.1:${port}`;
+let bodyCount = 0;
+try {
+  for (const route of ROUTES) {
+    await renderRoute(browser, baseUrl, deBrowserPath(route.path), deFilePath(route.path), "de-DE");
+    bodyCount++;
+    await renderRoute(browser, baseUrl, enBrowserPath(route.path), enFilePath(route.path), "en-US");
+    bodyCount++;
+    console.log(`  rendered ${route.path}  (DE + EN)`);
+  }
+} finally {
+  await browser.close();
+  server.close();
+}
+console.log(`body render: ${bodyCount} files (${ROUTES.length} routes × 2 languages)`);
