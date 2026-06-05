@@ -274,7 +274,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">{t("final_cta.title")}</h2>
           <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">{t("final_cta.subline")}</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button asChild size="lg" className="h-14 px-8 text-lg font-semibold bg-sky-600 text-white hover:bg-sky-700">
+            <Button asChild size="lg" className="h-14 px-8 text-lg font-semibold bg-sky-700 text-white hover:bg-sky-800">
               <Link href="/demo" data-testid="button-cta-demo">{t("final_cta.primary")}</Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="h-14 px-8 text-lg font-semibold bg-white border-slate-200 text-slate-900 hover:bg-slate-50 hover:text-slate-900">

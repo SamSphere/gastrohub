@@ -145,7 +145,7 @@ export function CostCalculator() {
                 <dd className="text-2xl font-extrabold text-primary">{fmt(ghAnnual)}</dd>
               </div>
             </dl>
-            <p className="mt-4 text-xs text-slate-500 leading-relaxed">{tk("gh_basis")}</p>
+            <p className="mt-4 text-xs text-slate-600 leading-relaxed">{tk("gh_basis")}</p>
           </div>
         </div>
 
