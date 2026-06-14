@@ -13,6 +13,29 @@
     "check1": "Built for restaurant operations",
     "check2": "Run everything from your phone"
   },
+  "live_restaurants": {
+    "title": "Two restaurants. One platform. Your brand.",
+    "subtitle": "We don't just build demos. Two real restaurants in Baden-Württemberg run on GastroHub today.",
+    "card1_name": "dOmO Restaurant",
+    "card1_cuisine": "Syrian cuisine",
+    "card1_city": "Reutlingen",
+    "card2_name": "Side Kebap",
+    "card2_cuisine": "Döner, Pide, Pizza",
+    "card2_city": "Stuttgart-Bad Cannstatt",
+    "view_live": "View live"
+  },
+  "customer_order": {
+    "title": "This is how your guests order.",
+    "subtitle": "Direct from you. No commission. No detour through delivery platforms.",
+    "caption": "Order from the Hub Bistro demo. Identical order flow to all live restaurants.",
+    "footnote": "Side Kebap runs GastroHub as a menu-display site only, with no online ordering. dOmO uses the full order flow including Stripe. You choose the model that fits your restaurant."
+  },
+  "admin_view": {
+    "title": "This is how you run it.",
+    "subtitle": "Menu, orders, staff, stats. From a laptop or a phone. One login, everything in one place.",
+    "caption_desktop": "Admin dashboard, dOmO Restaurant",
+    "caption_mobile": "The same dashboard on a phone"
+  },
   "valueprop": {
     "title": "Why GastroHub for restaurants?",
     "subtitle": "One platform for your restaurant website, app version, menu management and owner dashboard.",

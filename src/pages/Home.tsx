@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { motion, type Variants } from "framer-motion";
-import { ArrowRight, CheckCircle2, TrendingUp, ShieldCheck, Clock, Check, PackageOpen, Globe, UserRound, Settings, ShoppingCart, Languages, LayoutDashboard, Sparkles } from "lucide-react";
+import { ArrowRight, CheckCircle2, TrendingUp, ShieldCheck, Clock, Check, PackageOpen, Globe, UserRound, Settings, ShoppingCart, Languages, LayoutDashboard, Sparkles, ExternalLink } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -118,6 +118,139 @@ export default function Home() {
                   />
                 </picture>
               </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Live restaurants — proof strip */}
+      <section className="py-20 lg:py-28 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("live_restaurants.title")}</h2>
+            <p className="text-lg text-slate-600">{t("live_restaurants.subtitle")}</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {[
+              { name: "card1_name", cuisine: "card1_cuisine", city: "card1_city", img: "/screenshots/domo-home.jpg", url: "https://domo-rt.de" },
+              { name: "card2_name", cuisine: "card2_cuisine", city: "card2_city", img: "/screenshots/side-kebap-home.jpg", url: "https://kebap-cannstatt.de" },
+            ].map((r, idx) => (
+              <motion.a
+                key={r.name}
+                href={r.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                className="block group rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-md hover:shadow-xl transition-shadow"
+              >
+                <div className="flex items-center gap-1.5 bg-slate-100 px-3 py-2 border-b border-slate-200">
+                  <span className="h-2.5 w-2.5 rounded-full bg-rose-400/80"></span>
+                  <span className="h-2.5 w-2.5 rounded-full bg-amber-400/80"></span>
+                  <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/80"></span>
+                </div>
+                <div className="aspect-[4/3] overflow-hidden bg-slate-100">
+                  <img
+                    src={r.img}
+                    alt={t(`live_restaurants.${r.name}`)}
+                    className="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-500"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-slate-900 mb-1">{t(`live_restaurants.${r.name}`)}</h3>
+                  <p className="text-sm text-slate-600 mb-4">
+                    {t(`live_restaurants.${r.cuisine}`)} · {t(`live_restaurants.${r.city}`)}
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-primary font-semibold group-hover:gap-2 transition-all">
+                    {t("live_restaurants.view_live")}
+                    <ExternalLink className="h-4 w-4" />
+                  </span>
+                </div>
+              </motion.a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Customer order flow */}
+      <section className="py-20 lg:py-28 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("customer_order.title")}</h2>
+            <p className="text-lg text-slate-600">{t("customer_order.subtitle")}</p>
+          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-4xl mx-auto"
+          >
+            <div className="rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-2xl">
+              <div className="flex items-center gap-1.5 bg-slate-100 px-3 py-2 border-b border-slate-200">
+                <span className="h-2.5 w-2.5 rounded-full bg-rose-400/80"></span>
+                <span className="h-2.5 w-2.5 rounded-full bg-amber-400/80"></span>
+                <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/80"></span>
+              </div>
+              <img
+                src="/screenshots/demo-checkout-desktop.jpg"
+                alt={t("customer_order.caption")}
+                className="w-full h-auto block"
+                loading="lazy"
+              />
+            </div>
+            <p className="text-xs text-slate-500 text-center mt-3 italic">{t("customer_order.caption")}</p>
+            <p className="text-sm text-slate-600 text-center mt-6 max-w-2xl mx-auto leading-relaxed">
+              {t("customer_order.footnote")}
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Admin view */}
+      <section className="py-20 lg:py-28 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("admin_view.title")}</h2>
+            <p className="text-lg text-slate-600">{t("admin_view.subtitle")}</p>
+          </div>
+          <div className="grid lg:grid-cols-[1fr_auto] gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="rounded-xl overflow-hidden bg-white border border-slate-200 shadow-xl"
+            >
+              <div className="flex items-center gap-1.5 bg-slate-100 px-3 py-2 border-b border-slate-200">
+                <span className="h-2.5 w-2.5 rounded-full bg-rose-400/80"></span>
+                <span className="h-2.5 w-2.5 rounded-full bg-amber-400/80"></span>
+                <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/80"></span>
+              </div>
+              <img
+                src="/screenshots/domo-admin-desktop.jpg"
+                alt={t("admin_view.caption_desktop")}
+                className="w-full h-auto block"
+                loading="lazy"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.15 }}
+              className="mx-auto lg:mx-0 w-[240px] rounded-[2.25rem] border-[10px] border-slate-900 bg-slate-900 shadow-2xl overflow-hidden relative"
+            >
+              <span className="absolute left-1/2 top-1.5 -translate-x-1/2 h-1.5 w-16 rounded-full bg-slate-700 z-10"></span>
+              <img
+                src="/screenshots/domo-admin-mobile.jpg"
+                alt={t("admin_view.caption_mobile")}
+                className="w-full h-auto block rounded-[1.75rem]"
+                loading="lazy"
+              />
             </motion.div>
           </div>
         </div>
