@@ -27,7 +27,7 @@
   "customer_order": {
     "title": "So bestellen Ihre Gäste.",
     "subtitle": "Direkt bei Ihnen. Keine Provision. Keine Umwege über Lieferplattformen.",
-    "caption": "Bestellung aus der Hub-Bistro-Demo, identischer Bestellfluss wie bei allen Live-Restaurants.",
+    "caption": "Echte Bestellung bei dOmO Restaurant in Reutlingen.",
     "footnote": "Side Kebap nutzt GastroHub als reine Speisekarten-Anzeige ohne Online-Bestellung. dOmO nutzt den vollen Bestellfluss inklusive Stripe. Sie wählen das Modell, das zu Ihrem Restaurant passt."
   },
   "admin_view": {

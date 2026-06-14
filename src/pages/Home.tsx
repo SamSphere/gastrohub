@@ -196,7 +196,7 @@ export default function Home() {
                 <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/80"></span>
               </div>
               <img
-                src="/screenshots/demo-checkout-desktop.jpg"
+                src="/screenshots/domo-checkout-desktop.jpg"
                 alt={t("customer_order.caption")}
                 className="w-full h-auto block"
                 loading="lazy"
