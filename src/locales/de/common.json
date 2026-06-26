@@ -29,5 +29,12 @@
     "body": "Die aufgerufene Seite gibt es nicht (mehr). Vielleicht hilft eine der folgenden Optionen weiter:",
     "back_home": "Zur Startseite",
     "open_demo": "Demo ansehen"
+  },
+  "cookie": {
+    "title": "Cookie-Einstellungen",
+    "text": "Wir verwenden Cookies nur zur Google Ads-Conversion-Messung, damit wir unsere Werbung auswerten können, ausschließlich mit Ihrer Einwilligung. Technisch notwendige Funktionen bleiben unberührt.",
+    "privacy_link": "Datenschutzerklärung",
+    "accept": "Akzeptieren",
+    "reject": "Ablehnen"
   }
 }

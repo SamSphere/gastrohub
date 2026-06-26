@@ -7,6 +7,7 @@ import NotFound from "@/pages/not-found";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import { CookieConsent } from "@/components/CookieConsent";
 
 import Home from "@/pages/Home";
 import Demo from "@/pages/Demo";
@@ -43,6 +44,7 @@ function Layout({ children }: { children: React.ReactNode }) {
         {children}
       </main>
       <Footer />
+      <CookieConsent />
     </div>
   );
 }

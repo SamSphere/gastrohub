@@ -29,5 +29,12 @@
     "body": "The page you requested does not exist (anymore). One of the options below may help:",
     "back_home": "Back to home",
     "open_demo": "View demo"
+  },
+  "cookie": {
+    "title": "Cookie settings",
+    "text": "We use cookies only for Google Ads conversion measurement, so we can evaluate our advertising, only with your consent. Technically necessary functions are unaffected.",
+    "privacy_link": "Privacy policy",
+    "accept": "Accept",
+    "reject": "Reject"
   }
 }

@@ -2,7 +2,7 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://images.unsplash.com data:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' 'unsafe-inline'; connect-src 'self'; base-uri 'self'; form-action 'self';" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://images.unsplash.com https://www.googletagmanager.com https://www.google.com https://www.google.de https://googleads.g.doubleclick.net data:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; connect-src 'self' https://www.googletagmanager.com https://www.google.com https://www.google.de https://googleads.g.doubleclick.net; frame-src 'self' https://td.doubleclick.net; base-uri 'self'; form-action 'self';" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="text/javascript">
       // First-visit root redirect. Runs only on the exact root path "/".
@@ -46,6 +46,27 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=4" />
     <link rel="preload" as="image" href="/images/hero-1280.webp" type="image/webp" fetchpriority="high" />
     <link rel="preload" as="font" href="/fonts/InterVariable.woff2" type="font/woff2" crossorigin>
+    <!-- Google tag (gtag.js) for Google Ads, with Consent Mode v2.
+         Defaults are DENIED for EEA compliance; CookieConsent.tsx flips them to
+         granted only after the visitor accepts. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18275724345"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      (function () {
+        var c = 'denied';
+        try { if (localStorage.getItem('gh:consent') === 'granted') c = 'granted'; } catch (e) {}
+        gtag('consent', 'default', {
+          ad_storage: c,
+          ad_user_data: c,
+          ad_personalization: c,
+          analytics_storage: c,
+          wait_for_update: 500
+        });
+      })();
+      gtag('config', 'AW-18275724345');
+    </script>
   </head>
   <body>
     <div id="root"></div>
