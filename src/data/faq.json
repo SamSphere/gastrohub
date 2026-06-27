@@ -47,8 +47,8 @@
             "en": "How is GastroHub different from the big delivery apps?"
           },
           "a": {
-            "de": "Drei Dinge. Erstens: Die Bestellung läuft direkt bei Ihnen ein, nicht über ein fremdes System, das Ihre Marke verdeckt. Zweitens: Ihre Kunden sind Ihre Kunden. Sie sehen Namen, E-Mail-Adressen und Bestellhistorie und können diese Gäste für Wiederbestellungen oder Aktionen anschreiben. Drittens: Sie zahlen 0 %, 5 % oder 7 % je Bestellung statt 13 bis 30 % bei den großen Aggregatoren.",
-            "en": "Three things. First: the order lands directly with you, not through a foreign system that hides your brand. Second: your customers are your customers. You see names, email addresses and order history, and you can reach those guests for repeat orders or promotions. Third: you pay 0%, 5% or 7% per order instead of 13 to 30% at the big aggregators."
+            "de": "Drei Dinge. Erstens: Die Bestellung läuft direkt bei Ihnen ein, nicht über ein fremdes System, das Ihre Marke verdeckt. Zweitens: Ihre Kunden sind Ihre Kunden. Sie sehen Namen, E-Mail-Adressen und Bestellhistorie und können diese Gäste für Wiederbestellungen oder Aktionen anschreiben. Drittens: Sie zahlen 0 % oder 7 % je Bestellung statt 13 bis 30 % bei den großen Aggregatoren.",
+            "en": "Three things. First: the order lands directly with you, not through a foreign system that hides your brand. Second: your customers are your customers. You see names, email addresses and order history, and you can reach those guests for repeat orders or promotions. Third: you pay 0% or 7% per order instead of 13 to 30% at the big aggregators."
           }
         }
       ]
@@ -67,8 +67,8 @@
             "en": "What does GastroHub cost?"
           },
           "a": {
-            "de": "Es gibt drei Modelle. Im Einmalzahlungs-Modell zahlen Sie eine individuelle Einrichtungsgebühr und besitzen die Plattform danach vollständig. Keine Provision auf Umsätze. Technischer Support wird gesondert nach Aufwand abgerechnet. Im Growth-Modell zahlen Sie 299 € Einrichtungsgebühr und danach 5 % pro Bestellung. Keine monatliche Mindestgebühr. Support wird gesondert abgerechnet. Im Pro-Modell zahlen Sie 499 € Einrichtungsgebühr und danach 7 % pro Bestellung. Support, Wartung und priorisierte Reaktionszeiten sind komplett im Preis enthalten. Den genauen Einrichtungspreis im Einmalzahlungs-Modell nennen wir nach einem kurzen Gespräch, weil er von Speisekarten-Größe, Lieferzonen und Ihrer aktuellen Daten-Lage abhängt.",
-            "en": "There are three models. In the One-Time Payment model you pay a custom setup fee once, then you own the platform outright. No commission on revenue. Technical support is billed separately on a time-and-materials basis. In the Growth model you pay €299 setup and then 5% per order. No monthly minimum. Support is billed separately. In the Pro model you pay €499 setup and then 7% per order. Support, maintenance and priority response times are fully included. We give you the exact setup price for the One-Time Payment model after a short call, because it depends on menu size, delivery zones and your current data setup."
+            "de": "Es gibt zwei Modelle. Im Einmalzahlungs-Modell zahlen Sie eine individuelle Einrichtungsgebühr und besitzen die Plattform danach vollständig. Keine Provision auf Umsätze. Technischer Support wird gesondert nach Aufwand abgerechnet. Im Growth-Modell zahlen Sie 299 € Einrichtungsgebühr und danach 7 % pro Bestellung. Keine monatliche Mindestgebühr. Support, Updates und Wartung sind komplett im Preis enthalten. Den genauen Einrichtungspreis im Einmalzahlungs-Modell nennen wir nach einem kurzen Gespräch, weil er von Speisekarten-Größe, Lieferzonen und Ihrer aktuellen Daten-Lage abhängt.",
+            "en": "There are two models. In the One-Time Payment model you pay a custom setup fee once, then you own the platform outright. No commission on revenue. Technical support is billed separately on a time-and-materials basis. In the Growth model you pay €299 setup and then 7% per order. No monthly minimum. Support, updates and maintenance are fully included. We give you the exact setup price for the One-Time Payment model after a short call, because it depends on menu size, delivery zones and your current data setup."
           }
         },
         {
@@ -78,8 +78,8 @@
             "en": "What does 13 to 30% commission actually mean in money?"
           },
           "a": {
-            "de": "Rechnen Sie es durch. Bei 10.000 Euro Monatsumsatz nimmt eine Plattform mit 20% Provision 2.000 Euro pro Monat. Das sind 24.000 Euro im Jahr. Bei 25% sind es 30.000 Euro. Restaurants arbeiten typischerweise mit 5 bis 8% Nettomarge. Die Plattform nimmt also oft mehr von der einzelnen Bestellung weg, als am Ende für Sie übrig bleibt. Bei GastroHub bleibt der gleiche Umsatz bei Ihnen, minus einer transparenten Einrichtungsgebühr oder 5 bis 7% Provision.",
-            "en": "Work it out. With €10,000 in monthly revenue, a platform taking 20% commission takes €2,000 per month. That's €24,000 per year. At 25% it's €30,000. Restaurants typically work on a 5 to 8% net margin. So the platform often takes more from each order than what's left for you. With GastroHub, the same revenue stays with you, minus a transparent setup fee or 5 to 7% commission."
+            "de": "Rechnen Sie es durch. Bei 10.000 Euro Monatsumsatz nimmt eine Plattform mit 20% Provision 2.000 Euro pro Monat. Das sind 24.000 Euro im Jahr. Bei 25% sind es 30.000 Euro. Restaurants arbeiten typischerweise mit 5 bis 8% Nettomarge. Die Plattform nimmt also oft mehr von der einzelnen Bestellung weg, als am Ende für Sie übrig bleibt. Bei GastroHub bleibt der gleiche Umsatz bei Ihnen, minus einer transparenten Einrichtungsgebühr oder 7% Provision.",
+            "en": "Work it out. With €10,000 in monthly revenue, a platform taking 20% commission takes €2,000 per month. That's €24,000 per year. At 25% it's €30,000. Restaurants typically work on a 5 to 8% net margin. So the platform often takes more from each order than what's left for you. With GastroHub, the same revenue stays with you, minus a transparent setup fee or 7% commission."
           }
         },
         {
@@ -89,8 +89,8 @@
             "en": "Which model is better for me?"
           },
           "a": {
-            "de": "Einmalzahlung lohnt sich, wenn Sie langfristig denken und keine umsatzabhängige Provision wollen. Sie zahlen einmal für die Einrichtung und besitzen die Plattform danach vollständig. Growth lohnt sich, wenn Sie klein starten wollen, ohne hohe Anfangskosten. Sie zahlen 299 € Einrichtungsgebühr und danach nur 5 % pro Bestellung, ohne monatliche Mindestgebühr. Pro lohnt sich, wenn Sie keinen Aufwand mit Support oder Wartung haben wollen. 499 € Einrichtung, 7 % pro Bestellung, Support und Wartung komplett inklusive. Alle Modelle sind deutlich günstiger als die großen Aggregatoren. Im Erstgespräch rechnen wir mit Ihren echten Zahlen durch, welches Modell sich für Sie rechnet.",
-            "en": "One-Time Payment pays off if you think long-term and don't want revenue-based commission. You pay once for setup and then own the platform outright. Growth pays off if you want to start small without high upfront costs. You pay €299 setup and then only 5% per order, with no monthly minimum. Pro pays off if you don't want the hassle of support or maintenance. €499 setup, 7% per order, support and maintenance fully included. All models are significantly cheaper than the big aggregators. In the first call we work through your real numbers to see which model works best for you."
+            "de": "Einmalzahlung lohnt sich, wenn Sie langfristig denken und keine umsatzabhängige Provision wollen. Sie zahlen einmal für die Einrichtung und besitzen die Plattform danach vollständig. Growth lohnt sich, wenn Sie klein starten wollen, ohne hohe Anfangskosten. Sie zahlen 299 € Einrichtungsgebühr und danach nur 7 % pro Bestellung, ohne monatliche Mindestgebühr, mit Support, Updates und Wartung komplett inklusive. Beide Modelle sind deutlich günstiger als die großen Aggregatoren. Im Erstgespräch rechnen wir mit Ihren echten Zahlen durch, welches Modell sich für Sie rechnet.",
+            "en": "One-Time Payment pays off if you think long-term and don't want revenue-based commission. You pay once for setup and then own the platform outright. Growth pays off if you want to start small without high upfront costs. You pay €299 setup and then only 7% per order, with no monthly minimum, and support, updates and maintenance fully included. Both models are significantly cheaper than the big aggregators. In the first call we work through your real numbers to see which model works best for you."
           }
         },
         {
@@ -100,8 +100,8 @@
             "en": "Are there any hidden costs?"
           },
           "a": {
-            "de": "Nein. Was im Angebot steht, ist der vollständige Preis von uns. Zusätzlich fallen Stripe-Gebühren an, etwa 1,5% plus 25 Cent pro erfolgreicher Kartentransaktion. Diese gehen direkt an Stripe und sind in jedem Online-Bezahlsystem üblich. Sie sehen jede einzelne Gebühr in Ihrem Stripe-Dashboard. Es gibt keine Sponsored-Listings, keine Premium-Platzierung-Aufpreise, keine verpflichtenden Werbebudgets. Bei Modell 1 und Modell 2 wird technischer Support nach Aufwand abgerechnet, bei Modell 3 ist Support komplett inklusive.",
-            "en": "No. What's in the offer is our full price. On top, Stripe fees apply, roughly 1.5% plus 25 cents per successful card transaction. Those go directly to Stripe and are standard in any online payment system. You see every single fee in your Stripe dashboard. There are no sponsored listings, no premium-placement surcharges, no mandatory ad budgets. In Model 1 and Model 2, technical support is billed separately on a time-and-materials basis. In Model 3, support is fully included."
+            "de": "Nein. Was im Angebot steht, ist der vollständige Preis von uns. Zusätzlich fallen Stripe-Gebühren an, etwa 1,5% plus 25 Cent pro erfolgreicher Kartentransaktion. Diese gehen direkt an Stripe und sind in jedem Online-Bezahlsystem üblich. Sie sehen jede einzelne Gebühr in Ihrem Stripe-Dashboard. Es gibt keine Sponsored-Listings, keine Premium-Platzierung-Aufpreise, keine verpflichtenden Werbebudgets. Bei der Einmalzahlung wird technischer Support nach Aufwand abgerechnet, im Growth-Modell ist Support komplett inklusive.",
+            "en": "No. What's in the offer is our full price. On top, Stripe fees apply, roughly 1.5% plus 25 cents per successful card transaction. Those go directly to Stripe and are standard in any online payment system. You see every single fee in your Stripe dashboard. There are no sponsored listings, no premium-placement surcharges, no mandatory ad budgets. In the One-Time Payment model, technical support is billed separately on a time-and-materials basis. In the Growth model, support is fully included."
           }
         }
       ]
@@ -385,8 +385,8 @@
             "en": "How do I reach support?"
           },
           "a": {
-            "de": "Per E-Mail an kontakt@gastrohub.dev. Werktags antworten wir in der Regel am selben oder nächsten Tag. Im 7-Prozent-All-Inclusive-Modell ist Support unbegrenzt enthalten. Im 5-Prozent-Modell und im Einmalzahlungsmodell rechnen wir Support nach Aufwand ab, in 15-Minuten-Schritten und immer vorher angekündigt.",
-            "en": "By email at kontakt@gastrohub.dev. On working days we usually reply the same or next day. In the 7% all-inclusive model, support is included without limit. In the 5% model and the one-time payment model we bill support on a time-and-materials basis, in 15-minute increments, always announced in advance."
+            "de": "Per E-Mail an kontakt@gastrohub.dev. Werktags antworten wir in der Regel am selben oder nächsten Tag. Im Growth-Modell (7 %) ist Support unbegrenzt enthalten. Im Einmalzahlungsmodell rechnen wir Support nach Aufwand ab, in 15-Minuten-Schritten und immer vorher angekündigt.",
+            "en": "By email at kontakt@gastrohub.dev. On working days we usually reply the same or next day. In the Growth model (7%), support is included without limit. In the one-time payment model we bill support on a time-and-materials basis, in 15-minute increments, always announced in advance."
           }
         },
         {

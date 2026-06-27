@@ -25,7 +25,7 @@ export default function Pricing() {
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">{tk("subtitle")}</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 gap-6 mb-8 max-w-3xl mx-auto">
             {/* Einmalzahlung */}
             <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-7 text-left flex flex-col">
               <div className="text-xl font-extrabold text-slate-900 mb-1">{tk("einmal_label")}</div>
@@ -48,22 +48,7 @@ export default function Pricing() {
               <div className="text-3xl font-extrabold text-primary mt-2 mb-1">{tk("p5_price")}</div>
               <div className="text-slate-500 text-sm mb-5">{tk("p5_suffix")}</div>
               <ul className="space-y-2.5 text-sm text-slate-700 flex-1">
-                {["p5_b1", "p5_b2"].map((k) => (
-                  <li key={k} className="flex items-start gap-2">
-                    <Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
-                    <span>{tk(k)}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Pro */}
-            <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-7 text-left flex flex-col">
-              <div className="text-xl font-extrabold text-slate-900 mb-1">{tk("p7_label")}</div>
-              <div className="text-3xl font-extrabold text-primary mt-2 mb-1">{tk("p7_price")}</div>
-              <div className="text-slate-500 text-sm mb-5">{tk("p7_suffix")}</div>
-              <ul className="space-y-2.5 text-sm text-slate-700 flex-1">
-                {["p7_b1", "p7_b2", "p7_b3"].map((k) => (
+                {["p5_b1", "p5_b2", "p5_b3"].map((k) => (
                   <li key={k} className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
                     <span>{tk(k)}</span>

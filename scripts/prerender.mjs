@@ -36,8 +36,8 @@ const ROUTES = [
   },
   {
     path: "/preise",
-    de: { title: "Preise | GastroHub", description: "Drei Preismodelle für die GastroHub Restaurantplattform: Einmalzahlung, Growth (5 %) und Pro (7 % All-Inclusive). Einrichtungsgebühren ab 299 €. Keine monatliche Mindestgebühr." },
-    en: { title: "Pricing | GastroHub", description: "Three pricing models for the GastroHub restaurant platform: One-Time Payment, Growth (5%), and Pro (7% all-inclusive). Setup fees from €299. No monthly minimum." },
+    de: { title: "Preise | GastroHub", description: "Zwei Preismodelle für die GastroHub Restaurantplattform: Einmalzahlung oder Growth (299 € Einrichtung, 7 % pro Bestellung, alles inklusive). Keine monatliche Mindestgebühr." },
+    en: { title: "Pricing | GastroHub", description: "Two pricing models for the GastroHub restaurant platform: One-Time Payment or Growth (€299 setup, 7% per order, everything included). No monthly minimum." },
   },
   {
     path: "/faq",

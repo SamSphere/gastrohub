@@ -36,14 +36,10 @@ export function FeeComparison() {
             </span>
           </div>
 
-          {/* GastroHub — small numbers, 5 the smallest */}
+          {/* GastroHub — one small number (7 €), so it reads as tiny next to the 33 € */}
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between px-6 py-6 bg-secondary/30">
             <span className="font-semibold text-slate-900">{tk("gh_label")}</span>
-            <span className="flex items-baseline gap-2 text-primary">
-              <span className="text-base font-bold">{tk("gh_low")}</span>
-              <span className="text-sm text-primary/70">{tk("connector")}</span>
-              <span className="text-xl font-extrabold">{tk("gh_high")}</span>
-            </span>
+            <span className="text-2xl font-extrabold text-primary">{tk("gh_value")}</span>
           </div>
 
           <div className="px-6 py-5 border-t border-slate-200">
