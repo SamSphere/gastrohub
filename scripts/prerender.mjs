@@ -1,6 +1,7 @@
 // Post-build prerender:
-//   Step 1: emit dist/<route>/index.html (DE) + dist/en/<route>/index.html (EN) per
-//           route with route-specific <title>, meta description, canonical, og/twitter,
+//   Step 1: emit dist/<route>/index.html (DE) + dist/en/<route>/index.html (EN) +
+//           dist/ar/<route>/index.html (AR, translated routes only) per route with
+//           route-specific <title>, meta description, canonical, og/twitter,
 //           hreflang alternates, WebSite JSON-LD, and FAQPage JSON-LD for /faq.
 //   Step 2: spin up a local static server over dist/, drive a headless chromium across
 //           every route, wait for hydration, capture the rendered DOM, and write it
@@ -22,12 +23,14 @@ const ORIGIN = "https://gastrohub.dev";
 const faqData = JSON.parse(await readFile(join(__dirname, "..", "src", "data", "faq.json"), "utf8"));
 const homeDe = JSON.parse(await readFile(join(__dirname, "..", "src", "locales", "de", "home.json"), "utf8"));
 const homeEn = JSON.parse(await readFile(join(__dirname, "..", "src", "locales", "en", "home.json"), "utf8"));
+const homeAr = JSON.parse(await readFile(join(__dirname, "..", "src", "locales", "ar", "home.json"), "utf8"));
 
 const ROUTES = [
   {
     path: "/",
     de: { title: homeDe.meta.title, description: homeDe.meta.description },
     en: { title: homeEn.meta.title, description: homeEn.meta.description },
+    ar: { title: homeAr.meta.title, description: homeAr.meta.description },
   },
   {
     path: "/demo",
@@ -38,11 +41,13 @@ const ROUTES = [
     path: "/preise",
     de: { title: "Preise | GastroHub", description: "Zwei Preismodelle für die GastroHub Restaurantplattform: Einmalzahlung oder Growth (299 € Einrichtung, 7 % pro Bestellung, alles inklusive). Keine monatliche Mindestgebühr." },
     en: { title: "Pricing | GastroHub", description: "Two pricing models for the GastroHub restaurant platform: One-Time Payment or Growth (€299 setup, 7% per order, everything included). No monthly minimum." },
+    ar: { title: "الأسعار | GastroHub", description: "نموذجان للتسعير لمنصة مطاعم GastroHub: دفعة واحدة أو Growth (رسوم إعداد 299 €، 7 % لكل طلب، كل شيء شامل). بدون حد أدنى شهري." },
   },
   {
     path: "/faq",
     de: { title: "FAQ | GastroHub", description: "Häufig gestellte Fragen zu GastroHub: Preismodelle, Wechsel von Liefer-Apps, Datenschutz, Stripe-Zahlungen und Einrichtung. Antworten in Klartext.", extraHead: faqJsonLdScript("de") },
     en: { title: "FAQ | GastroHub", description: "Frequently asked questions about GastroHub: pricing models, switching from delivery apps, privacy, Stripe payments and setup. Answers in plain language.", extraHead: faqJsonLdScript("en") },
+    ar: { title: "الأسئلة الشائعة | GastroHub", description: "أسئلة شائعة حول GastroHub: نماذج التسعير، الانتقال من تطبيقات التوصيل، حماية البيانات، مدفوعات Stripe والإعداد. إجابات بلغة واضحة.", extraHead: faqJsonLdScript("ar") },
   },
   {
     path: "/kontakt",
@@ -66,6 +71,12 @@ const ROUTES = [
   },
 ];
 
+// Which languages each route is prerendered in. Arabic covers the translated
+// surfaces only (home, pricing, FAQ); other routes stay DE + EN.
+function langsFor(route) {
+  return route.ar ? ["de", "en", "ar"] : ["de", "en"];
+}
+
 function escapeHtmlAttr(s) {
   return s.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
@@ -86,44 +97,48 @@ function faqJsonLdScript(lang) {
   return `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, "\\u003c")}</script>`;
 }
 
+function inLanguageTag(lang) {
+  return lang === "en" ? "en" : lang === "ar" ? "ar" : "de-DE";
+}
+function ogLocaleTag(lang) {
+  return lang === "en" ? "en_US" : lang === "ar" ? "ar_AR" : "de_DE";
+}
+
 function websiteJsonLdScript(lang) {
-  const isEn = lang === "en";
-  const url = isEn ? `${ORIGIN}/en` : `${ORIGIN}/`;
-  const description = isEn ? homeEn.meta.description : homeDe.meta.description;
+  const home = lang === "ar" ? homeAr : lang === "en" ? homeEn : homeDe;
   const ld = {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "GastroHub",
-    url,
-    inLanguage: isEn ? "en" : "de-DE",
-    description,
+    url: `${ORIGIN}${urlPath("/", lang)}`,
+    inLanguage: inLanguageTag(lang),
+    description: home.meta.description,
     contactPoint: { "@type": "ContactPoint", email: "kontakt@gastrohub.dev", contactType: "customer service" },
   };
   return `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, "\\u003c")}</script>`;
 }
 
-function hreflangBlock(path) {
-  const deUrl = `${ORIGIN}${path}`;
-  const enUrl = `${ORIGIN}/en${path === "/" ? "" : path}`;
-  return [
-    `<link rel="alternate" hreflang="de" href="${deUrl}" />`,
-    `<link rel="alternate" hreflang="en" href="${enUrl}" />`,
-    `<link rel="alternate" hreflang="x-default" href="${deUrl}" />`,
-  ].join("\n    ");
+function hreflangBlock(path, langs) {
+  const lines = langs.map(
+    (l) => `<link rel="alternate" hreflang="${l}" href="${ORIGIN}${urlPath(path, l)}" />`,
+  );
+  lines.push(`<link rel="alternate" hreflang="x-default" href="${ORIGIN}${urlPath(path, "de")}" />`);
+  return lines.join("\n    ");
 }
 
 function rewriteHead(html, { title, description, canonical, extraHead, hreflang, lang }) {
   const t = escapeHtmlAttr(title);
   const d = escapeHtmlAttr(description);
+  const dir = lang === "ar" ? "rtl" : "ltr";
   let out = html
-    .replace(/<html lang="[^"]*"/, `<html lang="${lang}"`)
+    .replace(/<html lang="[^"]*"(?:\s+dir="[^"]*")?/, `<html lang="${lang}" dir="${dir}"`)
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${t}</title>`)
     .replace(/<meta name="description" content="[^"]*"\s*\/>/, `<meta name="description" content="${d}" />`)
     .replace(/<link rel="canonical" href="[^"]*"\s*\/>/, `<link rel="canonical" href="${canonical}" />`)
     .replace(/<meta property="og:title" content="[^"]*"\s*\/>/, `<meta property="og:title" content="${t}" />`)
     .replace(/<meta property="og:description" content="[^"]*"\s*\/>/, `<meta property="og:description" content="${d}" />`)
     .replace(/<meta property="og:url" content="[^"]*"\s*\/>/, `<meta property="og:url" content="${canonical}" />`)
-    .replace(/<meta property="og:locale" content="[^"]*"\s*\/>/, `<meta property="og:locale" content="${lang === "en" ? "en_US" : "de_DE"}" />`)
+    .replace(/<meta property="og:locale" content="[^"]*"\s*\/>/, `<meta property="og:locale" content="${ogLocaleTag(lang)}" />`)
     .replace(/<meta name="twitter:title" content="[^"]*"\s*\/>/, `<meta name="twitter:title" content="${t}" />`)
     .replace(/<meta name="twitter:description" content="[^"]*"\s*\/>/, `<meta name="twitter:description" content="${d}" />`);
   const websiteLd = websiteJsonLdScript(lang);
@@ -133,8 +148,9 @@ function rewriteHead(html, { title, description, canonical, extraHead, hreflang,
 }
 
 function urlPath(routePath, lang) {
-  if (lang === "en") return routePath === "/" ? "/en" : `/en${routePath}`;
-  return routePath;
+  if (lang === "de") return routePath;
+  const prefix = `/${lang}`; // /en or /ar
+  return routePath === "/" ? prefix : `${prefix}${routePath}`;
 }
 function filePath(routePath, lang) {
   const rel = urlPath(routePath, lang).replace(/^\//, "");
@@ -149,9 +165,10 @@ function browserPath(routePath, lang) {
 const indexHtml = await readFile(join(distDir, "index.html"), "utf8");
 let headCount = 0;
 for (const route of ROUTES) {
-  const hreflang = hreflangBlock(route.path);
+  const langs = langsFor(route);
+  const hreflang = hreflangBlock(route.path, langs);
 
-  for (const lang of ["de", "en"]) {
+  for (const lang of langs) {
     const out = rewriteHead(indexHtml, {
       title: route[lang].title,
       description: route[lang].description,
@@ -225,16 +242,17 @@ const browser = await chromium.launch({ headless: true });
 const baseUrl = `http://127.0.0.1:${port}`;
 let bodyCount = 0;
 try {
-  const locales = { de: "de-DE", en: "en-US" };
+  const locales = { de: "de-DE", en: "en-US", ar: "ar" };
   for (const route of ROUTES) {
-    for (const lang of ["de", "en"]) {
+    const langs = langsFor(route);
+    for (const lang of langs) {
       await renderRoute(browser, baseUrl, browserPath(route.path, lang), filePath(route.path, lang), locales[lang]);
       bodyCount++;
     }
-    console.log(`  rendered ${route.path}  (DE + EN)`);
+    console.log(`  rendered ${route.path}  (${langs.join(" + ")})`);
   }
 } finally {
   await browser.close();
   server.close();
 }
-console.log(`body render: ${bodyCount} files (${ROUTES.length} routes × 2 languages)`);
+console.log(`body render: ${bodyCount} files`);

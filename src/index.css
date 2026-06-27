@@ -239,3 +239,12 @@
     inset: -1px;
   }
 }
+
+/* Right-to-left (Arabic). dir="rtl" on <html> already handles text flow and flex/grid
+   mirroring; this fixes the explicit text-left utilities (pricing / value-prop cards)
+   that would otherwise stay left-aligned in RTL. */
+@layer utilities {
+  [dir="rtl"] .text-left {
+    text-align: right;
+  }
+}

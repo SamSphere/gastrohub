@@ -10,13 +10,17 @@
       // (gh:lang in localStorage) — otherwise an English-browser user clicking
       // "DE" on /en would land on / and get bounced right back to /en.
       //   no stored pick + "en*" → redirect to /en/
+      //   no stored pick + "ar*" → redirect to /ar/
       //   otherwise              → stay on / (German default)
       (function () {
         if (window.location.pathname !== '/') return;
         try { if (localStorage.getItem('gh:lang')) return; } catch (e) {}
         var lang = (navigator.language || '').toLowerCase();
+        var tail = window.location.search + window.location.hash;
         if (lang.indexOf('en') === 0) {
-          window.location.replace('/en' + window.location.search + window.location.hash);
+          window.location.replace('/en' + tail);
+        } else if (lang.indexOf('ar') === 0) {
+          window.location.replace('/ar' + tail);
         }
       })();
     </script>

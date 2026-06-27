@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import faqData from "@/data/faq.json";
-import type { SupportedLang } from "@/i18n";
+import { SUPPORTED_LANGS, type SupportedLang } from "@/i18n";
 
 type Lang = SupportedLang;
 
@@ -32,7 +32,9 @@ function buildFAQPageJsonLd(lang: Lang) {
 
 export default function FAQ() {
   const { t, i18n } = useTranslation("faq");
-  const lang: Lang = (i18n.language === "en" ? "en" : "de");
+  const lang: Lang = SUPPORTED_LANGS.includes(i18n.language as SupportedLang)
+    ? (i18n.language as SupportedLang)
+    : "de";
 
   useEffect(() => {
     document.title = `${t("title")} | GastroHub`;

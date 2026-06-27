@@ -52,7 +52,9 @@ function Layout({ children }: { children: React.ReactNode }) {
 function routerBase(): string {
   if (typeof window === "undefined") return "";
   const p = window.location.pathname;
-  return p === "/en" || p.startsWith("/en/") ? "/en" : "";
+  if (p === "/en" || p.startsWith("/en/")) return "/en";
+  if (p === "/ar" || p.startsWith("/ar/")) return "/ar";
+  return "";
 }
 
 function App() {
