@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "GastroHub | Bestell-App, Admin & Restaurant Website",
-    "description": "Eigene Restaurant-Bestellplattform statt Liefer-Apps. Drei Preismodelle ab 299 €. Volle Kontrolle, eigene Kundendaten, Stripe Connect, DSGVO."
+    "description": "Eigene Restaurant-Bestellplattform statt Liefer-Apps. Zwei Preismodelle ab 299 €. Volle Kontrolle, eigene Kundendaten, Stripe Connect, DSGVO."
   },
   "hero": {
     "badge": "Für Restaurants und Gastronomie",
@@ -48,7 +48,7 @@
   },
   "features": {
     "title": "Alle wichtigen Funktionen an einem Ort",
-    "subtitle": "Vom ersten Kontakt bis zur laufenden Bestellung deckt GastroHub den gesamten Ablauf ab. Drei Preismodelle, Sie wählen das passende für Ihr Restaurant.",
+    "subtitle": "Vom ersten Kontakt bis zur laufenden Bestellung deckt GastroHub den gesamten Ablauf ab. Zwei Preismodelle, Sie wählen das passende für Ihr Restaurant.",
     "ki_title": "KI-Lieferantenbestellung",
     "ki_text": "Ein Klick aus dem Admin-Dashboard: Die KI verfasst die komplette Bestellung an Ihren Lieferanten als E-Mail oder WhatsApp, in der gewünschten Sprache. Spart täglich Minuten und verhindert Tippfehler.",
     "website_title": "Eigene Restaurant-Website",

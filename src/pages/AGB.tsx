@@ -41,7 +41,6 @@ export default function AGB() {
         <ul>
           <li><strong>{tk("p4_li1_strong")}</strong> {tk("p4_li1_body")}</li>
           <li><strong>{tk("p4_li2_strong")}</strong> {tk("p4_li2_body")}</li>
-          <li><strong>{tk("p4_li3_strong")}</strong> {tk("p4_li3_body")}</li>
         </ul>
         <p>{tk("p4_outro1")}</p>
         <p>{tk("p4_outro2")}</p>

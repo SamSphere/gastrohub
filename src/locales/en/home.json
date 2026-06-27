@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "GastroHub | Restaurant ordering app, admin & website",
-    "description": "Your own restaurant ordering platform instead of delivery apps. Three pricing models from €299. Full control, your customer data, Stripe Connect."
+    "description": "Your own restaurant ordering platform instead of delivery apps. Two pricing models from €299. Full control, your customer data, Stripe Connect."
   },
   "hero": {
     "badge": "For restaurants and gastronomy",
@@ -48,7 +48,7 @@
   },
   "features": {
     "title": "All key features in one place",
-    "subtitle": "From first contact to live orders, GastroHub covers the entire flow. Three pricing models, you choose the one that fits your restaurant.",
+    "subtitle": "From first contact to live orders, GastroHub covers the entire flow. Two pricing models, you choose the one that fits your restaurant.",
     "ki_title": "AI supplier ordering",
     "ki_text": "One click from the admin dashboard: the AI drafts the full order to your supplier as email or WhatsApp, in the language you choose. Saves time every day and prevents typos.",
     "website_title": "Your own restaurant website",
