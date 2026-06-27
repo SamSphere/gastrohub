@@ -109,8 +109,7 @@ export default function Home() {
                   />
                   <img
                     src="/images/hero-1280.webp"
-                    alt=""
-                    role="presentation"
+                    alt={t("hero.image_alt")}
                     width={1280}
                     height={698}
                     fetchPriority="high"
@@ -155,6 +154,8 @@ export default function Home() {
                   <img
                     src={r.img}
                     alt={t(`live_restaurants.${r.name}`)}
+                    width={1400}
+                    height={1050}
                     className="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-500"
                     loading="lazy"
                   />
@@ -198,6 +199,8 @@ export default function Home() {
               <img
                 src="/screenshots/domo-checkout-desktop.jpg"
                 alt={t("customer_order.caption")}
+                width={1600}
+                height={1000}
                 className="w-full h-auto block"
                 loading="lazy"
               />
@@ -233,6 +236,8 @@ export default function Home() {
               <img
                 src="/screenshots/domo-admin-desktop.jpg"
                 alt={t("admin_view.caption_desktop")}
+                width={1600}
+                height={898}
                 className="w-full h-auto block"
                 loading="lazy"
               />
@@ -248,6 +253,8 @@ export default function Home() {
               <img
                 src="/screenshots/domo-admin-mobile.jpg"
                 alt={t("admin_view.caption_mobile")}
+                width={499}
+                height={800}
                 className="w-full h-auto block rounded-[1.75rem]"
                 loading="lazy"
               />

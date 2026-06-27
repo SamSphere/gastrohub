@@ -1,25 +1,15 @@
 {
   "calculator": {
-    "section_title": "Calculate your savings",
-    "section_subtitle": "Compare with your actual numbers.",
-    "preset_group_label": "Select monthly revenue",
-    "preset_small": "Small",
-    "preset_medium": "Medium",
-    "preset_small_label": "€1,000/month",
-    "preset_medium_label": "€5,000/month",
-    "custom_label": "Or enter your own revenue:",
-    "custom_placeholder": "5000",
-    "competitor_title": "Current platform",
-    "competitor_monthly": "Monthly cost",
-    "competitor_annual": "Annual cost",
-    "competitor_basis": "Based on 20% commission (conservative assumption within the publicly reported 13-30% range)",
-    "gh_title": "GastroHub Pro",
-    "gh_monthly": "Monthly cost",
-    "gh_setup": "Setup fee (one-time): €499",
-    "gh_annual_year1": "Annual cost year 1 incl. setup",
-    "gh_annual_year2": "Annual cost from year 2 onwards",
-    "gh_basis": "Incl. support, maintenance, hosting, domain, email",
-    "savings": "Your annual savings",
-    "disclaimer": "Calculation based on 20% commission as a conservative assumption within the publicly reported 13-30% range of major delivery platforms in Germany. Actual rates vary by contract, region, and platform. § 6 UWG."
+    "section_title": "Fair pricing, made simple",
+    "section_subtitle": "One example shows the difference – no complicated tables.",
+    "example_intro": "On a €30 order:",
+    "competitor_label": "Big delivery apps",
+    "competitor_amount": "about €6",
+    "competitor_note": "goes to the platform",
+    "gh_label": "With GastroHub",
+    "gh_amount": "about €2",
+    "gh_note": "a small fee – the rest stays with you",
+    "keep_line": "You keep more of every order.",
+    "disclaimer": "Illustrative example. Big delivery apps often charge around 20–30% per order, GastroHub 7%. Actual rates vary by provider and contract."
   }
 }

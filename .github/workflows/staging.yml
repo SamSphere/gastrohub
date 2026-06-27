@@ -1,0 +1,31 @@
+name: Staging build (preview)
+
+# Produces a downloadable, fully prerendered build of a feature branch WITHOUT
+# touching the production GitHub Pages site (gastrohub.dev). Download the
+# "staging-dist" artifact from the run, unzip, and serve locally
+# (e.g. `npx serve dist`) to review before merging to main.
+on:
+  push:
+    branches:
+      - "claude/**"
+      - "staging"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
+      - run: npm run build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: staging-dist
+          path: dist
+          retention-days: 14

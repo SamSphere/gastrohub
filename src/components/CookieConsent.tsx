@@ -49,7 +49,7 @@ export function CookieConsent() {
 
   return (
     <div
-      role="dialog"
+      role="region"
       aria-live="polite"
       aria-label={t("cookie.title")}
       className="fixed inset-x-0 bottom-0 z-50 border-t border-slate-200 bg-[#FBF6EC]/95 shadow-[0_-2px_12px_rgba(0,0,0,0.06)] backdrop-blur supports-[backdrop-filter]:bg-[#FBF6EC]/85"

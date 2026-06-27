@@ -212,6 +212,18 @@ async function renderRoute(browser, baseUrl, browserPath, filePath, locale) {
       },
       { timeout: 20000 },
     );
+    // Scroll the full page so every framer-motion `whileInView` section fires and
+    // settles at opacity:1. Otherwise below-the-fold blocks get captured with the
+    // hidden initial state (opacity:0), leaving crawlers / no-JS visitors blank.
+    await page.evaluate(async () => {
+      const step = Math.max(200, Math.floor(window.innerHeight * 0.8));
+      for (let y = 0; y <= document.body.scrollHeight; y += step) {
+        window.scrollTo(0, y);
+        await new Promise((r) => setTimeout(r, 120));
+      }
+      window.scrollTo(0, 0);
+      await new Promise((r) => setTimeout(r, 250));
+    });
     const html = "<!doctype html>\n" + await page.evaluate(() => document.documentElement.outerHTML);
     await writeFile(filePath, html, "utf8");
   } finally {
@@ -221,7 +233,13 @@ async function renderRoute(browser, baseUrl, browserPath, filePath, locale) {
 
 const port = 4174;
 const server = await startServer(port);
-const browser = await chromium.launch({ headless: true });
+// PRERENDER_CHROMIUM lets environments with a pre-installed browser (CI caches,
+// sandboxes) point at it instead of Playwright's managed download. Unset in normal
+// builds, where `playwright install chromium` (prebuild) provides the matching binary.
+const browser = await chromium.launch({
+  headless: true,
+  executablePath: process.env.PRERENDER_CHROMIUM || undefined,
+});
 const baseUrl = `http://127.0.0.1:${port}`;
 let bodyCount = 0;
 try {
