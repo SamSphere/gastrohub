@@ -4,7 +4,9 @@ import { Check } from "lucide-react";
 // Simple, calm fee comparison. Replaces the old CostCalculator, which asked the
 // owner to type their revenue and then showed a large red annual figure (e.g.
 // €36,000) that scared low-information visitors. Here: one fixed €100-order
-// example, two short rows, no input, no annual projection.
+// example, no input, no annual projection. The numbers are sized by how big the
+// cut is — the competitor's high end (33 €) is the largest, GastroHub's low end
+// (5 €) the smallest — so the contrast reads at a glance.
 export function FeeComparison() {
   const { t } = useTranslation("pricing");
   const tk = (k: string) => t(`comparison.${k}`);
@@ -19,18 +21,29 @@ export function FeeComparison() {
         </div>
 
         <div className="rounded-2xl border border-slate-200 shadow-md overflow-hidden">
-          <div className="bg-slate-50 px-6 py-4 text-center font-semibold text-slate-700 border-b border-slate-200">
-            {tk("basis")}
+          <div className="bg-slate-50 px-6 py-5 text-center border-b border-slate-200">
+            <span className="text-slate-600">{tk("basis_prefix")} </span>
+            <span className="text-3xl font-extrabold text-slate-900 align-middle">{tk("basis_amount")}</span>
           </div>
 
-          <div className="flex items-center justify-between px-6 py-6 border-b border-slate-100">
+          {/* Others — large numbers, 33 the largest */}
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between px-6 py-6 border-b border-slate-100">
             <span className="text-slate-600">{tk("others_label")}</span>
-            <span className="text-xl font-bold text-slate-500">{tk("others_value")}</span>
+            <span className="flex items-baseline gap-2 text-slate-500">
+              <span className="text-2xl font-bold">{tk("others_low")}</span>
+              <span className="text-sm text-slate-400">{tk("connector")}</span>
+              <span className="text-5xl font-extrabold text-slate-700">{tk("others_high")}</span>
+            </span>
           </div>
 
-          <div className="flex items-center justify-between px-6 py-6 bg-secondary/30">
+          {/* GastroHub — small numbers, 5 the smallest */}
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between px-6 py-6 bg-secondary/30">
             <span className="font-semibold text-slate-900">{tk("gh_label")}</span>
-            <span className="text-2xl font-extrabold text-primary">{tk("gh_value")}</span>
+            <span className="flex items-baseline gap-2 text-primary">
+              <span className="text-base font-bold">{tk("gh_low")}</span>
+              <span className="text-sm text-primary/70">{tk("connector")}</span>
+              <span className="text-xl font-extrabold">{tk("gh_high")}</span>
+            </span>
           </div>
 
           <div className="px-6 py-5 border-t border-slate-200">
