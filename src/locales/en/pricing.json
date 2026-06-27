@@ -1,25 +1,15 @@
 {
-  "calculator": {
-    "section_title": "Calculate your savings",
-    "section_subtitle": "Compare with your actual numbers.",
-    "preset_group_label": "Select monthly revenue",
-    "preset_small": "Small",
-    "preset_medium": "Medium",
-    "preset_small_label": "€1,000/month",
-    "preset_medium_label": "€5,000/month",
-    "custom_label": "Or enter your own revenue:",
-    "custom_placeholder": "5000",
-    "competitor_title": "Current platform",
-    "competitor_monthly": "Monthly cost",
-    "competitor_annual": "Annual cost",
-    "competitor_basis": "Based on 20% commission (conservative assumption within the publicly reported 13-30% range)",
-    "gh_title": "GastroHub Pro",
-    "gh_monthly": "Monthly cost",
-    "gh_setup": "Setup fee (one-time): €499",
-    "gh_annual_year1": "Annual cost year 1 incl. setup",
-    "gh_annual_year2": "Annual cost from year 2 onwards",
-    "gh_basis": "Incl. support, maintenance, hosting, domain, email",
-    "savings": "Your annual savings",
-    "disclaimer": "Calculation based on 20% commission as a conservative assumption within the publicly reported 13-30% range of major delivery platforms in Germany. Actual rates vary by contract, region, and platform. § 6 UWG."
+  "comparison": {
+    "title": "Low fees, simply explained",
+    "subtitle": "You keep more of every order.",
+    "basis": "On a €100 order",
+    "others_label": "Other platforms take",
+    "others_value": "€15 to €33",
+    "gh_label": "GastroHub takes only",
+    "gh_value": "€5 to €7",
+    "incl1": "Support included",
+    "incl2": "Updates included",
+    "incl3": "Hosting included",
+    "note": "Example values. Other platforms' actual terms vary by contract and region."
   }
 }

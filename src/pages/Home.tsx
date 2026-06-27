@@ -4,7 +4,7 @@ import { ArrowRight, CheckCircle2, TrendingUp, ShieldCheck, Clock, Check, Packag
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { CostCalculator } from "@/components/CostCalculator";
+import { FeeComparison } from "@/components/FeeComparison";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -303,8 +303,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Cost Calculator (replaces static comparison table) */}
-      <CostCalculator />
+      {/* Fee comparison — simple €100-order example, no calculator, no scary annual total */}
+      <FeeComparison />
 
       {/* Pricing */}
       <section className="py-20 lg:py-28 bg-slate-50">
