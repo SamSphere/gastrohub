@@ -4,7 +4,7 @@ import { SUPPORTED_LANGS, type SupportedLang } from "@/i18n";
 const FLAGS: Record<SupportedLang, string> = {
   de: "🇩🇪",
   en: "🇬🇧",
-  ar: "ع",
+  ar: "🇸🇦",
 };
 
 const SWITCH_KEY: Record<SupportedLang, string> = {
