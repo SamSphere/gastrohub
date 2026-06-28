@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "GastroHub | Bestell-App, Admin & Restaurant Website",
-    "description": "Eigene Restaurant-Bestellplattform statt Liefer-Apps. Zwei Preismodelle ab 299 €. Volle Kontrolle, eigene Kundendaten, Stripe Connect, DSGVO."
+    "description": "Eigene Restaurant-Bestellplattform statt Liefer-Apps. Drei Preismodelle ab 50 € im Monat. Volle Kontrolle, eigene Kundendaten, Stripe Connect, DSGVO."
   },
   "hero": {
     "badge": "Für Restaurants und Gastronomie",
@@ -48,7 +48,7 @@
   },
   "features": {
     "title": "Alle wichtigen Funktionen an einem Ort",
-    "subtitle": "Vom ersten Kontakt bis zur laufenden Bestellung deckt GastroHub den gesamten Ablauf ab. Zwei Preismodelle, Sie wählen das passende für Ihr Restaurant.",
+    "subtitle": "Vom ersten Kontakt bis zur laufenden Bestellung deckt GastroHub den gesamten Ablauf ab. Drei Preismodelle, Sie wählen das passende für Ihr Restaurant.",
     "ki_title": "KI-Lieferantenbestellung",
     "ki_text": "Ein Klick aus dem Admin-Dashboard: Die KI verfasst die komplette Bestellung an Ihren Lieferanten als E-Mail oder WhatsApp, in der gewünschten Sprache. Spart täglich Minuten und verhindert Tippfehler.",
     "website_title": "Eigene Restaurant-Website",
@@ -74,9 +74,9 @@
   },
   "pricing": {
     "meta_title": "Preise",
-    "meta_description": "Zwei Preismodelle für die GastroHub Restaurantplattform: Einmalzahlung oder Growth (299 € Einrichtung, 7 % pro Bestellung, alles inklusive). Keine monatliche Mindestgebühr.",
+    "meta_description": "Drei Preismodelle für die GastroHub Restaurantplattform: Einmalzahlung, Flatrate (ab 50 € im Monat, Tablet und Drucker gratis) oder Growth (299 € Einrichtung, 7 % pro Bestellung).",
     "title": "Einfache Preismodelle",
-    "subtitle": "Zwei Modelle. Sie wählen, was zu Ihrem Restaurant passt.",
+    "subtitle": "Drei Modelle. Sie wählen, was zu Ihrem Restaurant passt.",
     "einmal_label": "Einmalzahlung",
     "einmal_price": "Auf Anfrage",
     "einmal_suffix": " ",
@@ -89,6 +89,14 @@
     "p5_b1": "7 % pro Bestellung",
     "p5_b2": "Support, Updates und Hosting inklusive",
     "p5_b3": "Keine monatliche Mindestgebühr",
+    "flat_label": "Flatrate",
+    "flat_price": "50 €",
+    "flat_suffix": "pro Monat (erste 3 Monate)",
+    "flat_b1": "Danach 75 € pro Monat",
+    "flat_b2": "Feste Gebühr, egal wie viele Bestellungen",
+    "flat_b3": "Support inklusive",
+    "flat_b4": "Tablet und Drucker gratis",
+    "flat_b5": "Erste Flyer gehen auf uns",
     "recommended": "Empfohlen",
     "footnote": "Alle Preise abhängig von Restaurantgröße und Anforderungen, sprechen Sie uns an.",
     "cta": "Angebot anfragen"

@@ -40,9 +40,9 @@ const ROUTES = [
   },
   {
     path: "/preise",
-    de: { title: "Preise | GastroHub", description: "Zwei Preismodelle für die GastroHub Restaurantplattform: Einmalzahlung oder Growth (299 € Einrichtung, 7 % pro Bestellung, alles inklusive). Keine monatliche Mindestgebühr." },
-    en: { title: "Pricing | GastroHub", description: "Two pricing models for the GastroHub restaurant platform: One-Time Payment or Growth (€299 setup, 7% per order, everything included). No monthly minimum." },
-    ar: { title: "الأسعار | GastroHub", description: "نموذجان للتسعير لمنصة مطاعم GastroHub: دفعة واحدة أو Growth (رسوم إعداد 299 €، 7 % لكل طلب، كل شيء شامل). بدون حد أدنى شهري." },
+    de: { title: "Preise | GastroHub", description: "Drei Preismodelle für die GastroHub Restaurantplattform: Einmalzahlung, Flatrate (ab 50 € im Monat, Tablet und Drucker gratis) oder Growth (299 € Einrichtung, 7 % pro Bestellung)." },
+    en: { title: "Pricing | GastroHub", description: "Three pricing models for the GastroHub restaurant platform: One-Time Payment, Flat rate (from €50/month, free tablet and printer) or Growth (€299 setup, 7% per order)." },
+    ar: { title: "الأسعار | GastroHub", description: "ثلاث خطط تسعير لمنصة مطاعم GastroHub: دفعة واحدة، أو اشتراك ثابت (من 50 € شهرياً، مع جهاز لوحي وطابعة مجاناً)، أو Growth (رسوم إعداد 299 €، 7 % لكل طلب)." },
   },
   {
     path: "/faq",
@@ -70,9 +70,9 @@ const ROUTES = [
   },
   {
     path: "/agb",
-    de: { title: "AGB | GastroHub", description: "Allgemeine Geschäftsbedingungen von GastroHub. Restaurant-Bestellplattform mit Einmalzahlungs- oder Provisionsmodell." },
-    en: { title: "Terms and Conditions | GastroHub", description: "Terms and conditions of GastroHub. Restaurant ordering platform with one-time payment or commission model." },
-    ar: { title: "الشروط والأحكام | GastroHub", description: "الشروط والأحكام العامة لـ GastroHub. منصة طلبات للمطاعم بنموذج الدفع لمرة واحدة أو نموذج العمولة." },
+    de: { title: "AGB | GastroHub", description: "Allgemeine Geschäftsbedingungen von GastroHub. Restaurant-Bestellplattform mit flexiblen Preismodellen." },
+    en: { title: "Terms and Conditions | GastroHub", description: "Terms and conditions of GastroHub. Restaurant ordering platform with flexible pricing models." },
+    ar: { title: "الشروط والأحكام | GastroHub", description: "الشروط والأحكام العامة لـ GastroHub. منصة طلبات للمطاعم بنماذج تسعير مرنة." },
   },
 ];
 
