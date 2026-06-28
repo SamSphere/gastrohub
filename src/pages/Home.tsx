@@ -157,6 +157,7 @@ export default function Home() {
                     alt={t(`live_restaurants.${r.name}`)}
                     className="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-500"
                     loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="p-6">
@@ -200,6 +201,7 @@ export default function Home() {
                 alt={t("customer_order.caption")}
                 className="w-full h-auto block"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <p className="text-xs text-slate-500 text-center mt-3 italic">{t("customer_order.caption")}</p>
@@ -235,6 +237,7 @@ export default function Home() {
                 alt={t("admin_view.caption_desktop")}
                 className="w-full h-auto block"
                 loading="lazy"
+                decoding="async"
               />
             </motion.div>
             <motion.div
@@ -250,6 +253,7 @@ export default function Home() {
                 alt={t("admin_view.caption_mobile")}
                 className="w-full h-auto block rounded-[1.75rem]"
                 loading="lazy"
+                decoding="async"
               />
             </motion.div>
           </div>
@@ -388,8 +392,8 @@ export default function Home() {
 
             <div className="relative">
               <div className="aspect-square max-w-md mx-auto bg-slate-100 rounded-full flex items-center justify-center relative shadow-inner overflow-hidden">
-                <div className="absolute inset-4 rounded-full border-4 border-dashed border-primary/20 animate-[spin_60s_linear_infinite]"></div>
-                <div className="absolute inset-12 rounded-full border-4 border-primary/30 animate-[spin_40s_linear_infinite_reverse]"></div>
+                <div className="absolute inset-4 rounded-full border-4 border-dashed border-primary/20"></div>
+                <div className="absolute inset-12 rounded-full border-4 border-primary/30"></div>
                 <div className="w-48 h-48 bg-white shadow-xl rounded-2xl z-10 flex flex-col items-center justify-center p-6 text-center rotate-3 hover:rotate-0 transition-transform">
                   <PackageOpen className="w-16 h-16 text-primary mb-4" />
                   <div className="font-bold text-slate-900">{t("how.illustration_title")}</div>
