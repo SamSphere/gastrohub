@@ -1,4 +1,4 @@
-import { Mail, MessageCircle } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Card } from "@/components/ui/card";
 import { useEffect } from "react";
@@ -39,17 +39,15 @@ export default function Contact() {
               </a>
 
               <a
-                href="https://wa.me/491791600038"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="tel:+491791600038"
                 className="flex items-start gap-4 rounded-xl border border-slate-200 p-5 transition-colors hover:bg-slate-50"
-                data-testid="link-whatsapp"
+                data-testid="link-phone"
               >
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/10">
-                  <MessageCircle className="h-5 w-5 text-primary" />
+                  <Phone className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <h2 className="font-semibold text-slate-900">{t("whatsapp_label")}</h2>
+                  <h2 className="font-semibold text-slate-900">{t("phone_label")}</h2>
                   <p className="mt-1 text-sm text-primary">+49 179 1600038</p>
                 </div>
               </a>
