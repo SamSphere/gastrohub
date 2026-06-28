@@ -7,7 +7,7 @@ export default function Contact() {
   const { t } = useTranslation("contact");
 
   useEffect(() => {
-    document.title = "Kontakt | GastroHub";
+    document.title = `${t("title")} | GastroHub`;
     const meta = document.querySelector('meta[name="description"]') ?? Object.assign(document.createElement("meta"), { name: "description" });
     (meta as HTMLMetaElement).content = t("meta_description");
     if (!meta.parentNode) document.head.appendChild(meta);

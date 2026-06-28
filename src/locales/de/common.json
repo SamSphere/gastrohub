@@ -11,8 +11,10 @@
     "language": "Sprache",
     "language_german": "Deutsch",
     "language_english": "Englisch",
+    "language_arabic": "Arabisch",
     "switch_to_german": "Auf Deutsch wechseln",
-    "switch_to_english": "Auf Englisch wechseln"
+    "switch_to_english": "Auf Englisch wechseln",
+    "switch_to_arabic": "Auf Arabisch wechseln"
   },
   "footer": {
     "tagline": "Die Restaurantplattform für direkte Bestellungen, Menüverwaltung und mobiles Owner-Dashboard.",

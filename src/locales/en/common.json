@@ -11,8 +11,10 @@
     "language": "Language",
     "language_german": "German",
     "language_english": "English",
+    "language_arabic": "Arabic",
     "switch_to_german": "Switch to German",
-    "switch_to_english": "Switch to English"
+    "switch_to_english": "Switch to English",
+    "switch_to_arabic": "Switch to Arabic"
   },
   "footer": {
     "tagline": "The restaurant platform for direct orders, menu management and a mobile owner dashboard.",

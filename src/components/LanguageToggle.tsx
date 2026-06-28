@@ -4,6 +4,13 @@ import { SUPPORTED_LANGS, type SupportedLang } from "@/i18n";
 const FLAGS: Record<SupportedLang, string> = {
   de: "🇩🇪",
   en: "🇬🇧",
+  ar: "🇸🇦",
+};
+
+const SWITCH_KEY: Record<SupportedLang, string> = {
+  de: "nav.switch_to_german",
+  en: "nav.switch_to_english",
+  ar: "nav.switch_to_arabic",
 };
 
 export function LanguageToggle({ className = "" }: { className?: string }) {
@@ -17,13 +24,13 @@ export function LanguageToggle({ className = "" }: { className?: string }) {
     // Persist the explicit pick so the index.html auto-redirect (which sniffs
     // navigator.language on "/") doesn't override the user when they go DE → /.
     try { localStorage.setItem("gh:lang", next); } catch { /* private mode */ }
-    // Switch language via real navigation so prerendered EN HTML loads and URL reflects state.
+    // Switch language via real navigation so the prerendered HTML for that language
+    // loads and the URL reflects state. Strip any existing /en or /ar prefix, then
+    // add the target prefix (German has none).
     const path = window.location.pathname;
-    const onEn = path.startsWith("/en/") || path === "/en";
-    const stripped = onEn ? (path.replace(/^\/en/, "") || "/") : path;
-    const target = next === "en"
-      ? (stripped === "/" ? "/en" : `/en${stripped}`)
-      : stripped;
+    const stripped = path.replace(/^\/(en|ar)(?=\/|$)/, "") || "/";
+    const prefix = next === "de" ? "" : `/${next}`;
+    const target = stripped === "/" ? (prefix || "/") : `${prefix}${stripped}`;
     window.location.assign(target + window.location.hash);
   }
 
@@ -31,7 +38,7 @@ export function LanguageToggle({ className = "" }: { className?: string }) {
     <div role="group" aria-label={t("nav.language")} className={`inline-flex items-center gap-1 rounded-full border border-border/60 bg-background/50 p-0.5 ${className}`}>
       {SUPPORTED_LANGS.map((lng) => {
         const active = lng === current;
-        const label = lng === "de" ? t("nav.switch_to_german") : t("nav.switch_to_english");
+        const label = t(SWITCH_KEY[lng]);
         return (
           <button
             key={lng}

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "GastroHub | Restaurant ordering app, admin & website",
-    "description": "Your own restaurant ordering platform instead of delivery apps. Three pricing models from €299. Full control, your customer data, Stripe Connect."
+    "description": "Your own restaurant ordering platform instead of delivery apps. Three pricing models from €50/month. Full control, your customer data, Stripe Connect."
   },
   "hero": {
     "badge": "For restaurants and gastronomy",
@@ -74,8 +74,8 @@
   },
   "pricing": {
     "meta_title": "Pricing",
-    "meta_description": "Three pricing models for the GastroHub restaurant platform: One-Time Payment, Growth (5%), and Pro (7% all-inclusive). Setup fees from €299. No monthly minimum.",
-    "title": "Flexible pricing models",
+    "meta_description": "Three pricing models for the GastroHub restaurant platform: One-Time Payment, Flat rate (from €50/month, free tablet and printer) or Growth (7% per transaction, no setup fee).",
+    "title": "Simple pricing models",
     "subtitle": "Three models. Choose the one that fits your restaurant.",
     "einmal_label": "One-Time Payment",
     "einmal_price": "Contact us for pricing",
@@ -83,17 +83,22 @@
     "einmal_b1": "Full custom setup",
     "einmal_b2": "0% commission per order",
     "einmal_b3": "You own it outright",
+    "einmal_b4": "Support billed separately",
+    "einmal_b5": "Monthly hosting €25/month",
     "p5_label": "Growth",
-    "p5_price": "€299",
-    "p5_suffix": "setup fee",
-    "p5_b1": "5% per order",
-    "p5_b2": "Support billed separately",
-    "p7_label": "Pro",
-    "p7_price": "€499",
-    "p7_suffix": "setup fee",
-    "p7_b1": "7% per order",
-    "p7_b2": "Support and maintenance fully included",
-    "p7_b3": "Priority response",
+    "p5_price": "7%",
+    "p5_suffix": "per transaction",
+    "p5_b1": "No setup fee",
+    "p5_b2": "Support, updates and hosting included",
+    "p5_b3": "No monthly minimum",
+    "flat_label": "Flat rate",
+    "flat_price": "€50",
+    "flat_suffix": "per month (first 3 months)",
+    "flat_b1": "Then €75 per month",
+    "flat_b2": "Flat fee, no matter how many orders",
+    "flat_b3": "Support included",
+    "flat_b4": "Free tablet and printer",
+    "flat_b5": "First flyers on us",
     "recommended": "Recommended",
     "footnote": "All prices depend on restaurant size and requirements, talk to us.",
     "cta": "Request a quote"

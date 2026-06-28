@@ -10,7 +10,7 @@ export default function Demo() {
   const { t } = useTranslation("demo");
 
   useEffect(() => {
-    document.title = "Demo | GastroHub";
+    document.title = `${t("meta_title")} | GastroHub`;
     const meta = document.querySelector('meta[name="description"]') ?? Object.assign(document.createElement("meta"), { name: "description" });
     (meta as HTMLMetaElement).content = t("meta_description");
     if (!meta.parentNode) document.head.appendChild(meta);

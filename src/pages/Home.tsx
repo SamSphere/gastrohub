@@ -4,7 +4,6 @@ import { ArrowRight, CheckCircle2, TrendingUp, ShieldCheck, Clock, Check, Packag
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { CostCalculator } from "@/components/CostCalculator";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -157,6 +156,7 @@ export default function Home() {
                     alt={t(`live_restaurants.${r.name}`)}
                     className="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-500"
                     loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="p-6">
@@ -200,6 +200,7 @@ export default function Home() {
                 alt={t("customer_order.caption")}
                 className="w-full h-auto block"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <p className="text-xs text-slate-500 text-center mt-3 italic">{t("customer_order.caption")}</p>
@@ -235,6 +236,7 @@ export default function Home() {
                 alt={t("admin_view.caption_desktop")}
                 className="w-full h-auto block"
                 loading="lazy"
+                decoding="async"
               />
             </motion.div>
             <motion.div
@@ -242,14 +244,15 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.15 }}
-              className="mx-auto lg:mx-0 w-[240px] rounded-[2.25rem] border-[10px] border-slate-900 bg-slate-900 shadow-2xl overflow-hidden relative"
+              className="mx-auto lg:mx-0 w-[240px] rounded-[2.25rem] border-[10px] border-slate-900 bg-slate-900 shadow-2xl overflow-hidden relative pt-5"
             >
               <span className="absolute left-1/2 top-1.5 -translate-x-1/2 h-1.5 w-16 rounded-full bg-slate-700 z-10"></span>
               <img
                 src="/screenshots/domo-admin-mobile.jpg"
                 alt={t("admin_view.caption_mobile")}
-                className="w-full h-auto block rounded-[1.75rem]"
+                className="w-full h-auto block rounded-b-[1.5rem]"
                 loading="lazy"
+                decoding="async"
               />
             </motion.div>
           </div>
@@ -303,23 +306,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Cost Calculator (replaces static comparison table) */}
-      <CostCalculator />
-
       {/* Pricing */}
       <section className="py-20 lg:py-28 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("pricing.title")}</h2>
             <p className="text-lg text-slate-600 mb-10">{t("pricing.subtitle")}</p>
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <div className="grid md:grid-cols-3 gap-6 mb-8 max-w-5xl mx-auto items-stretch">
               {/* Einmalzahlung */}
               <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-7 text-left flex flex-col">
                 <div className="text-xl font-extrabold text-slate-900 mb-1">{t("pricing.einmal_label")}</div>
-                <div className="text-3xl font-extrabold text-primary mt-2 mb-1">{t("pricing.einmal_price")}</div>
+                <div className="text-3xl font-extrabold text-primary mt-2 mb-1"><span dir="ltr">{t("pricing.einmal_price")}</span></div>
                 <div className="text-slate-500 text-sm mb-5">{t("pricing.einmal_suffix")}</div>
                 <ul className="space-y-2.5 text-sm text-slate-700 flex-1">
-                  {["einmal_b1", "einmal_b2", "einmal_b3"].map((k) => (
+                  {["einmal_b1", "einmal_b2", "einmal_b3", "einmal_b4", "einmal_b5"].map((k) => (
                     <li key={k} className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
                       <span>{t(`pricing.${k}`)}</span>
@@ -327,28 +327,28 @@ export default function Home() {
                   ))}
                 </ul>
               </div>
-              {/* Growth (recommended) */}
-              <div className="bg-white rounded-2xl shadow-md border-2 border-primary p-7 text-left flex flex-col relative">
+              {/* Flatrate (recommended) */}
+              <div className="bg-white rounded-2xl shadow-lg border-2 border-primary p-7 text-left flex flex-col relative md:-mt-2">
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">{t("pricing.recommended")}</div>
+                <div className="text-xl font-extrabold text-slate-900 mb-1">{t("pricing.flat_label")}</div>
+                <div className="text-3xl font-extrabold text-primary mt-2 mb-1"><span dir="ltr">{t("pricing.flat_price")}</span></div>
+                <div className="text-slate-500 text-sm mb-5">{t("pricing.flat_suffix")}</div>
+                <ul className="space-y-2.5 text-sm text-slate-700 flex-1">
+                  {["flat_b1", "flat_b2", "flat_b3", "flat_b4", "flat_b5"].map((k) => (
+                    <li key={k} className="flex items-start gap-2">
+                      <Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
+                      <span>{t(`pricing.${k}`)}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              {/* Growth */}
+              <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-7 text-left flex flex-col">
                 <div className="text-xl font-extrabold text-slate-900 mb-1">{t("pricing.p5_label")}</div>
-                <div className="text-3xl font-extrabold text-primary mt-2 mb-1">{t("pricing.p5_price")}</div>
+                <div className="text-3xl font-extrabold text-primary mt-2 mb-1"><span dir="ltr">{t("pricing.p5_price")}</span></div>
                 <div className="text-slate-500 text-sm mb-5">{t("pricing.p5_suffix")}</div>
                 <ul className="space-y-2.5 text-sm text-slate-700 flex-1">
-                  {["p5_b1", "p5_b2"].map((k) => (
-                    <li key={k} className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
-                      <span>{t(`pricing.${k}`)}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              {/* Pro (7% All-Inclusive) */}
-              <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-7 text-left flex flex-col">
-                <div className="text-xl font-extrabold text-slate-900 mb-1">{t("pricing.p7_label")}</div>
-                <div className="text-3xl font-extrabold text-primary mt-2 mb-1">{t("pricing.p7_price")}</div>
-                <div className="text-slate-500 text-sm mb-5">{t("pricing.p7_suffix")}</div>
-                <ul className="space-y-2.5 text-sm text-slate-700 flex-1">
-                  {["p7_b1", "p7_b2", "p7_b3"].map((k) => (
+                  {["p5_b1", "p5_b2", "p5_b3"].map((k) => (
                     <li key={k} className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
                       <span>{t(`pricing.${k}`)}</span>
@@ -388,8 +388,8 @@ export default function Home() {
 
             <div className="relative">
               <div className="aspect-square max-w-md mx-auto bg-slate-100 rounded-full flex items-center justify-center relative shadow-inner overflow-hidden">
-                <div className="absolute inset-4 rounded-full border-4 border-dashed border-primary/20 animate-[spin_60s_linear_infinite]"></div>
-                <div className="absolute inset-12 rounded-full border-4 border-primary/30 animate-[spin_40s_linear_infinite_reverse]"></div>
+                <div className="absolute inset-4 rounded-full border-4 border-dashed border-primary/20"></div>
+                <div className="absolute inset-12 rounded-full border-4 border-primary/30"></div>
                 <div className="w-48 h-48 bg-white shadow-xl rounded-2xl z-10 flex flex-col items-center justify-center p-6 text-center rotate-3 hover:rotate-0 transition-transform">
                   <PackageOpen className="w-16 h-16 text-primary mb-4" />
                   <div className="font-bold text-slate-900">{t("how.illustration_title")}</div>

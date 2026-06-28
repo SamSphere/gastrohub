@@ -19,9 +19,9 @@ export function Navbar() {
   ] as const;
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 group" aria-label={t("nav.home") + " GastroHub"}>
+        <Link href="/" className="flex items-center gap-2 group shrink-0" aria-label={t("nav.home") + " GastroHub"}>
           <img
             src="/brand/mark-light.svg"
             alt=""
@@ -35,7 +35,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden lg:flex items-center gap-5">
           {links.map((link) => (
             <Link
               key={link.href}
@@ -54,7 +54,7 @@ export function Navbar() {
         </nav>
 
         {/* Mobile actions: toggle + hamburger */}
-        <div className="md:hidden flex items-center gap-2">
+        <div className="lg:hidden flex items-center gap-2">
           <LanguageToggle />
           <button
             className="p-3 text-foreground"
@@ -71,7 +71,7 @@ export function Navbar() {
 
       {/* Mobile Nav Menu */}
       {isMobileMenuOpen && (
-        <div id="mobile-nav" className="md:hidden border-t bg-background p-4 flex flex-col gap-4 animate-in slide-in-from-top-4">
+        <div id="mobile-nav" className="lg:hidden border-t bg-background p-4 flex flex-col gap-4 animate-in slide-in-from-top-4">
           {links.map((link) => (
             <Link
               key={link.href}
