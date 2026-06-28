@@ -244,13 +244,13 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.15 }}
-              className="mx-auto lg:mx-0 w-[240px] rounded-[2.25rem] border-[10px] border-slate-900 bg-slate-900 shadow-2xl overflow-hidden relative"
+              className="mx-auto lg:mx-0 w-[240px] rounded-[2.25rem] border-[10px] border-slate-900 bg-slate-900 shadow-2xl overflow-hidden relative pt-5"
             >
               <span className="absolute left-1/2 top-1.5 -translate-x-1/2 h-1.5 w-16 rounded-full bg-slate-700 z-10"></span>
               <img
                 src="/screenshots/domo-admin-mobile.jpg"
                 alt={t("admin_view.caption_mobile")}
-                className="w-full h-auto block rounded-[1.75rem]"
+                className="w-full h-auto block rounded-b-[1.5rem]"
                 loading="lazy"
                 decoding="async"
               />
