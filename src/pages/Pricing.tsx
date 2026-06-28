@@ -3,7 +3,6 @@ import { Link } from "wouter";
 import { useTranslation } from "react-i18next";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { FeeComparison } from "@/components/FeeComparison";
 
 export default function Pricing() {
   const { t } = useTranslation("home");
@@ -82,8 +81,6 @@ export default function Pricing() {
           </div>
         </div>
       </section>
-
-      <FeeComparison />
     </div>
   );
 }

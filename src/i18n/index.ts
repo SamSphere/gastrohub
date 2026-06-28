@@ -16,9 +16,6 @@ import enFaq from "@/locales/en/faq.json";
 import arFaq from "@/locales/ar/faq.json";
 import deLegal from "@/locales/de/legal.json";
 import enLegal from "@/locales/en/legal.json";
-import dePricing from "@/locales/de/pricing.json";
-import enPricing from "@/locales/en/pricing.json";
-import arPricing from "@/locales/ar/pricing.json";
 import arDemo from "@/locales/ar/demo.json";
 import arContact from "@/locales/ar/contact.json";
 import arLegal from "@/locales/ar/legal.json";
@@ -46,17 +43,17 @@ void i18n
   .use(initReactI18next)
   .init({
     resources: {
-      de: { common: deCommon, home: deHome, demo: deDemo, contact: deContact, faq: deFaq, legal: deLegal, pricing: dePricing },
-      en: { common: enCommon, home: enHome, demo: enDemo, contact: enContact, faq: enFaq, legal: enLegal, pricing: enPricing },
+      de: { common: deCommon, home: deHome, demo: deDemo, contact: deContact, faq: deFaq, legal: deLegal },
+      en: { common: enCommon, home: enHome, demo: enDemo, contact: enContact, faq: enFaq, legal: enLegal },
       // Arabic now covers the full site (incl. demo, contact and legal pages).
-      ar: { common: arCommon, home: arHome, faq: arFaq, pricing: arPricing, demo: arDemo, contact: arContact, legal: arLegal },
+      ar: { common: arCommon, home: arHome, faq: arFaq, demo: arDemo, contact: arContact, legal: arLegal },
     },
     // URL is the only signal: /en/* renders English, /ar/* Arabic, everything else German.
     lng: urlLang ?? DEFAULT_LANG,
     fallbackLng: DEFAULT_LANG,
     supportedLngs: SUPPORTED_LANGS as unknown as string[],
     defaultNS: "common",
-    ns: ["common", "home", "demo", "contact", "faq", "legal", "pricing"],
+    ns: ["common", "home", "demo", "contact", "faq", "legal"],
     interpolation: { escapeValue: false },
   });
 
