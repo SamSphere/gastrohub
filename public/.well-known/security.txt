@@ -1,0 +1,5 @@
+# security.txt for gastrohub.dev (RFC 9116)
+Contact: mailto:security@gastrohub.dev
+Expires: 2027-06-28T00:00:00.000Z
+Preferred-Languages: de, en
+Canonical: https://gastrohub.dev/.well-known/security.txt
