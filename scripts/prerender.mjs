@@ -40,9 +40,9 @@ const ROUTES = [
   },
   {
     path: "/preise",
-    de: { title: "Preise | GastroHub", description: "Drei Preismodelle für die GastroHub Restaurantplattform: Einmalzahlung, Flatrate (ab 50 € im Monat, Tablet und Drucker gratis) oder Growth (299 € Einrichtung, 7 % pro Bestellung)." },
-    en: { title: "Pricing | GastroHub", description: "Three pricing models for the GastroHub restaurant platform: One-Time Payment, Flat rate (from €50/month, free tablet and printer) or Growth (€299 setup, 7% per order)." },
-    ar: { title: "الأسعار | GastroHub", description: "ثلاث خطط تسعير لمنصة مطاعم GastroHub: دفعة واحدة، أو اشتراك ثابت (من 50 € شهرياً، مع جهاز لوحي وطابعة مجاناً)، أو Growth (رسوم إعداد 299 €، 7 % لكل طلب)." },
+    de: { title: "Preise | GastroHub", description: "Drei Preismodelle für die GastroHub Restaurantplattform: Einmalzahlung, Flatrate (ab 50 € im Monat, Tablet und Drucker gratis) oder Growth (7 % pro Transaktion, keine Einrichtungsgebühr)." },
+    en: { title: "Pricing | GastroHub", description: "Three pricing models for the GastroHub restaurant platform: One-Time Payment, Flat rate (from €50/month, free tablet and printer) or Growth (7% per transaction, no setup fee)." },
+    ar: { title: "الأسعار | GastroHub", description: "ثلاث خطط تسعير لمنصة مطاعم GastroHub: دفعة واحدة، أو اشتراك ثابت (من 50 € شهرياً، مع جهاز لوحي وطابعة مجاناً)، أو Growth (7 % لكل معاملة، دون رسوم إعداد)." },
   },
   {
     path: "/faq",
