@@ -36,6 +36,7 @@ const ROUTES = [
     path: "/demo",
     de: { title: "Demo | GastroHub", description: "Interaktive Demo der GastroHub Restaurantplattform. Kundensicht und Admin-Dashboard ohne Registrierung ausprobieren." },
     en: { title: "Demo | GastroHub", description: "Interactive demo of the GastroHub restaurant platform. Try the customer view and admin dashboard without registering." },
+    ar: { title: "النسخة التجريبية | GastroHub", description: "نسخة تجريبية تفاعلية من منصة مطاعم GastroHub. جرّب واجهة العميل ولوحة الإدارة دون تسجيل." },
   },
   {
     path: "/preise",
@@ -53,21 +54,25 @@ const ROUTES = [
     path: "/kontakt",
     de: { title: "Kontakt | GastroHub", description: "Kontaktieren Sie GastroHub. Wir helfen Ihnen beim Aufbau Ihres eigenen Restaurant-Bestellsystems ohne Provision. Antwort werktags am selben oder nächsten Tag." },
     en: { title: "Contact | GastroHub", description: "Get in touch with GastroHub. We help you build your own restaurant ordering system without commissions. We reply on working days, same or next day." },
+    ar: { title: "تواصل معنا | GastroHub", description: "تواصل مع GastroHub. نساعدك في بناء نظام طلبات خاص بمطعمك دون عمولة. نرد في أيام العمل في نفس اليوم أو في اليوم التالي." },
   },
   {
     path: "/impressum",
     de: { title: "Impressum | GastroHub", description: "Impressum von GastroHub, Anbieter für eigene Restaurant-Bestellsysteme ohne Provision." },
     en: { title: "Imprint | GastroHub", description: "Imprint of GastroHub, provider of restaurant ordering systems without commissions." },
+    ar: { title: "بيانات الناشر | GastroHub", description: "بيانات الناشر الخاصة بـ GastroHub، مزوّد أنظمة طلب خاصة بالمطاعم دون عمولة." },
   },
   {
     path: "/datenschutz",
     de: { title: "Datenschutz | GastroHub", description: "Datenschutzerklärung von GastroHub. DSGVO-konform, europäische Server, Stripe Connect als Zahlungsdienstleister." },
     en: { title: "Privacy Policy | GastroHub", description: "Privacy policy of GastroHub. GDPR-compliant, European servers, Stripe Connect as payment processor." },
+    ar: { title: "سياسة الخصوصية | GastroHub", description: "سياسة الخصوصية الخاصة بـ GastroHub. متوافقة مع اللائحة العامة لحماية البيانات (DSGVO)، خوادم في أوروبا، Stripe Connect لمعالجة المدفوعات." },
   },
   {
     path: "/agb",
     de: { title: "AGB | GastroHub", description: "Allgemeine Geschäftsbedingungen von GastroHub. Restaurant-Bestellplattform mit Einmalzahlungs- oder Provisionsmodell." },
     en: { title: "Terms and Conditions | GastroHub", description: "Terms and conditions of GastroHub. Restaurant ordering platform with one-time payment or commission model." },
+    ar: { title: "الشروط والأحكام | GastroHub", description: "الشروط والأحكام العامة لـ GastroHub. منصة طلبات للمطاعم بنموذج الدفع لمرة واحدة أو نموذج العمولة." },
   },
 ];
 

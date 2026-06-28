@@ -19,6 +19,9 @@ import enLegal from "@/locales/en/legal.json";
 import dePricing from "@/locales/de/pricing.json";
 import enPricing from "@/locales/en/pricing.json";
 import arPricing from "@/locales/ar/pricing.json";
+import arDemo from "@/locales/ar/demo.json";
+import arContact from "@/locales/ar/contact.json";
+import arLegal from "@/locales/ar/legal.json";
 
 export const SUPPORTED_LANGS = ["de", "en", "ar"] as const;
 export type SupportedLang = (typeof SUPPORTED_LANGS)[number];
@@ -45,9 +48,8 @@ void i18n
     resources: {
       de: { common: deCommon, home: deHome, demo: deDemo, contact: deContact, faq: deFaq, legal: deLegal, pricing: dePricing },
       en: { common: enCommon, home: enHome, demo: enDemo, contact: enContact, faq: enFaq, legal: enLegal, pricing: enPricing },
-      // Arabic covers nav/UI, homepage, pricing and FAQ. Untranslated namespaces
-      // (demo, contact, legal) fall back to German via fallbackLng.
-      ar: { common: arCommon, home: arHome, faq: arFaq, pricing: arPricing },
+      // Arabic now covers the full site (incl. demo, contact and legal pages).
+      ar: { common: arCommon, home: arHome, faq: arFaq, pricing: arPricing, demo: arDemo, contact: arContact, legal: arLegal },
     },
     // URL is the only signal: /en/* renders English, /ar/* Arabic, everything else German.
     lng: urlLang ?? DEFAULT_LANG,
