@@ -6,142 +6,142 @@
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
     <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/" />
   </url>
   <url>
-    <loc>https://gastrohub.dev/en</loc>
+    <loc>https://gastrohub.dev/en/</loc>
     <lastmod>2026-05-18</lastmod>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
     <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/" />
   </url>
   <url>
-    <loc>https://gastrohub.dev/demo</loc>
+    <loc>https://gastrohub.dev/demo/</loc>
     <lastmod>2026-05-18</lastmod>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
-    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/demo" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/demo" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/demo" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/demo/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/demo/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/demo/" />
   </url>
   <url>
-    <loc>https://gastrohub.dev/en/demo</loc>
+    <loc>https://gastrohub.dev/en/demo/</loc>
     <lastmod>2026-05-18</lastmod>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
-    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/demo" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/demo" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/demo" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/demo/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/demo/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/demo/" />
   </url>
   <url>
-    <loc>https://gastrohub.dev/preise</loc>
+    <loc>https://gastrohub.dev/preise/</loc>
     <lastmod>2026-05-19</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/preise" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/preise" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/preise" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/preise/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/preise/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/preise/" />
   </url>
   <url>
-    <loc>https://gastrohub.dev/en/preise</loc>
+    <loc>https://gastrohub.dev/en/preise/</loc>
     <lastmod>2026-05-19</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/preise" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/preise" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/preise" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/preise/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/preise/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/preise/" />
   </url>
   <url>
-    <loc>https://gastrohub.dev/faq</loc>
+    <loc>https://gastrohub.dev/faq/</loc>
     <lastmod>2026-05-18</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/faq" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/faq" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/faq" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/faq/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/faq/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/faq/" />
   </url>
   <url>
-    <loc>https://gastrohub.dev/en/faq</loc>
+    <loc>https://gastrohub.dev/en/faq/</loc>
     <lastmod>2026-05-18</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/faq" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/faq" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/faq" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/faq/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/faq/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/faq/" />
   </url>
   <url>
-    <loc>https://gastrohub.dev/kontakt</loc>
+    <loc>https://gastrohub.dev/kontakt/</loc>
     <lastmod>2026-05-18</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/kontakt" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/kontakt" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/kontakt" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/kontakt/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/kontakt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/kontakt/" />
   </url>
   <url>
-    <loc>https://gastrohub.dev/en/kontakt</loc>
+    <loc>https://gastrohub.dev/en/kontakt/</loc>
     <lastmod>2026-05-18</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/kontakt" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/kontakt" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/kontakt" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/kontakt/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/kontakt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/kontakt/" />
   </url>
   <url>
-    <loc>https://gastrohub.dev/impressum</loc>
+    <loc>https://gastrohub.dev/impressum/</loc>
     <lastmod>2026-05-18</lastmod>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
-    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/impressum" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/impressum" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/impressum" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/impressum/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/impressum/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/impressum/" />
   </url>
   <url>
-    <loc>https://gastrohub.dev/en/impressum</loc>
+    <loc>https://gastrohub.dev/en/impressum/</loc>
     <lastmod>2026-05-18</lastmod>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
-    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/impressum" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/impressum" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/impressum" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/impressum/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/impressum/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/impressum/" />
   </url>
   <url>
-    <loc>https://gastrohub.dev/datenschutz</loc>
+    <loc>https://gastrohub.dev/datenschutz/</loc>
     <lastmod>2026-05-18</lastmod>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
-    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/datenschutz" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/datenschutz" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/datenschutz" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/datenschutz/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/datenschutz/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/datenschutz/" />
   </url>
   <url>
-    <loc>https://gastrohub.dev/en/datenschutz</loc>
+    <loc>https://gastrohub.dev/en/datenschutz/</loc>
     <lastmod>2026-05-18</lastmod>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
-    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/datenschutz" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/datenschutz" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/datenschutz" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/datenschutz/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/datenschutz/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/datenschutz/" />
   </url>
   <url>
-    <loc>https://gastrohub.dev/agb</loc>
+    <loc>https://gastrohub.dev/agb/</loc>
     <lastmod>2026-05-18</lastmod>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
-    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/agb" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/agb" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/agb" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/agb/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/agb/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/agb/" />
   </url>
   <url>
-    <loc>https://gastrohub.dev/en/agb</loc>
+    <loc>https://gastrohub.dev/en/agb/</loc>
     <lastmod>2026-05-18</lastmod>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
-    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/agb" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/agb" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/agb" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://gastrohub.dev/agb/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gastrohub.dev/en/agb/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gastrohub.dev/agb/" />
   </url>
 </urlset>
