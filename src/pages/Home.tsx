@@ -313,7 +313,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("pricing.title")}</h2>
             <p className="text-lg text-slate-600 mb-10">{t("pricing.subtitle")}</p>
             <div className="grid md:grid-cols-3 gap-6 mb-8 max-w-5xl mx-auto items-stretch">
-              {/* Einmalzahlung */}
+              {/* Digital */}
               <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-7 text-left flex flex-col">
                 <div className="text-xl font-extrabold text-slate-900 mb-1">{t("pricing.einmal_label")}</div>
                 <div className="text-3xl font-extrabold text-primary mt-2 mb-1"><span dir="ltr">{t("pricing.einmal_price")}</span></div>
@@ -342,13 +342,13 @@ export default function Home() {
                   ))}
                 </ul>
               </div>
-              {/* Growth */}
+              {/* Starter */}
               <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-7 text-left flex flex-col">
                 <div className="text-xl font-extrabold text-slate-900 mb-1">{t("pricing.p5_label")}</div>
                 <div className="text-3xl font-extrabold text-primary mt-2 mb-1"><span dir="ltr">{t("pricing.p5_price")}</span></div>
                 <div className="text-slate-500 text-sm mb-5">{t("pricing.p5_suffix")}</div>
                 <ul className="space-y-2.5 text-sm text-slate-700 flex-1">
-                  {["p5_b1", "p5_b2", "p5_b3"].map((k) => (
+                  {["p5_b1", "p5_b2", "p5_b3", "p5_b4", "p5_b5"].map((k) => (
                     <li key={k} className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
                       <span>{t(`pricing.${k}`)}</span>

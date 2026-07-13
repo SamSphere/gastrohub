@@ -25,7 +25,7 @@ export default function Pricing() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-8 max-w-5xl mx-auto items-stretch">
-            {/* Einmalzahlung */}
+            {/* Digital */}
             <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-7 text-left flex flex-col">
               <div className="text-xl font-extrabold text-slate-900 mb-1">{tk("einmal_label")}</div>
               <div className="text-3xl font-extrabold text-primary mt-2 mb-1"><span dir="ltr">{tk("einmal_price")}</span></div>
@@ -56,13 +56,13 @@ export default function Pricing() {
               </ul>
             </div>
 
-            {/* Growth */}
+            {/* Starter */}
             <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-7 text-left flex flex-col">
               <div className="text-xl font-extrabold text-slate-900 mb-1">{tk("p5_label")}</div>
               <div className="text-3xl font-extrabold text-primary mt-2 mb-1"><span dir="ltr">{tk("p5_price")}</span></div>
               <div className="text-slate-500 text-sm mb-5">{tk("p5_suffix")}</div>
               <ul className="space-y-2.5 text-sm text-slate-700 flex-1">
-                {["p5_b1", "p5_b2", "p5_b3"].map((k) => (
+                {["p5_b1", "p5_b2", "p5_b3", "p5_b4", "p5_b5"].map((k) => (
                   <li key={k} className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
                     <span>{tk(k)}</span>
