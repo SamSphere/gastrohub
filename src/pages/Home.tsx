@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { motion, type Variants } from "framer-motion";
-import { ArrowRight, CheckCircle2, TrendingUp, ShieldCheck, Clock, Check, PackageOpen, Globe, UserRound, Settings, ShoppingCart, Languages, LayoutDashboard, Sparkles, ExternalLink } from "lucide-react";
+import { ArrowRight, CheckCircle2, TrendingUp, ShieldCheck, Clock, Check, PackageOpen, Globe, UserRound, Settings, ShoppingCart, Languages, LayoutDashboard, Sparkles, ExternalLink, Search, Users } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -301,6 +301,33 @@ export default function Home() {
                 <h3 className="text-lg font-semibold text-slate-900 mb-2">{t(`features.${feature.k}_title`)}</h3>
                 <p className="text-slate-600 leading-relaxed">{t(`features.${feature.k}_text`)}</p>
               </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why it pays off — benefits */}
+      <section className="py-20 lg:py-32 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("benefits.title")}</h2>
+            <p className="text-lg text-slate-600">{t("benefits.subtitle")}</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              { icon: Search, k: "card1" },
+              { icon: Globe, k: "card2" },
+              { icon: Users, k: "card3" },
+            ].map((card, idx) => (
+              <motion.div key={card.k} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: idx * 0.1 }}>
+                <Card className="p-8 h-full border-none shadow-md hover:shadow-lg transition-shadow bg-white">
+                  <div className="h-12 w-12 bg-sky-100 rounded-xl flex items-center justify-center text-sky-600 mb-6">
+                    <card.icon className="h-6 w-6" />
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-3">{t(`benefits.${card.k}_title`)}</h3>
+                  <p className="text-slate-600 leading-relaxed">{t(`benefits.${card.k}_body`)}</p>
+                </Card>
+              </motion.div>
             ))}
           </div>
         </div>

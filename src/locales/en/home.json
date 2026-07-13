@@ -83,7 +83,7 @@
     "einmal_b1": "Your own website with a digital menu",
     "einmal_b2": "QR code for tables and your shop window",
     "einmal_b3": "Your own email address on your domain (e.g. info@yourrestaurant.de)",
-    "einmal_b4": "Hosting, updates and support included",
+    "einmal_b4": "Hosting included",
     "einmal_b5": "No ordering system",
     "flat_label": "Flatrate",
     "flat_price": "€75",
@@ -124,5 +124,15 @@
     "secondary": "Questions? Get in touch",
     "check1": "Free, no-commitment first call",
     "check2": "Well below typical aggregator rates"
+  },
+  "benefits": {
+    "title": "Why it pays off for your restaurant",
+    "subtitle": "Your own website with a menu gives you more than just orders.",
+    "card1_title": "Found better on Google",
+    "card1_body": "Your own website with a menu and your domain is indexed by Google. That means your restaurant shows up in local search when guests look for food nearby.",
+    "card2_title": "More visibility",
+    "card2_body": "With QR codes on the table and in your shop window, your own domain and menu, you are present everywhere your guests look for you, not hidden inside a delivery app.",
+    "card3_title": "Corporate and group orders",
+    "card3_body": "Take larger orders from offices, companies and groups directly, with a clear menu and your own ordering channel instead of notes and phone calls."
   }
 }

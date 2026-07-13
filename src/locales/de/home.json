@@ -83,7 +83,7 @@
     "einmal_b1": "Eigene Website mit digitaler Speisekarte",
     "einmal_b2": "QR-Code für Tisch und Schaufenster",
     "einmal_b3": "Eigene E-Mail-Adresse auf Ihrer Domain (z. B. info@ihrrestaurant.de)",
-    "einmal_b4": "Hosting, Updates und Support inklusive",
+    "einmal_b4": "Hosting inklusive",
     "einmal_b5": "Kein Bestellsystem",
     "flat_label": "Flatrate",
     "flat_price": "75 €",
@@ -124,5 +124,15 @@
     "secondary": "Fragen? Kontaktieren Sie uns",
     "check1": "Unverbindliches Erstgespräch",
     "check2": "Weit unter branchenüblichen Konditionen"
+  },
+  "benefits": {
+    "title": "Warum sich das für Ihr Restaurant lohnt",
+    "subtitle": "Eine eigene Website mit Speisekarte bringt Ihnen mehr als nur Bestellungen.",
+    "card1_title": "Besser bei Google gefunden",
+    "card1_body": "Eine eigene Website mit Speisekarte und Ihrer Domain wird von Google indexiert. So taucht Ihr Restaurant in der lokalen Suche auf, wenn Gäste nach Essen in Ihrer Nähe suchen.",
+    "card2_title": "Mehr Sichtbarkeit",
+    "card2_body": "Mit QR-Codes am Tisch und im Schaufenster, eigener Domain und Speisekarte sind Sie überall präsent, wo Ihre Gäste nach Ihnen suchen, nicht versteckt in einer Liefer-App.",
+    "card3_title": "Firmen- und Gruppenbestellungen",
+    "card3_body": "Nehmen Sie größere Bestellungen von Büros, Firmen und Gruppen direkt entgegen, mit klarer Speisekarte und eigenem Bestellweg statt über Zettel und Telefon."
   }
 }
