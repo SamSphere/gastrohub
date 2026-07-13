@@ -74,7 +74,7 @@
   },
   "pricing": {
     "meta_title": "Pricing",
-    "meta_description": "Three pricing models for the GastroHub restaurant platform: Digital (€300 one-off plus €25/month), Starter (€50/month) or Flatrate (€75/month, tablet and printer included).",
+    "meta_description": "Three pricing models for the GastroHub restaurant platform: Digital (€300 one-off plus €25/month), Entry (€50/month) or Flatrate (€75/month, tablet and printer included).",
     "title": "Simple pricing models",
     "subtitle": "Three models. Choose the one that fits your restaurant.",
     "einmal_label": "Digital",
@@ -93,7 +93,7 @@
     "flat_b3": "Your own website, menu, QR code and email address included",
     "flat_b4": "Flat fee, no matter how many orders",
     "flat_b5": "Support included",
-    "p5_label": "Starter",
+    "p5_label": "Entry",
     "p5_price": "€50",
     "p5_suffix": "per month",
     "p5_b1": "Online orders and table reservations by email",
@@ -127,12 +127,18 @@
   },
   "benefits": {
     "title": "Why it pays off for your restaurant",
-    "subtitle": "Your own website with a menu gives you more than just orders.",
-    "card1_title": "Found better on Google",
-    "card1_body": "Your own website with a menu and your domain is indexed by Google. That means your restaurant shows up in local search when guests look for food nearby.",
-    "card2_title": "More visibility",
-    "card2_body": "With QR codes on the table and in your shop window, your own domain and menu, you are present everywhere your guests look for you, not hidden inside a delivery app.",
-    "card3_title": "Corporate and group orders",
-    "card3_body": "Take larger orders from offices, companies and groups directly, with a clear menu and your own ordering channel instead of notes and phone calls."
+    "subtitle": "Not just away from delivery apps. More revenue, guests who are yours, and a restaurant that gets found online.",
+    "card1_title": "You keep more of every order",
+    "card1_body": "Delivery apps take 13 to 30% per order, on a margin that is often just 5 to 8%. On your own platform you pay a fixed fee instead of commission, and the revenue stays with you.",
+    "card2_title": "The guest becomes your guest",
+    "card2_body": "You see names, emails and order history, and can reach your guests for repeat orders and promotions. On delivery apps the customer belongs to the app, not to you.",
+    "card3_title": "Found better on Google",
+    "card3_body": "Your own website with a menu and your domain gets indexed by Google. Guests find you in local search when they look for food nearby.",
+    "card4_title": "Guests prefer to order direct",
+    "card4_body": "Most guests would rather order directly from the restaurant, for fair prices, easy customization and to support their local. You just have to make it possible.",
+    "card5_title": "Fuller tables from reservations",
+    "card5_body": "Take table reservations directly through your site, without phone chaos at peak times. Not just delivery, your dining room benefits too.",
+    "card6_title": "Corporate and group orders",
+    "card6_body": "Take larger orders from offices, companies and groups directly, with a clear menu and your own ordering channel instead of notes and phone calls."
   }
 }

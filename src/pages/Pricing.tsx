@@ -40,14 +40,13 @@ export default function Pricing() {
               </ul>
             </div>
 
-            {/* Flatrate (recommended) */}
-            <div className="bg-white rounded-2xl shadow-lg border-2 border-primary p-7 text-left flex flex-col relative md:-mt-2">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">{tk("recommended")}</div>
-              <div className="text-xl font-extrabold text-slate-900 mb-1">{tk("flat_label")}</div>
-              <div className="text-3xl font-extrabold text-primary mt-2 mb-1"><span dir="ltr">{tk("flat_price")}</span></div>
-              <div className="text-slate-500 text-sm mb-5">{tk("flat_suffix")}</div>
+            {/* Einstieg */}
+            <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-7 text-left flex flex-col">
+              <div className="text-xl font-extrabold text-slate-900 mb-1">{tk("p5_label")}</div>
+              <div className="text-3xl font-extrabold text-primary mt-2 mb-1"><span dir="ltr">{tk("p5_price")}</span></div>
+              <div className="text-slate-500 text-sm mb-5">{tk("p5_suffix")}</div>
               <ul className="space-y-2.5 text-sm text-slate-700 flex-1">
-                {["flat_b1", "flat_b2", "flat_b3", "flat_b4", "flat_b5"].map((k) => (
+                {["p5_b1", "p5_b2", "p5_b3", "p5_b4", "p5_b5"].map((k) => (
                   <li key={k} className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
                     <span>{tk(k)}</span>
@@ -56,13 +55,14 @@ export default function Pricing() {
               </ul>
             </div>
 
-            {/* Starter */}
-            <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-7 text-left flex flex-col">
-              <div className="text-xl font-extrabold text-slate-900 mb-1">{tk("p5_label")}</div>
-              <div className="text-3xl font-extrabold text-primary mt-2 mb-1"><span dir="ltr">{tk("p5_price")}</span></div>
-              <div className="text-slate-500 text-sm mb-5">{tk("p5_suffix")}</div>
+            {/* Flatrate (recommended) */}
+            <div className="bg-white rounded-2xl shadow-lg border-2 border-primary p-7 text-left flex flex-col relative md:-mt-2">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">{tk("recommended")}</div>
+              <div className="text-xl font-extrabold text-slate-900 mb-1">{tk("flat_label")}</div>
+              <div className="text-3xl font-extrabold text-primary mt-2 mb-1"><span dir="ltr">{tk("flat_price")}</span></div>
+              <div className="text-slate-500 text-sm mb-5">{tk("flat_suffix")}</div>
               <ul className="space-y-2.5 text-sm text-slate-700 flex-1">
-                {["p5_b1", "p5_b2", "p5_b3", "p5_b4", "p5_b5"].map((k) => (
+                {["flat_b1", "flat_b2", "flat_b3", "flat_b4", "flat_b5"].map((k) => (
                   <li key={k} className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
                     <span>{tk(k)}</span>

@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { motion, type Variants } from "framer-motion";
-import { ArrowRight, CheckCircle2, TrendingUp, ShieldCheck, Clock, Check, PackageOpen, Globe, UserRound, Settings, ShoppingCart, Languages, LayoutDashboard, Sparkles, ExternalLink, Search, Users } from "lucide-react";
+import { ArrowRight, CheckCircle2, TrendingUp, ShieldCheck, Clock, Check, PackageOpen, Globe, UserRound, Settings, ShoppingCart, Languages, LayoutDashboard, Sparkles, ExternalLink, Search, Users, Heart, CalendarCheck } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -315,9 +315,12 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { icon: Search, k: "card1" },
-              { icon: Globe, k: "card2" },
-              { icon: Users, k: "card3" },
+              { icon: TrendingUp, k: "card1" },
+              { icon: UserRound, k: "card2" },
+              { icon: Search, k: "card3" },
+              { icon: Heart, k: "card4" },
+              { icon: CalendarCheck, k: "card5" },
+              { icon: Users, k: "card6" },
             ].map((card, idx) => (
               <motion.div key={card.k} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: idx * 0.1 }}>
                 <Card className="p-8 h-full border-none shadow-md hover:shadow-lg transition-shadow bg-white">
@@ -354,6 +357,20 @@ export default function Home() {
                   ))}
                 </ul>
               </div>
+              {/* Einstieg */}
+              <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-7 text-left flex flex-col">
+                <div className="text-xl font-extrabold text-slate-900 mb-1">{t("pricing.p5_label")}</div>
+                <div className="text-3xl font-extrabold text-primary mt-2 mb-1"><span dir="ltr">{t("pricing.p5_price")}</span></div>
+                <div className="text-slate-500 text-sm mb-5">{t("pricing.p5_suffix")}</div>
+                <ul className="space-y-2.5 text-sm text-slate-700 flex-1">
+                  {["p5_b1", "p5_b2", "p5_b3", "p5_b4", "p5_b5"].map((k) => (
+                    <li key={k} className="flex items-start gap-2">
+                      <Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
+                      <span>{t(`pricing.${k}`)}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
               {/* Flatrate (recommended) */}
               <div className="bg-white rounded-2xl shadow-lg border-2 border-primary p-7 text-left flex flex-col relative md:-mt-2">
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">{t("pricing.recommended")}</div>
@@ -362,20 +379,6 @@ export default function Home() {
                 <div className="text-slate-500 text-sm mb-5">{t("pricing.flat_suffix")}</div>
                 <ul className="space-y-2.5 text-sm text-slate-700 flex-1">
                   {["flat_b1", "flat_b2", "flat_b3", "flat_b4", "flat_b5"].map((k) => (
-                    <li key={k} className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
-                      <span>{t(`pricing.${k}`)}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              {/* Starter */}
-              <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-7 text-left flex flex-col">
-                <div className="text-xl font-extrabold text-slate-900 mb-1">{t("pricing.p5_label")}</div>
-                <div className="text-3xl font-extrabold text-primary mt-2 mb-1"><span dir="ltr">{t("pricing.p5_price")}</span></div>
-                <div className="text-slate-500 text-sm mb-5">{t("pricing.p5_suffix")}</div>
-                <ul className="space-y-2.5 text-sm text-slate-700 flex-1">
-                  {["p5_b1", "p5_b2", "p5_b3", "p5_b4", "p5_b5"].map((k) => (
                     <li key={k} className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
                       <span>{t(`pricing.${k}`)}</span>
