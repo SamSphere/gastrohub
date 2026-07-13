@@ -18,7 +18,7 @@
           "a": {
             "de": "GastroHub ist Ihr eigenes Bestellsystem im Internet. Eine Webseite mit Ihrer Speisekarte, einem Warenkorb und einer Kasse, auf der Ihre Gäste direkt bei Ihnen bestellen. Sie sehen jede Bestellung sofort auf dem Handy, kassieren direkt über Ihr eigenes Konto und behalten alle Kundendaten. Kein Mittelsmann. Kein Aggregator zwischen Ihnen und Ihrem Gast.",
             "en": "GastroHub is your own ordering system on the web. A website with your menu, a cart and a checkout, where your guests order directly with you. You see every order instantly on your phone, you collect payments through your own account, and you keep all the customer data. No middleman. No aggregator between you and your guest.",
-            "ar": "GastroHub هو نظام الطلب الخاص بك على الإنترنت. موقع إلكتروني يضم قائمة طعامك وسلة تسوق وصفحة دفع، يطلب من خلالها ضيوفك منك مباشرة. ترى كل طلب فوراً على هاتفك، وتحصّل المدفوعات مباشرة عبر حسابك الخاص، وتحتفظ بجميع بيانات العملاء. لا وسيط. لا منصة تجميع بينك وبين ضيفك."
+            "ar": "GastroHub هو نظام الطلبات الخاص بك على الإنترنت. موقع يضم قائمة طعامك وسلة تسوق وصفحة دفع، يطلب من خلاله عملاؤك منك مباشرة. ترى كل طلب لحظة وصوله على هاتفك، وتحصّل المدفوعات عبر حسابك الخاص، وتحتفظ بكل بيانات العملاء. لا وسيط، ولا منصة تجميع تقف بينك وبين عميلك."
           }
         },
         {
@@ -31,7 +31,7 @@
           "a": {
             "de": "Nein. GastroHub passt für jeden gastronomischen Betrieb, der Bestellungen entgegennimmt: Pizzerien, Imbisse, Bistros, Restaurants, Catering, Bäckereien mit Vorbestellung, auch Foodtrucks mit fester Route. Sie können Lieferung anbieten, Abholung, oder beides. Wenn Ihre Gäste bei Ihnen bestellen wollen, statt durch ein anonymes Plattform-Menü zu scrollen, ist GastroHub für Sie.",
             "en": "No. GastroHub fits any food business that takes orders: pizzerias, snack bars, bistros, restaurants, caterers, bakeries with pre-orders, even food trucks with fixed routes. You can offer delivery, pickup, or both. If your guests want to order with you rather than scroll through an anonymous platform menu, GastroHub is for you.",
-            "ar": "لا. يناسب GastroHub أي منشأة لتقديم الطعام تستقبل الطلبات: مطاعم البيتزا، والمطاعم السريعة، والبيسترو، والمطاعم، وخدمات التموين، والمخابز التي تتيح الطلب المسبق، وحتى شاحنات الطعام ذات المسار الثابت. يمكنك تقديم التوصيل أو الاستلام أو كليهما. إذا أراد ضيوفك أن يطلبوا منك مباشرة بدلاً من التنقل في قائمة منصة مجهولة، فإن GastroHub لك."
+            "ar": "لا. يناسب GastroHub أي منشأة طعام تستقبل الطلبات: مطاعم البيتزا، والمطاعم السريعة، والبيسترو، والمطاعم، وخدمات التموين، والمخابز التي تتيح الطلب المسبق، وحتى شاحنات الطعام ذات المسار الثابت. قدّم التوصيل أو الاستلام أو كليهما. إذا أراد عملاؤك أن يطلبوا منك مباشرة بدلاً من التنقل في قائمة منصة مجهولة، فإن GastroHub هو خيارك."
           }
         },
         {
@@ -44,7 +44,7 @@
           "a": {
             "de": "Eine Webseite zeigt, wer Sie sind, wo Sie sind und was Sie kochen. Mehr nicht. GastroHub macht zusätzlich folgendes: nimmt Bestellungen entgegen, prüft die Lieferzone, kassiert sicher mit Kreditkarte, PayPal, Überweisung, Wero und allen gängigen Online-Zahlungsmethoden, schickt die Bestellung sofort auf Ihr Telefon oder Ihr Kassensystem und gibt Ihnen ein Dashboard für Speisekarte, Öffnungszeiten und Statistik. Das ist der Unterschied zwischen einer Visitenkarte und einer Kasse.",
             "en": "A website shows who you are, where you are and what you cook. That's it. GastroHub additionally: takes orders, checks the delivery zone, charges securely via credit card, PayPal, bank transfer, Wero and all common online payment methods, sends the order instantly to your phone or POS system, and gives you a dashboard for menu, opening hours and statistics. That's the difference between a business card and a cash register.",
-            "ar": "يُظهر الموقع الإلكتروني من أنت وأين تقع وماذا تطبخ. لا أكثر. أما GastroHub فيقوم إضافة إلى ذلك بما يلي: يستقبل الطلبات، ويتحقق من منطقة التوصيل، ويحصّل المدفوعات بأمان عبر بطاقة الائتمان وPayPal والتحويل البنكي وWero وجميع وسائل الدفع الإلكترونية الشائعة، ويرسل الطلب فوراً إلى هاتفك أو نظام الكاشير لديك، ويمنحك لوحة تحكم لقائمة الطعام وأوقات العمل والإحصاءات. هذا هو الفرق بين بطاقة تعريف وصندوق دفع."
+            "ar": "الموقع العادي يُظهر من أنت وأين تقع وماذا تطبخ، لا أكثر. أما GastroHub فيضيف إلى ذلك الكثير: يستقبل الطلبات، ويتحقق من منطقة التوصيل، ويحصّل المدفوعات بأمان عبر بطاقة الائتمان وPayPal والتحويل البنكي وWero وكل وسائل الدفع الإلكترونية الشائعة، ويرسل الطلب فوراً إلى هاتفك أو نظام الكاشير لديك، ويمنحك لوحة تحكم لقائمة الطعام وساعات العمل والإحصاءات. هذا هو الفرق بين بطاقة تعريف وصندوق دفع."
           }
         },
         {
@@ -57,7 +57,7 @@
           "a": {
             "de": "Drei Dinge. Erstens: Die Bestellung läuft direkt bei Ihnen ein, nicht über ein fremdes System, das Ihre Marke verdeckt. Zweitens: Ihre Kunden sind Ihre Kunden. Sie sehen Namen, E-Mail-Adressen und Bestellhistorie und können diese Gäste für Wiederbestellungen oder Aktionen anschreiben. Drittens: Sie zahlen einen festen Preis, ganz ohne Provision auf Ihre Bestellungen, statt 13 bis 30 % bei den großen Aggregatoren.",
             "en": "Three things. First: the order lands directly with you, not through a foreign system that hides your brand. Second: your customers are your customers. You see names, email addresses and order history, and you can reach those guests for repeat orders or promotions. Third: you pay a fixed price with zero commission on your orders, instead of 13 to 30% at the big aggregators.",
-            "ar": "ثلاثة أمور. أولاً: يصل الطلب إليك مباشرة، لا عبر نظام خارجي يحجب علامتك التجارية. ثانياً: عملاؤك هم عملاؤك. ترى الأسماء وعناوين البريد الإلكتروني وسجل الطلبات، ويمكنك مراسلة هؤلاء الضيوف من أجل إعادة الطلب أو العروض. ثالثاً: تدفع سعراً ثابتاً دون أي عمولة على طلباتك، بدلاً من 13 إلى 30 % لدى منصات التجميع الكبرى."
+            "ar": "ثلاثة فروق. الأول: يصل الطلب إليك مباشرة، لا عبر نظام خارجي يحجب علامتك التجارية. الثاني: عملاؤك هم عملاؤك. ترى الأسماء وعناوين البريد الإلكتروني وسجل الطلبات، وتراسل هؤلاء العملاء لإعادة الطلب أو لإطلاعهم على عروضك. الثالث: تدفع سعراً ثابتاً بلا أي عمولة على طلباتك، بدلاً من 13 إلى 30 % لدى منصات التجميع الكبرى."
           }
         }
       ]
@@ -80,7 +80,7 @@
           "a": {
             "de": "Es gibt drei Modelle. Digital: eine einmalige Einrichtungsgebühr von 300 € plus 25 € im Monat. Damit bekommen Sie eine eigene Website mit digitaler Speisekarte, QR-Codes, eine E-Mail-Adresse auf Ihrer Domain und Hosting, ohne Online-Bestellsystem. Einstieg: 50 € im Monat. Online-Bestellungen und Tischreservierungen per E-Mail, ohne Hardware, mit Website, Speisekarte, QR-Code, E-Mail-Adresse und Support. Flatrate: 75 € im Monat, unser Empfehlungsmodell. Online-Bestellungen und Tischreservierungen, Tablet und Drucker inklusive, feste Gebühr egal wie viele Bestellungen, Support inklusive. Auf Ihre Umsätze fällt bei keinem Modell eine Provision an. Ein Wechsel von Einstieg zu Flatrate ist jederzeit möglich.",
             "en": "There are three models. Digital: a one-off setup fee of €300 plus €25 per month. You get your own website with a digital menu, QR codes, an email address on your domain and hosting, without an online ordering system. Entry: €50 per month. Online orders and table reservations by email, no hardware, with website, menu, QR code, email address and support. Flatrate: €75 per month, our recommended model. Online orders and table reservations, tablet and printer included, a flat fee no matter how many orders, support included. None of the models charge commission on your revenue. You can switch from Entry to Flatrate at any time.",
-            "ar": "هناك ثلاثة نماذج. ديجيتال: رسوم إعداد لمرة واحدة قدرها 300 € بالإضافة إلى 25 € شهرياً. تحصل على موقع خاص بك مع قائمة طعام رقمية، ورموز QR، وعنوان بريد إلكتروني على نطاقك، والاستضافة، دون نظام طلبات عبر الإنترنت. ستارتر: 50 € شهرياً. طلبات عبر الإنترنت وحجوزات طاولات عبر البريد الإلكتروني، دون أجهزة، مع موقع وقائمة طعام ورمز QR وعنوان بريد إلكتروني ودعم. فلات ريت: 75 € شهرياً، وهو النموذج الموصى به لدينا. طلبات عبر الإنترنت وحجوزات طاولات، مع جهاز لوحي وطابعة، ورسوم ثابتة مهما بلغ عدد الطلبات، والدعم مشمول. ولا يفرض أي نموذج عمولة على إيراداتك. ويمكن الانتقال من ستارتر إلى فلات ريت في أي وقت."
+            "ar": "لدينا ثلاث باقات. ديجيتال: رسوم إعداد لمرة واحدة قدرها 300 € زائد 25 € شهرياً. تحصل على موقع خاص بك مع قائمة طعام رقمية، ورموز QR، وبريد إلكتروني على نطاقك، والاستضافة، دون نظام طلبات أونلاين. الانطلاقة: 50 € شهرياً. طلبات أونلاين وحجوزات طاولات عبر البريد الإلكتروني، بلا أجهزة، مع الموقع وقائمة الطعام ورمز QR والبريد والدعم. الباقة الشاملة: 75 € شهرياً، وهي باقتنا الموصى بها. طلبات أونلاين وحجوزات طاولات، مع جهاز لوحي وطابعة، ورسوم ثابتة مهما بلغ عدد الطلبات، والدعم مشمول. لا تفرض أي باقة عمولة على إيراداتك. يمكنك الترقية من الانطلاقة إلى الباقة الشاملة في أي وقت."
           }
         },
         {
@@ -93,7 +93,7 @@
           "a": {
             "de": "Rechnen Sie es durch. Bei 10.000 Euro Monatsumsatz nimmt eine Plattform mit 20% Provision 2.000 Euro pro Monat. Das sind 24.000 Euro im Jahr. Bei 25% sind es 30.000 Euro. Restaurants arbeiten typischerweise mit 5 bis 8% Nettomarge. Die Plattform nimmt also oft mehr von der einzelnen Bestellung weg, als am Ende für Sie übrig bleibt. Bei GastroHub bleibt der gleiche Umsatz bei Ihnen, minus einer transparenten festen Gebühr und ganz ohne umsatzabhängige Provision.",
             "en": "Work it out. With €10,000 in monthly revenue, a platform taking 20% commission takes €2,000 per month. That's €24,000 per year. At 25% it's €30,000. Restaurants typically work on a 5 to 8% net margin. So the platform often takes more from each order than what's left for you. With GastroHub, the same revenue stays with you, minus a transparent fixed fee and with no revenue-based commission at all.",
-            "ar": "احسبها. عند إيراد شهري قدره 10.000 يورو، تأخذ منصة بعمولة 20% مبلغ 2.000 يورو شهرياً. هذا يعني 24.000 يورو في السنة. وعند 25% يكون المبلغ 30.000 يورو. تعمل المطاعم عادة بهامش ربح صافٍ يتراوح بين 5 و 8%. أي أن المنصة كثيراً ما تأخذ من الطلب الواحد أكثر مما يتبقى لك في النهاية. مع GastroHub يبقى الإيراد نفسه لديك، ناقص رسوم ثابتة شفافة ودون أي عمولة مرتبطة بالإيراد."
+            "ar": "احسبها بنفسك. عند إيراد شهري قدره 10.000 يورو، تأخذ منصة بعمولة 20% مبلغ 2.000 يورو شهرياً. هذا يعادل 24.000 يورو في السنة. وعند 25% يقفز الرقم إلى 30.000 يورو. تعمل المطاعم عادة بهامش ربح صافٍ بين 5 و 8%. أي أن المنصة كثيراً ما تأخذ من الطلب الواحد أكثر مما يتبقى لك منه. مع GastroHub يبقى الإيراد نفسه لديك، ناقص رسوم ثابتة وواضحة، وبلا أي عمولة مرتبطة بالإيراد."
           }
         },
         {
@@ -106,7 +106,7 @@
           "a": {
             "de": "Digital passt, wenn Sie vor allem online sichtbar sein wollen: eine eigene Website mit digitaler Speisekarte, QR-Codes und E-Mail-Adresse, ohne Bestellsystem, für 300 € einmalig plus 25 € im Monat. Einstieg passt, wenn Sie Bestellungen und Reservierungen annehmen wollen, aber noch keine Hardware brauchen: 50 € im Monat, alles per E-Mail, jederzeit auf Flatrate erweiterbar. Flatrate passt, wenn Sie voll durchstarten wollen: 75 € im Monat, Tablet und Drucker inklusive, feste Kosten egal wie viele Bestellungen. Bei keinem Modell zahlen Sie Provision auf Ihre Umsätze. Im Erstgespräch schauen wir gemeinsam, welches Modell zu Ihrem Restaurant passt.",
             "en": "Digital fits if you mainly want to be visible online: your own website with a digital menu, QR codes and email address, without an ordering system, for €300 one-off plus €25 per month. Entry fits if you want to take orders and reservations but don't need hardware yet: €50 per month, everything by email, upgradable to Flatrate any time. Flatrate fits if you want to go all in: €75 per month, tablet and printer included, fixed costs no matter how many orders. None of the models charge commission on your revenue. In the first call we look together at which model fits your restaurant.",
-            "ar": "يناسبك ديجيتال إذا كنت تريد أساساً أن تكون ظاهراً على الإنترنت: موقع خاص بك مع قائمة طعام رقمية ورموز QR وعنوان بريد إلكتروني، دون نظام طلبات، مقابل 300 € لمرة واحدة بالإضافة إلى 25 € شهرياً. ويناسبك ستارتر إذا أردت استقبال الطلبات والحجوزات لكنك لا تحتاج بعد إلى أجهزة: 50 € شهرياً، كل شيء عبر البريد الإلكتروني، مع إمكانية الترقية إلى فلات ريت في أي وقت. ويناسبك فلات ريت إذا أردت الانطلاق بالكامل: 75 € شهرياً، مع جهاز لوحي وطابعة، وتكاليف ثابتة مهما بلغ عدد الطلبات. ولا يفرض أي نموذج عمولة على إيراداتك. وفي المحادثة الأولى ننظر معاً في النموذج الذي يناسب مطعمك."
+            "ar": "اختر ديجيتال إذا كان همّك الأول أن تظهر على الإنترنت: موقع خاص بك مع قائمة طعام رقمية ورموز QR وبريد إلكتروني، دون نظام طلبات، مقابل 300 € لمرة واحدة زائد 25 € شهرياً. اختر الانطلاقة إذا أردت استقبال الطلبات والحجوزات لكنك لا تحتاج بعد إلى أجهزة: 50 € شهرياً، كل شيء عبر البريد الإلكتروني، مع إمكانية الترقية إلى الباقة الشاملة في أي وقت. اختر الباقة الشاملة إذا أردت الانطلاق بكامل قوتك: 75 € شهرياً، مع جهاز لوحي وطابعة، وتكاليف ثابتة مهما بلغ عدد الطلبات. لا تفرض أي باقة عمولة على إيراداتك. في المكالمة الأولى ننظر معاً في الباقة الأنسب لمطعمك."
           }
         },
         {
@@ -119,7 +119,7 @@
           "a": {
             "de": "Nein. Was im Angebot steht, ist der vollständige Preis von uns. Zusätzlich fallen Stripe-Gebühren an, etwa 1,5% plus 25 Cent pro erfolgreicher Kartentransaktion. Diese gehen direkt an Stripe und sind in jedem Online-Bezahlsystem üblich. Sie sehen jede einzelne Gebühr in Ihrem Stripe-Dashboard. Es gibt keine Sponsored-Listings, keine Premium-Platzierung-Aufpreise, keine verpflichtenden Werbebudgets. Im Digital-Modell sind Updates und Support nicht enthalten und werden gesondert nach Aufwand abgerechnet; bei Einstieg und Flatrate ist der Support inklusive.",
             "en": "No. What's in the offer is our full price. On top, Stripe fees apply, roughly 1.5% plus 25 cents per successful card transaction. Those go directly to Stripe and are standard in any online payment system. You see every single fee in your Stripe dashboard. There are no sponsored listings, no premium-placement surcharges, no mandatory ad budgets. In the Digital model, updates and support are not included and are billed separately on a time-and-materials basis; with Entry and Flatrate, support is included.",
-            "ar": "لا. ما هو مذكور في العرض هو السعر الكامل من جانبنا. تُضاف إلى ذلك رسوم Stripe، نحو 1,5% زائد 25 سنتاً لكل عملية بطاقة ناجحة. هذه تذهب مباشرة إلى Stripe وهي معتادة في أي نظام دفع إلكتروني. ترى كل رسم على حدة في لوحة تحكم Stripe الخاصة بك. لا توجد قوائم مُموّلة، ولا رسوم إضافية مقابل الظهور المميّز، ولا ميزانيات إعلانية إلزامية. في نموذج ديجيتال لا تكون التحديثات والدعم مشمولة وتُحتسب بشكل منفصل حسب الجهد المبذول؛ أما في ستارتر وفلات ريت فالدعم مشمول."
+            "ar": "لا. ما تراه في العرض هو سعرنا الكامل. تُضاف إليه رسوم Stripe فقط، نحو 1,5% زائد 25 سنتاً لكل عملية بطاقة ناجحة. هذه تذهب مباشرة إلى Stripe وهي معتادة في أي نظام دفع إلكتروني، وترى كل رسم منها على حدة في لوحة تحكم Stripe لديك. لا قوائم مموّلة، ولا رسوم إضافية مقابل الظهور المميّز، ولا ميزانيات إعلانية إلزامية. في باقة ديجيتال لا تكون التحديثات والدعم مشمولة وتُحتسب على حدة حسب الجهد؛ أما في الانطلاقة والباقة الشاملة فالدعم مشمول."
           }
         }
       ]
@@ -142,7 +142,7 @@
           "a": {
             "de": "Drei Fragen, die viele Restaurantbesitzer am Monatsende stellen. Wer hat heute mehr verdient, ich oder die App? Welche meiner Stammkunden hat heute bestellt, und weiß ich, wer sie sind? Was wäre, wenn die App morgen ihre Konditionen ändert oder mich für zwei Wochen aussetzt? Wenn nur eine dieser Antworten Sie unruhig macht, lohnt sich ein 10-Minuten-Gespräch. Mehr verlangen wir nicht.",
             "en": "Three questions many restaurant owners ask themselves at the end of the month. Who earned more today, me or the app? Which of my regulars ordered today, and do I know who they are? What if the app changes its terms tomorrow or suspends me for two weeks? If even one of those answers makes you uneasy, a 10-minute call is worth it. We're not asking for more than that.",
-            "ar": "ثلاثة أسئلة يطرحها كثير من أصحاب المطاعم في نهاية الشهر. مَن ربح أكثر اليوم، أنا أم التطبيق؟ أيٌّ من عملائي الدائمين طلب اليوم، وهل أعرف من هم؟ ماذا لو غيّر التطبيق شروطه غداً أو أوقفني لأسبوعين؟ إذا أقلقتك إجابة واحدة فقط من هذه، فإن محادثة مدتها 10 دقائق تستحق العناء. لا نطلب أكثر من ذلك."
+            "ar": "ثلاثة أسئلة يطرحها كثير من أصحاب المطاعم في نهاية الشهر. من ربح أكثر اليوم، أنا أم التطبيق؟ أيٌّ من عملائي الدائمين طلب اليوم، وهل أعرف من هم أصلاً؟ ماذا لو غيّر التطبيق شروطه غداً أو أوقف حسابي لأسبوعين؟ إذا أقلقك جواب واحد فقط من هذه الأسئلة، فمكالمة من 10 دقائق تستحق وقتك. لا نطلب منك أكثر من ذلك."
           }
         },
         {
@@ -155,7 +155,7 @@
           "a": {
             "de": "Eine Baukasten-Webseite zeigt das Restaurant, aber sie nimmt selten echte Bestellungen entgegen. Die meisten Baukästen haben kein integriertes Bestellsystem mit Stripe-Anbindung, keine Lieferzonen-Logik, keinen direkten Bon-Druck in der Küche, keine automatischen Benachrichtigungen. Am Ende zahlen viele Restaurants ihren Baukasten und zusätzlich eine teure Liefer-App, weil die Webseite allein keine Kasse ist. Bei GastroHub ist beides eins.",
             "en": "A website-builder site shows the restaurant, but it rarely actually takes orders. Most builders have no integrated ordering system with Stripe, no delivery-zone logic, no direct receipt printing in the kitchen, no automatic notifications. In the end, many restaurants pay for their builder and on top for an expensive delivery app, because the website alone is not a cash register. With GastroHub, both are one.",
-            "ar": "يعرض موقع منشئ المواقع الجاهزة المطعم، لكنه نادراً ما يستقبل طلبات حقيقية. لا تملك معظم أدوات إنشاء المواقع نظام طلب مدمجاً مرتبطاً بـStripe، ولا منطقاً لمناطق التوصيل، ولا طباعة مباشرة للإيصال في المطبخ، ولا إشعارات تلقائية. وفي النهاية تدفع مطاعم كثيرة مقابل أداة إنشاء الموقع وإضافة إلى ذلك تطبيق توصيل باهظ، لأن الموقع وحده ليس نظام دفع. مع GastroHub يكون الاثنان شيئاً واحداً."
+            "ar": "موقع منشئ المواقع الجاهزة يعرض مطعمك، لكنه نادراً ما يستقبل طلبات حقيقية. معظم هذه الأدوات لا تملك نظام طلبات مدمجاً مرتبطاً بـStripe، ولا منطقاً لمناطق التوصيل، ولا طباعة مباشرة للإيصال في المطبخ، ولا إشعارات تلقائية. والنتيجة أن مطاعم كثيرة تدفع مقابل أداة إنشاء الموقع، ثم تدفع فوقها لتطبيق توصيل باهظ، لأن الموقع وحده ليس صندوق دفع. مع GastroHub يجتمع الاثنان في شيء واحد."
           }
         },
         {
@@ -168,7 +168,7 @@
           "a": {
             "de": "Stammkunden, die schon bei Ihnen direkt bestellen (E-Mail, Anruf, vor Ort), behalten Sie sofort. Stammkunden, die heute über eine Liefer-App bei Ihnen bestellen, kennen Sie technisch nicht, weil die Plattform Ihnen Namen und Kontakt nicht weitergibt. Diese gewinnen Sie nach und nach zurück, in dem Sie Ihre eigene Bestellseite über Visitenkarten, Flyer in der Tüte, einen QR-Code an der Tür oder auf der Speisekarte sichtbar machen. Wir zeigen Ihnen den Übergang, Sie müssen ihn nicht im Alleingang planen.",
             "en": "Regulars who already order with you directly (email, phone, in person) you keep right away. Regulars who currently order through a delivery app are technically unknown to you, because the platform doesn't pass on names or contact details. You win them back gradually by making your own ordering page visible on business cards, a flyer in the bag, a QR code on the door or on the menu. We walk you through the transition, you don't have to plan it alone.",
-            "ar": "العملاء الدائمون الذين يطلبون منك مباشرة بالفعل (بريد إلكتروني، أو اتصال، أو في الموقع) تحتفظ بهم فوراً. أما العملاء الدائمون الذين يطلبون منك اليوم عبر تطبيق توصيل فلا تعرفهم تقنياً، لأن المنصة لا تمرّر إليك الأسماء وبيانات الاتصال. هؤلاء تستعيدهم تدريجياً عبر إبراز صفحة الطلب الخاصة بك على بطاقات التعريف، ومنشور داخل الكيس، ورمز QR على الباب أو على قائمة الطعام. نحن نوضّح لك مرحلة الانتقال، ولا يتعيّن عليك التخطيط لها بمفردك."
+            "ar": "العملاء الدائمون الذين يطلبون منك مباشرة بالفعل (بريد إلكتروني أو اتصال أو حضور إلى المطعم) تحتفظ بهم فوراً. أما الذين يطلبون منك اليوم عبر تطبيق توصيل فلا تعرفهم تقنياً، لأن المنصة لا تمرّر إليك أسماءهم وبيانات اتصالهم. هؤلاء تستعيدهم تدريجياً بإبراز صفحة طلباتك على بطاقات التعريف، وفي منشور داخل الكيس، وبرمز QR على الباب أو على قائمة الطعام. نرشدك في مرحلة الانتقال خطوة بخطوة، فلا تخطّط لها وحدك."
           }
         },
         {
@@ -181,7 +181,7 @@
           "a": {
             "de": "Sie brauchen keine technischen Kenntnisse. Wir richten die Plattform für Sie ein, importieren Ihre Speisekarte, konfigurieren Lieferzonen und Öffnungszeiten. Im Alltag bedienen Sie nur ein Dashboard auf dem Smartphone, ähnlich wie eine WhatsApp- oder Banking-App. Bestellungen annehmen funktioniert mit einem Klick. Wenn Sie ein Smartphone bedienen können, können Sie GastroHub bedienen.",
             "en": "You don't need any technical skills. We set the platform up for you, import your menu, configure delivery zones and opening hours. Day to day you just use a dashboard on your smartphone, similar to a WhatsApp or banking app. Accepting orders takes one click. If you can use a smartphone, you can use GastroHub.",
-            "ar": "لا تحتاج إلى أي معرفة تقنية. نحن نُعدّ المنصة لك، ونستورد قائمة طعامك، ونضبط مناطق التوصيل وأوقات العمل. في العمل اليومي لا تستخدم سوى لوحة تحكم على الهاتف الذكي، شبيهة بتطبيق WhatsApp أو تطبيق مصرفي. قبول الطلبات يتم بنقرة واحدة. إذا كنت تستطيع استخدام هاتف ذكي، فيمكنك استخدام GastroHub."
+            "ar": "لا تحتاج إلى أي معرفة تقنية. نحن نعدّ المنصة لك، ونستورد قائمة طعامك، ونضبط مناطق التوصيل وساعات العمل. في عملك اليومي لا تتعامل إلا مع لوحة تحكم على هاتفك، شبيهة بتطبيق WhatsApp أو تطبيق البنك. تقبل الطلب بنقرة واحدة. إذا كنت تجيد استخدام هاتفك، فأنت تجيد استخدام GastroHub."
           }
         },
         {
@@ -194,7 +194,7 @@
           "a": {
             "de": "Nein. Viele Restaurants laufen am Anfang parallel: Sie sammeln über die alte Plattform weiterhin Bestellungen und bauen gleichzeitig Ihre eigene Bestellseite auf. Sobald Ihre eigene Seite mehr direkte Bestellungen bringt, können Sie die Plattform kündigen oder weiter mitlaufen lassen. Diese Entscheidung gehört Ihnen. Wir drängen Sie zu nichts.",
             "en": "No. Many restaurants run both in parallel at the start: they keep collecting orders through the old platform while building their own ordering page. Once your own page brings in more direct orders, you can cancel the platform or keep it running alongside. The decision is yours. We don't pressure you.",
-            "ar": "لا. تعمل مطاعم كثيرة في البداية بالتوازي: تواصل جمع الطلبات عبر المنصة القديمة وتبني في الوقت نفسه صفحة الطلب الخاصة بك. وبمجرد أن تجلب صفحتك الخاصة مزيداً من الطلبات المباشرة، يمكنك إلغاء المنصة أو إبقاؤها تعمل جنباً إلى جنب. هذا القرار قرارك أنت. ولا ندفعك إلى أي شيء."
+            "ar": "لا. تعمل مطاعم كثيرة في البداية بالتوازي: تواصل جمع الطلبات عبر المنصة القديمة، وتبني في الوقت نفسه صفحة طلباتك الخاصة. وبمجرد أن تجلب صفحتك مزيداً من الطلبات المباشرة، تلغي المنصة القديمة أو تبقيها تعمل جنباً إلى جنب. القرار قرارك وحدك، ولا نضغط عليك في شيء."
           }
         }
       ]
@@ -217,7 +217,7 @@
           "a": {
             "de": "Ihnen. Alle Daten Ihrer Endkunden (Namen, Adressen, Bestellungen, bevorzugte Gerichte) gehören ausschließlich Ihrem Restaurant. Wir verarbeiten diese Daten als Auftragsverarbeiter für Sie, nach DSGVO Art. 28, und geben sie niemals an Dritte weiter, an niemanden, auch nicht an andere Restaurants. Bei den großen Liefer-Apps ist das umgekehrt: die Plattform sammelt die Daten, Sie bekommen sie nicht zu sehen.",
             "en": "You do. All data from your end customers (names, addresses, orders, favourite dishes) belongs exclusively to your restaurant. We process this data as your processor under GDPR Art. 28, and we never pass it on to third parties, to anyone, not even to other restaurants. With the big delivery apps it's the other way round: the platform collects the data, you don't get to see it.",
-            "ar": "لك. جميع بيانات عملائك النهائيين (الأسماء، والعناوين، والطلبات، والأطباق المفضّلة) تعود حصراً إلى مطعمك. نحن نعالج هذه البيانات بصفتنا معالجاً بالنيابة عنك، وفقاً للمادة 28 من DSGVO، ولا نمرّرها أبداً إلى أطراف ثالثة، ولا إلى أي أحد، ولا حتى إلى مطاعم أخرى. أما لدى تطبيقات التوصيل الكبرى فالأمر معكوس: المنصة تجمع البيانات، وأنت لا تراها."
+            "ar": "لك أنت. كل بيانات عملائك (الأسماء والعناوين والطلبات والأطباق المفضّلة) تعود حصراً إلى مطعمك. نعالج هذه البيانات بصفتنا معالجاً بالنيابة عنك وفقاً للمادة 28 من DSGVO، ولا نمرّرها أبداً إلى أي طرف ثالث، ولا حتى إلى مطاعم أخرى. أما لدى تطبيقات التوصيل الكبرى فالأمر معكوس: المنصة تجمع البيانات، وأنت لا تراها."
           }
         },
         {
@@ -230,7 +230,7 @@
           "a": {
             "de": "Sie können wiederkehrende Gäste erkennen, ihnen einmal im Quartal einen Newsletter mit neuen Gerichten schicken, gezielte Rabatte an inaktive Gäste senden, ihre Lieblingsgerichte analysieren und Ihre Speisekarte entsprechend weiterentwickeln. Sie können die Daten auch jederzeit als CSV-Datei exportieren. Sie bleiben Ihre, auch wenn Sie GastroHub eines Tages verlassen.",
             "en": "You can recognise returning guests, send them a quarterly newsletter with new dishes, send targeted discounts to inactive guests, analyse their favourite dishes and refine your menu accordingly. You can also export the data as a CSV file any time. It stays yours, even if one day you leave GastroHub.",
-            "ar": "يمكنك التعرّف على الضيوف المتكرّرين، وإرسال نشرة إخبارية لهم مرة كل ربع سنة تتضمّن أطباقاً جديدة، وإرسال خصومات موجّهة إلى الضيوف غير النشطين، وتحليل أطباقهم المفضّلة وتطوير قائمة طعامك بناءً على ذلك. ويمكنك أيضاً تصدير البيانات في أي وقت كملف CSV. تبقى البيانات ملكك، حتى لو غادرت GastroHub يوماً ما."
+            "ar": "تتعرّف على عملائك المتكرّرين، وترسل لهم نشرة كل ربع سنة بأطباق جديدة، وتوجّه خصومات إلى العملاء الذين توقّفوا عن الطلب، وتحلّل أطباقهم المفضّلة فتطوّر قائمة طعامك بناءً عليها. وتصدّر البيانات في أي وقت كملف CSV. تبقى البيانات ملكك، حتى لو غادرت GastroHub يوماً ما."
           }
         },
         {
@@ -243,7 +243,7 @@
           "a": {
             "de": "Ja. Im Dashboard sehen Sie die Bestellhistorie nach Gast, nach Tag, nach Gericht oder nach Lieferzone. Sie sehen, welche Gerichte besonders gut laufen, welche Tage Ihre stärksten sind, welche Stammgäste in den letzten Wochen nicht mehr bestellt haben. Diese Informationen helfen Ihnen, gezielt Entscheidungen zu treffen. Heute fliegen diese Daten vielleicht ungenutzt durch die Server einer App, die sie für Sie verbirgt.",
             "en": "Yes. In the dashboard you see the order history by guest, by day, by dish or by delivery zone. You see which dishes sell particularly well, which days are your strongest, which regulars haven't ordered in the last few weeks. This information helps you make targeted decisions. Today this data may be flying through the servers of an app that hides it from you.",
-            "ar": "نعم. في لوحة التحكم ترى سجل الطلبات بحسب الضيف، أو اليوم، أو الطبق، أو منطقة التوصيل. ترى أي الأطباق تحقّق رواجاً خاصاً، وأي الأيام هي الأقوى لديك، وأي الضيوف الدائمين لم يعودوا يطلبون في الأسابيع الأخيرة. تساعدك هذه المعلومات على اتخاذ قرارات موجّهة. أما اليوم فربما تمرّ هذه البيانات دون استخدام عبر خوادم تطبيق يخفيها عنك."
+            "ar": "نعم. في لوحة التحكم ترى سجل الطلبات بحسب العميل أو اليوم أو الطبق أو منطقة التوصيل. تعرف أي الأطباق تحقّق أعلى رواج، وأي الأيام هي الأقوى لديك، وأي العملاء الدائمين توقّفوا عن الطلب في الأسابيع الأخيرة. تساعدك هذه المعلومات على اتخاذ قرارات دقيقة. أما اليوم فربما تمرّ هذه البيانات دون فائدة عبر خوادم تطبيق يخفيها عنك."
           }
         }
       ]
@@ -266,7 +266,7 @@
           "a": {
             "de": "In der Regel zwei bis vier Wochen, nachdem Sie uns Ihre Speisekarte und Fotos zur Verfügung gestellt haben. Wir setzen Speisekarte, Kategorien, Allergene, Lieferzonen, Öffnungszeiten und Stripe-Konto auf, prüfen alles mit Ihnen gemeinsam, und nach einer kurzen Test-Bestellung gehen Sie live.",
             "en": "Usually two to four weeks after you've given us your menu and photos. We set up menu, categories, allergens, delivery zones, opening hours and the Stripe account, review everything with you, and after a short test order you go live.",
-            "ar": "عادة من أسبوعين إلى أربعة أسابيع بعد أن تزوّدنا بقائمة طعامك والصور. نُعدّ قائمة الطعام والفئات ومسبّبات الحساسية ومناطق التوصيل وأوقات العمل وحساب Stripe، ونراجع كل شيء معك معاً، وبعد طلب تجريبي قصير تنطلق مباشرة."
+            "ar": "عادة من أسبوعين إلى أربعة أسابيع، بعد أن تزوّدنا بقائمة طعامك وصورك. نعدّ قائمة الطعام والفئات ومسبّبات الحساسية ومناطق التوصيل وساعات العمل وحساب Stripe، ونراجع كل شيء معك، وبعد طلب تجريبي قصير تنطلق مباشرة."
           }
         },
         {
@@ -279,7 +279,7 @@
           "a": {
             "de": "Ihre aktuelle Speisekarte (PDF, Excel, oder eine bestehende Webseite genügt), Fotos der wichtigsten Gerichte (auch Handy-Fotos reichen, falls keine Profi-Bilder vorhanden sind), Ihre Öffnungszeiten, die Postleitzahlen, in die Sie liefern, Ihre Logo-Datei und die Rechtsangaben (Impressum-Daten). Wenn Ihnen einzelne Punkte fehlen, helfen wir.",
             "en": "Your current menu (PDF, Excel or an existing website is fine), photos of your main dishes (phone photos are fine if you don't have professional shots), your opening hours, the postcodes you deliver to, your logo file and your legal details (imprint information). If any pieces are missing, we help.",
-            "ar": "قائمة طعامك الحالية (يكفي ملف PDF أو Excel أو موقع إلكتروني قائم)، وصور لأهم الأطباق (تكفي صور الهاتف أيضاً إن لم تتوفّر صور احترافية)، وأوقات عملك، والرموز البريدية التي توصّل إليها، وملف شعارك والبيانات القانونية (بيانات بيان الناشر). وإن نقصتك بعض النقاط، فنحن نساعدك."
+            "ar": "قائمة طعامك الحالية (يكفي ملف PDF أو Excel أو موقع قائم)، وصور لأهم الأطباق (تكفي صور الهاتف إن لم تتوفّر صور احترافية)، وساعات عملك، والرموز البريدية التي توصّل إليها، وملف شعارك، والبيانات القانونية (بيانات Impressum). وإن نقصك شيء منها، نساعدك في تجهيزه."
           }
         },
         {
@@ -292,7 +292,7 @@
           "a": {
             "de": "Nein. Im Dashboard bearbeiten Sie Gerichte, Preise und Öffnungszeiten so einfach wie in einer Notiz-App. Bestellungen nehmen Sie mit einem Klick an oder ab. Status-Updates für den Kunden gehen automatisch raus. Wenn etwas Komplexeres nötig ist (neue Lieferzone, Kategorie umbenennen), erledigen wir das auf Zuruf, ohne Aufpreis im Wartungs-Modell.",
             "en": "No. In the dashboard you edit dishes, prices and opening hours as easily as in a notes app. You accept or decline orders with one click. Status updates to the customer go out automatically. If something more complex is needed (new delivery zone, rename a category), we handle it on request, no extra charge in the maintenance model.",
-            "ar": "لا. في لوحة التحكم تحرّر الأطباق والأسعار وأوقات العمل بسهولة كما في تطبيق ملاحظات. تقبل الطلبات أو ترفضها بنقرة واحدة. تُرسَل تحديثات الحالة إلى العميل تلقائياً. وإذا لزم أمر أكثر تعقيداً (منطقة توصيل جديدة، أو إعادة تسمية فئة)، نتولّاه عند الطلب، دون رسوم إضافية في نموذج الصيانة."
+            "ar": "لا. في لوحة التحكم تحرّر الأطباق والأسعار وساعات العمل بسهولة كما في تطبيق ملاحظات. تقبل الطلب أو ترفضه بنقرة واحدة. وتُرسَل تحديثات الحالة إلى العميل تلقائياً. وإذا احتجت إلى أمر أكثر تعقيداً (منطقة توصيل جديدة أو إعادة تسمية فئة)، نتولّاه عند الطلب، دون رسوم إضافية ضمن باقات الدعم."
           }
         }
       ]
@@ -315,7 +315,7 @@
           "a": {
             "de": "Sofort, ohne dass Sie zusätzliche Hardware auf dem Tresen brauchen. Eine neue Bestellung erscheint als Benachrichtigung auf Ihrem Handy (per Telegram und E-Mail, beides parallel) sowie auf Laptop oder PC. Sie tippen einmal, um anzunehmen, und der Kunde bekommt automatisch eine Bestätigung mit der voraussichtlichen Lieferzeit. Wenn Ihr Kassensystem eine API unterstützt, drucken wir die Bestellung zusätzlich direkt bei Ihnen aus. Wir wollen Ihnen den besten Preis anbieten, nicht teure Zusatz-Geräte verkaufen. Falls Sie trotzdem ein eigenes Gerät bevorzugen, richten wir das gerne für Sie ein.",
             "en": "Instantly, without needing any extra hardware on the counter. A new order appears as a notification on your phone (via Telegram and email, both in parallel) and on your laptop or PC. You tap once to accept, and the customer automatically gets a confirmation with the estimated delivery time. If your POS system supports an API, we additionally print the order directly at your end. Our goal is to offer you the best price, not to sell expensive add-on devices. If you'd still prefer your own device, we'll happily set it up for you.",
-            "ar": "فوراً، دون حاجة إلى أجهزة إضافية على المنضدة. يظهر الطلب الجديد كإشعار على هاتفك (عبر Telegram والبريد الإلكتروني، كلاهما بالتوازي) وكذلك على الحاسوب المحمول أو الحاسوب الشخصي. تنقر مرة واحدة للقبول، ويتلقّى العميل تلقائياً تأكيداً مع وقت التوصيل المتوقّع. وإذا كان نظام الكاشير لديك يدعم واجهة برمجة تطبيقات (API)، نطبع الطلب إضافة إلى ذلك مباشرة لديك. هدفنا أن نقدّم لك أفضل سعر، لا أن نبيعك أجهزة إضافية باهظة. وإن كنت تفضّل رغم ذلك جهازاً خاصاً بك، نُعدّه لك بكل سرور."
+            "ar": "فوراً، ودون أجهزة إضافية على المنضدة. يصلك الطلب الجديد كإشعار على هاتفك (عبر Telegram والبريد الإلكتروني معاً) وكذلك على حاسوبك المحمول أو المكتبي. تنقر نقرة واحدة للقبول، فيتلقّى العميل تلقائياً تأكيداً بوقت التوصيل المتوقّع. وإذا كان نظام الكاشير لديك يدعم واجهة برمجة (API)، نطبع الطلب أيضاً مباشرة لديك. هدفنا أن نقدّم لك أفضل سعر، لا أن نبيعك أجهزة باهظة. وإن فضّلت رغم ذلك جهازاً خاصاً بك، نعدّه لك بكل سرور."
           }
         },
         {
@@ -328,7 +328,7 @@
           "a": {
             "de": "Online über Stripe Connect (Kreditkarte, PayPal, je nach Ihren Stripe-Einstellungen auch Sofort, Klarna, Apple Pay, Google Pay). Optional können Sie zusätzlich Barzahlung bei Lieferung oder Abholung aktivieren. Das Geld geht direkt auf Ihr Stripe-Konto, in der Regel innerhalb von zwei Werktagen auf Ihr Bank-Konto.",
             "en": "Online via Stripe Connect (credit card, PayPal, and depending on your Stripe settings also Sofort, Klarna, Apple Pay, Google Pay). Optionally you can also enable cash on delivery or pickup. The money goes directly into your Stripe account, usually onto your bank account within two business days.",
-            "ar": "إلكترونياً عبر Stripe Connect (بطاقة ائتمان، وPayPal، وبحسب إعدادات Stripe لديك أيضاً Sofort وKlarna وApple Pay وGoogle Pay). واختيارياً يمكنك إضافة الدفع نقداً عند التوصيل أو الاستلام. يذهب المال مباشرة إلى حساب Stripe الخاص بك، وعادة خلال يومي عمل إلى حسابك البنكي."
+            "ar": "أونلاين عبر Stripe Connect (بطاقة ائتمان وPayPal، وبحسب إعدادات Stripe لديك أيضاً Sofort وKlarna وApple Pay وGoogle Pay). واختيارياً تضيف الدفع نقداً عند التوصيل أو الاستلام. يذهب المال مباشرة إلى حساب Stripe الخاص بك، ثم إلى حسابك البنكي عادة خلال يومي عمل."
           }
         },
         {
@@ -341,7 +341,7 @@
           "a": {
             "de": "Sie können jede Bestellung mit einem Klick ablehnen und einen kurzen Grund angeben (\"Küche ausgelastet\", \"außerhalb der Lieferzeit\", \"Zutat nicht vorrätig\"). Der Kunde wird informiert und bei Online-Zahlung automatisch komplett zurückerstattet. Keine Gebühren von uns, keine Bearbeitung durch Sie.",
             "en": "You can decline any order with one click and give a short reason (\"kitchen at capacity\", \"outside delivery hours\", \"ingredient unavailable\"). The customer is notified and, for online payments, automatically refunded in full. No fees from us, no manual handling for you.",
-            "ar": "يمكنك رفض أي طلب بنقرة واحدة وذكر سبب موجز (\"المطبخ مشغول بالكامل\"، أو \"خارج وقت التوصيل\"، أو \"أحد المكوّنات غير متوفّر\"). يُبلَّغ العميل، وفي حالة الدفع الإلكتروني يُسترَدّ له المبلغ كاملاً تلقائياً. لا رسوم من جانبنا، ولا معالجة من جانبك."
+            "ar": "ترفض أي طلب بنقرة واحدة مع سبب موجز (\"المطبخ مشغول بالكامل\"، أو \"خارج ساعات التوصيل\"، أو \"أحد المكوّنات غير متوفّر\"). يُبلَّغ العميل، وفي حال الدفع أونلاين يُسترَدّ له المبلغ كاملاً تلقائياً. لا رسوم من جانبنا، ولا خطوات إضافية من جانبك."
           }
         },
         {
@@ -354,7 +354,7 @@
           "a": {
             "de": "Sie selbst, mit eigenem Fahrer oder einem von Ihnen beauftragten Kurierdienst. GastroHub übernimmt nicht die Lieferung selbst. Wir liefern nur das Bestellsystem und halten Ihre Gäste in Echtzeit über den Status auf dem Laufenden. Die Logistik bleibt bei Ihnen, so wie heute auch.",
             "en": "You do, with your own driver or a courier service of your choice. GastroHub does not handle delivery itself. We only provide the ordering system and keep your guests up to date on the status in real time. Logistics stays with you, the same as today.",
-            "ar": "أنت بنفسك، بسائق خاص بك أو بخدمة توصيل تكلّفها أنت. لا يتولّى GastroHub التوصيل بنفسه. نحن نوفّر نظام الطلب فقط ونُبقي ضيوفك على اطّلاع بالحالة في الوقت الفعلي. تبقى الخدمات اللوجستية لديك، كما هي اليوم."
+            "ar": "أنت بنفسك، بسائقك الخاص أو بخدمة توصيل تكلّفها أنت. لا يتولّى GastroHub التوصيل. نحن نوفّر نظام الطلبات فقط، ونُبقي عملاءك على اطّلاع بحالة الطلب لحظة بلحظة. تبقى الخدمات اللوجستية بيدك، كما هي اليوم."
           }
         }
       ]
@@ -377,7 +377,7 @@
           "a": {
             "de": "Ja. Die Bestellplattform ist nach DSGVO aufgebaut. Sie schließen mit uns einen Auftragsverarbeitungsvertrag (AVV) gemäß Art. 28 DSGVO ab, bevor der erste Endkunde bei Ihnen bestellt. Wir verwenden technisch notwendige Cookies, kein Tracking, keine Werbe-Cookies. Endkunden-Daten werden ausschließlich auf Servern in Deutschland verarbeitet. Details stehen in unserer Datenschutzerklärung.",
             "en": "Yes. The ordering platform is built according to GDPR. You sign a Data Processing Agreement (DPA) with us under Art. 28 GDPR before the first end customer orders. We use only technically necessary cookies, no tracking, no advertising cookies. End-customer data is processed exclusively on servers in Germany. Details are in our privacy policy.",
-            "ar": "نعم. منصة الطلب مبنية وفقاً لـDSGVO. تبرم معنا عقد معالجة بالنيابة (AVV) وفقاً للمادة 28 من DSGVO قبل أن يطلب أول عميل نهائي منك. نستخدم ملفات تعريف ارتباط ضرورية تقنياً فقط، دون تتبّع، ودون ملفات تعريف ارتباط إعلانية. تُعالَج بيانات العملاء النهائيين حصراً على خوادم في ألمانيا. التفاصيل موجودة في سياسة حماية البيانات لدينا."
+            "ar": "نعم. منصة الطلبات مبنية وفقاً لـDSGVO. تبرم معنا عقد معالجة بالنيابة (AVV) بموجب المادة 28 من DSGVO قبل أن يطلب أول عميل منك. نستخدم ملفات تعريف ارتباط ضرورية تقنياً فقط، بلا تتبّع وبلا ملفات إعلانية. وتُعالَج بيانات العملاء حصراً على خوادم في ألمانيا. تجد التفاصيل في سياسة حماية البيانات لدينا."
           }
         },
         {
@@ -390,7 +390,7 @@
           "a": {
             "de": "Anwendungsdaten (Speisekarte, Bestellungen, Kundeninformationen) laufen ausschließlich auf Servern in Deutschland. Es gibt keine Datenübertragung in die USA oder andere Drittländer. Lediglich die Marketing-Webseite gastrohub.dev läuft über GitHub Pages, getrennt von der Bestellplattform. Zahlungen über Stripe können nach DSGVO-konformen Standardvertragsklauseln in die USA übermittelt werden; Stripe ist dafür DPF-zertifiziert.",
             "en": "Application data (menu, orders, customer information) runs exclusively on servers in Germany. There is no data transfer to the USA or other third countries. Only the marketing website gastrohub.dev runs via GitHub Pages, separate from the ordering platform. Payments via Stripe may be transferred to the USA under GDPR-compliant Standard Contractual Clauses; Stripe is DPF-certified for this purpose.",
-            "ar": "بيانات التطبيق (قائمة الطعام، والطلبات، ومعلومات العملاء) تعمل حصراً على خوادم في ألمانيا. لا يوجد نقل للبيانات إلى الولايات المتحدة أو دول ثالثة أخرى. والموقع التسويقي gastrohub.dev وحده يعمل عبر GitHub Pages، منفصلاً عن منصة الطلب. أما المدفوعات عبر Stripe فيمكن أن تُنقَل إلى الولايات المتحدة وفق بنود تعاقدية معيارية متوافقة مع DSGVO؛ وStripe حاصل على شهادة DPF لهذا الغرض."
+            "ar": "بيانات التطبيق (قائمة الطعام والطلبات ومعلومات العملاء) تُخزَّن حصراً على خوادم في ألمانيا. لا نقل للبيانات إلى الولايات المتحدة أو أي دولة ثالثة. الموقع التسويقي gastrohub.dev وحده يعمل عبر GitHub Pages، منفصلاً عن منصة الطلبات. أما المدفوعات عبر Stripe فقد تُنقَل إلى الولايات المتحدة وفق بنود تعاقدية معيارية متوافقة مع DSGVO، وStripe حاصل على شهادة DPF لهذا الغرض."
           }
         },
         {
@@ -403,7 +403,7 @@
           "a": {
             "de": "Sie pflegen Allergene und Zusatzstoffe pro Gericht direkt im Dashboard, und der Kunde sieht sie vor der Bestellung. Das System ist auf die deutschen und EU-Vorgaben zur Lebensmittelinformationsverordnung (LMIV) ausgelegt. Die Verantwortung für die inhaltliche Richtigkeit liegt bei Ihnen als Restaurantbetreiber, das System macht Ihnen die Pflege so leicht wie möglich.",
             "en": "You maintain allergens and additives per dish directly in the dashboard, and the customer sees them before ordering. The system is designed for German and EU rules on food-information regulation (LMIV / EU FIC 1169/2011). Responsibility for the accuracy of the content lies with you as the restaurant operator; the system makes the data entry as easy as possible.",
-            "ar": "تُدخِل مسبّبات الحساسية والمواد المضافة لكل طبق مباشرة في لوحة التحكم، ويراها العميل قبل الطلب. النظام مصمّم وفقاً للمتطلّبات الألمانية ومتطلّبات الاتحاد الأوروبي الخاصة بلائحة معلومات الأغذية (LMIV). تقع مسؤولية صحة المحتوى عليك بصفتك مشغّل المطعم، والنظام يجعل إدخال البيانات سهلاً قدر الإمكان."
+            "ar": "تُدخِل مسبّبات الحساسية والمواد المضافة لكل طبق مباشرة في لوحة التحكم، فيراها العميل قبل الطلب. النظام مصمّم وفق المتطلّبات الألمانية ومتطلّبات الاتحاد الأوروبي الخاصة بلائحة معلومات الأغذية (LMIV). تقع مسؤولية صحة المحتوى عليك بصفتك مشغّل المطعم، والنظام يجعل إدخال البيانات أسهل ما يكون."
           }
         },
         {
@@ -416,7 +416,7 @@
           "a": {
             "de": "Ja. Für die Online-Zahlungsabwicklung richten Sie einen eigenen Stripe Connect Account ein, mit Ihren Bank-Daten und Ihrem Gewerbe-Nachweis. Stripe ist Ihr Zahlungs-Dienstleister, GastroHub ist nur die Plattform, die das einbindet. Das ist der gesetzliche Standard und schützt Sie: Sie haben die volle Kontrolle über Ihre Einnahmen und können bei Bedarf auch ohne GastroHub mit Stripe weiterarbeiten.",
             "en": "Yes. For online payment processing you set up your own Stripe Connect account, with your bank details and proof of business. Stripe is your payment processor; GastroHub is only the platform that integrates it. That's the legal standard and it protects you: you have full control over your revenue and could keep working with Stripe even without GastroHub if needed.",
-            "ar": "نعم. لمعالجة المدفوعات الإلكترونية تُنشئ حساب Stripe Connect خاصاً بك، مع بياناتك البنكية وإثبات نشاطك التجاري. Stripe هو مزوّد خدمة الدفع لديك، وGastroHub ليس سوى المنصة التي تدمجه. هذا هو المعيار القانوني وهو يحميك: لديك السيطرة الكاملة على إيراداتك، ويمكنك عند الحاجة مواصلة العمل مع Stripe حتى دون GastroHub."
+            "ar": "نعم. لمعالجة المدفوعات أونلاين تُنشئ حساب Stripe Connect خاصاً بك، مع بياناتك البنكية وإثبات نشاطك التجاري. Stripe هو مزوّد الدفع لديك، وGastroHub هو المنصة التي تدمجه فقط. هذا هو المعيار القانوني وهو يحميك: تملك السيطرة الكاملة على إيراداتك، وتستطيع عند الحاجة مواصلة العمل مع Stripe حتى دون GastroHub."
           }
         },
         {
@@ -429,7 +429,7 @@
           "a": {
             "de": "Die Button-Lösung (§ 312j Abs. 3 BGB) ist in den Bestellprozess integriert: der Endkunde bestätigt vor dem Klick auf \"Zahlungspflichtig bestellen\", was er kauft, zu welchem Preis und mit welcher Lieferkosten. Für Lebensmittel-Bestellungen gilt das gesetzliche Widerrufsrecht nach § 312g BGB Abs. 2 Nr. 2 und 4 nicht (verderbliche Waren und vor Ort zubereitete Speisen). Das ist in den Plattform-AGB sauber abgebildet.",
             "en": "The Button-Lösung (§ 312j para. 3 BGB) is integrated into the checkout flow: the end customer confirms what they buy, at what price and with what delivery cost before clicking \"Zahlungspflichtig bestellen\" (order with obligation to pay). For food orders, the statutory right of withdrawal under § 312g BGB para. 2 nos. 2 and 4 does not apply (perishable goods and food prepared on the spot). This is reflected cleanly in the platform's terms (AGB).",
-            "ar": "إن Button-Lösung (المادة 312j الفقرة 3 من BGB) مدمجة في عملية الطلب: يؤكّد العميل النهائي قبل النقر على \"Zahlungspflichtig bestellen\" ما الذي يشتريه، وبأي سعر، وبأي تكاليف توصيل. وبالنسبة لطلبات الأغذية لا يسري الحق القانوني في التراجع وفقاً للمادة 312g من BGB الفقرة 2 البندين 2 و4 (السلع القابلة للتلف والأطعمة المحضّرة في الموقع). وهذا مبيّن بوضوح في الشروط والأحكام (AGB) الخاصة بالمنصة."
+            "ar": "إن Button-Lösung (المادة 312j الفقرة 3 من BGB) مدمجة في مسار الطلب: قبل النقر على \"Zahlungspflichtig bestellen\" يؤكّد العميل ماذا يشتري، وبأي سعر، وبأي تكاليف توصيل. وبالنسبة لطلبات الأغذية لا يسري الحق القانوني في التراجع بموجب المادة 312g من BGB الفقرة 2 البندين 2 و4 (السلع القابلة للتلف والأطعمة المحضّرة في الموقع). وهذا مبيّن بوضوح في الشروط والأحكام (AGB) الخاصة بالمنصة."
           }
         }
       ]
@@ -452,7 +452,7 @@
           "a": {
             "de": "Per E-Mail an kontakt@gastrohub.dev. Werktags antworten wir in der Regel am selben oder nächsten Tag. Bei Einstieg und Flatrate ist der Support inklusive. Im Digital-Modell rechnen wir Support nach Aufwand ab, in 15-Minuten-Schritten und immer vorher angekündigt.",
             "en": "By email at kontakt@gastrohub.dev. On working days we usually reply the same or next day. With Entry and Flatrate, support is included. In the Digital model we bill support on a time-and-materials basis, in 15-minute increments, always announced in advance.",
-            "ar": "عبر البريد الإلكتروني إلى kontakt@gastrohub.dev. في أيام العمل نردّ عادة في اليوم نفسه أو في اليوم التالي. في ستارتر وفلات ريت يكون الدعم مشمولاً. وفي نموذج ديجيتال نحتسب الدعم حسب الجهد المبذول، بخطوات مدتها 15 دقيقة، ومع الإشعار المسبق دائماً."
+            "ar": "عبر البريد الإلكتروني إلى kontakt@gastrohub.dev. في أيام العمل نردّ عادة في اليوم نفسه أو في اليوم التالي. في الانطلاقة والباقة الشاملة يكون الدعم مشمولاً. وفي باقة ديجيتال نحتسب الدعم حسب الجهد، بخطوات مدتها 15 دقيقة، ومع إشعار مسبق دائماً."
           }
         },
         {
@@ -465,7 +465,7 @@
           "a": {
             "de": "In den monatlichen Modellen (Einstieg und Flatrate) läuft der Vertrag auf unbestimmte Zeit und kann von beiden Seiten mit einer Frist von 30 Tagen zum Monatsende in Textform gekündigt werden. Im Digital-Modell gilt das für die monatliche Gebühr; die einmalige Einrichtungsgebühr bleibt davon unberührt. Abweichende Mindestlaufzeiten können im individuellen Angebot stehen. Außerordentliche Kündigung aus wichtigem Grund bleibt jederzeit möglich.",
             "en": "In the monthly models (Entry and Flatrate) the contract runs for an indefinite term and may be terminated by either party in text form with 30 days' notice to the end of the month. In the Digital model this applies to the monthly fee; the one-off setup fee is not affected. Deviating minimum terms may be stated in the individual offer. Extraordinary termination for cause remains possible at any time.",
-            "ar": "في النموذجين الشهريين (ستارتر وفلات ريت) يسري العقد لمدة غير محدّدة، ويمكن لكلا الطرفين إنهاؤه كتابةً بمهلة قدرها 30 يوماً حتى نهاية الشهر. وفي نموذج ديجيتال يسري ذلك على الرسوم الشهرية؛ ولا تتأثر بذلك رسوم الإعداد لمرة واحدة. وقد تُذكَر مدد دنيا مختلفة في العرض الفردي. ويبقى الإنهاء الاستثنائي لسبب جوهري ممكناً في أي وقت."
+            "ar": "في الباقتين الشهريتين (الانطلاقة والباقة الشاملة) يسري العقد لمدة غير محدّدة، ويحقّ لكلا الطرفين إنهاؤه كتابةً بمهلة 30 يوماً حتى نهاية الشهر. وفي باقة ديجيتال يسري ذلك على الرسوم الشهرية، ولا تتأثر به رسوم الإعداد لمرة واحدة. وقد تُذكَر مدد دنيا مختلفة في العرض الفردي. ويبقى الإنهاء الاستثنائي لسبب جوهري ممكناً في أي وقت."
           }
         },
         {
@@ -478,7 +478,7 @@
           "a": {
             "de": "Ja. Die Plattform unterstützt aktuell Deutsch, Englisch, Arabisch und Türkisch, gleichzeitig im selben System. Ihr Gast wählt die Sprache, Sie pflegen einmal pro Sprache die Texte. Weitere Sprachen können auf Anfrage ergänzt werden. Sinnvoll für Stadtteile mit gemischter Kundschaft, Touristen-Lagen oder Caterer mit internationalen Firmenkunden.",
             "en": "Yes. The platform currently supports German, English, Arabic and Turkish, simultaneously in the same system. Your guest picks the language, you maintain the texts once per language. More languages can be added on request. Useful in neighbourhoods with a mixed customer base, tourist locations or caterers with international corporate clients.",
-            "ar": "نعم. تدعم المنصة حالياً الألمانية والإنجليزية والعربية والتركية، في الوقت نفسه ضمن النظام ذاته. يختار ضيفك اللغة، وتُدخِل النصوص مرة واحدة لكل لغة. ويمكن إضافة لغات أخرى عند الطلب. هذا مفيد للأحياء ذات قاعدة عملاء مختلطة، أو المواقع السياحية، أو خدمات التموين التي تتعامل مع عملاء من الشركات الدوليين."
+            "ar": "نعم. تدعم المنصة حالياً الألمانية والإنجليزية والعربية والتركية معاً ضمن النظام نفسه. يختار عميلك اللغة، وتُدخِل النصوص مرة واحدة لكل لغة. ويمكن إضافة لغات أخرى عند الطلب. خيار مفيد للأحياء ذات القاعدة المختلطة من العملاء، أو المواقع السياحية، أو خدمات التموين التي تخدم شركات دولية."
           }
         },
         {
@@ -491,7 +491,7 @@
           "a": {
             "de": "Wir bemühen uns um sehr hohe Verfügbarkeit (Server-Standort Deutschland, gespiegelte Datenhaltung, regelmäßige Backups). Garantiert ist eine bestimmte Verfügbarkeit nicht, das wäre unseriös. Bei einem Ausfall sind wir schnellstmöglich für Sie erreichbar. Wartungsarbeiten legen wir, soweit möglich, außerhalb typischer Bestellzeiten (frühmorgens). Im Fall der Fälle können Sie Bestellungen weiter telefonisch annehmen, Ihre Daten gehen nicht verloren.",
             "en": "We aim for very high availability (server location Germany, mirrored data storage, regular backups). A specific availability is not guaranteed, that would be irresponsible. In case of an outage, we're available as fast as possible. Maintenance is scheduled, where possible, outside typical ordering hours (early morning). If the worst happens, you can keep taking orders by phone; your data is not lost.",
-            "ar": "نسعى لتحقيق توافر عالٍ جداً (موقع الخوادم في ألمانيا، وتخزين بيانات منعكس، ونسخ احتياطية منتظمة). لا نضمن نسبة توافر محدّدة، فذلك سيكون غير جدّي. وعند حدوث عطل نكون متاحين لك بأسرع ما يمكن. ونجري أعمال الصيانة، قدر الإمكان، خارج أوقات الطلب المعتادة (في الصباح الباكر). وفي أسوأ الأحوال يمكنك الاستمرار في استقبال الطلبات هاتفياً، ولا تُفقَد بياناتك."
+            "ar": "نسعى إلى توافر عالٍ جداً (خوادم في ألمانيا، وتخزين بيانات منعكس، ونسخ احتياطية منتظمة). لا نضمن نسبة توافر محدّدة، فذلك وعد غير جدّي. وعند حدوث عطل نكون متاحين لك بأسرع ما يمكن. ونجدول أعمال الصيانة قدر الإمكان خارج أوقات الطلب المعتادة (في الصباح الباكر). وفي أسوأ الأحوال تواصل استقبال الطلبات هاتفياً، ولا تُفقَد بياناتك."
           }
         }
       ]
