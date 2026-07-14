@@ -315,12 +315,12 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
+              { icon: Users, k: "card6" },
               { icon: TrendingUp, k: "card1" },
               { icon: UserRound, k: "card2" },
               { icon: Search, k: "card3" },
               { icon: Heart, k: "card4" },
               { icon: CalendarCheck, k: "card5" },
-              { icon: Users, k: "card6" },
             ].map((card, idx) => (
               <motion.div key={card.k} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: idx * 0.1 }}>
                 <Card className="p-8 h-full border-none shadow-md hover:shadow-lg transition-shadow bg-white">

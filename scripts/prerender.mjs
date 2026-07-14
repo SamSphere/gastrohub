@@ -42,7 +42,7 @@ const ROUTES = [
     path: "/preise",
     de: { title: "Preise | GastroHub", description: "Drei Preismodelle für die GastroHub Restaurantplattform: Digital (300 € einmalig plus 25 € im Monat), Einstieg (50 € im Monat) oder Flatrate (75 € im Monat, Tablet und Drucker inklusive)." },
     en: { title: "Pricing | GastroHub", description: "Three pricing models for the GastroHub restaurant platform: Digital (€300 one-off plus €25/month), Entry (€50/month) or Flatrate (€75/month, tablet and printer included)." },
-    ar: { title: "الأسعار | GastroHub", description: "ثلاث خطط أسعار لمنصة مطاعم GastroHub: ديجيتال (300 € لمرة واحدة زائد 25 € شهرياً)، أو الانطلاقة (50 € شهرياً)، أو الباقة الشاملة (75 € شهرياً، مع جهاز لوحي وطابعة)." },
+    ar: { title: "الأسعار | GastroHub", description: "ثلاث خطط أسعار لمنصة مطاعم GastroHub: ديجيتال (300 € لمرة واحدة زائد 25 € شهرياً)، أو انطلاقة (50 € شهرياً)، أو الباقة الشاملة (75 € شهرياً، مع جهاز لوحي وطابعة)." },
   },
   {
     path: "/faq",
