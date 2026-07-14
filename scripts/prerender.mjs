@@ -115,7 +115,7 @@ function websiteJsonLdScript(lang) {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "GastroHub",
-    url: `${ORIGIN}${urlPath("/", lang)}`,
+    url: canonUrl("/", lang),
     inLanguage: inLanguageTag(lang),
     description: home.meta.description,
     contactPoint: { "@type": "ContactPoint", email: "kontakt@gastrohub.dev", contactType: "customer service" },
@@ -125,9 +125,9 @@ function websiteJsonLdScript(lang) {
 
 function hreflangBlock(path, langs) {
   const lines = langs.map(
-    (l) => `<link rel="alternate" hreflang="${l}" href="${ORIGIN}${urlPath(path, l)}" />`,
+    (l) => `<link rel="alternate" hreflang="${l}" href="${canonUrl(path, l)}" />`,
   );
-  lines.push(`<link rel="alternate" hreflang="x-default" href="${ORIGIN}${urlPath(path, "de")}" />`);
+  lines.push(`<link rel="alternate" hreflang="x-default" href="${canonUrl(path, "de")}" />`);
   return lines.join("\n    ");
 }
 
@@ -157,6 +157,13 @@ function urlPath(routePath, lang) {
   const prefix = `/${lang}`; // /en or /ar
   return routePath === "/" ? prefix : `${prefix}${routePath}`;
 }
+// Canonical URLs carry a trailing slash to match GitHub Pages' served directory
+// URLs (/demo -> /demo/). Without it Google fetches the slash-less URL from the
+// sitemap, gets a 301, and reports "Page with redirect".
+function canonUrl(routePath, lang) {
+  const p = urlPath(routePath, lang);
+  return `${ORIGIN}${p.endsWith("/") ? p : p + "/"}`;
+}
 function filePath(routePath, lang) {
   const rel = urlPath(routePath, lang).replace(/^\//, "");
   return rel ? join(distDir, rel, "index.html") : join(distDir, "index.html");
@@ -177,7 +184,7 @@ for (const route of ROUTES) {
     const out = rewriteHead(indexHtml, {
       title: route[lang].title,
       description: route[lang].description,
-      canonical: `${ORIGIN}${urlPath(route.path, lang)}`,
+      canonical: canonUrl(route.path, lang),
       extraHead: route[lang].extraHead,
       hreflang,
       lang,
