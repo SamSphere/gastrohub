@@ -14,21 +14,27 @@
     "check2": "Alles vom Handy steuerbar"
   },
   "live_restaurants": {
-    "title": "Zwei Restaurants. Eine Plattform. Ihre Marke.",
-    "subtitle": "Wir bauen nicht nur Demos. Zwei echte Restaurants in Baden-Württemberg laufen heute auf GastroHub.",
+    "title": "Vier Restaurants. Eine Plattform. Ihre Marke.",
+    "subtitle": "Wir bauen nicht nur Demos. Vier echte Restaurants in Baden-Württemberg laufen heute auf GastroHub.",
     "card1_name": "dOmO Restaurant",
     "card1_cuisine": "Syrische Küche",
     "card1_city": "Reutlingen",
     "card2_name": "Side Kebap",
     "card2_cuisine": "Döner, Pide, Pizza",
     "card2_city": "Stuttgart-Bad Cannstatt",
+    "card3_name": "Roma & Damaskus",
+    "card3_cuisine": "Italienisch & Syrisch",
+    "card3_city": "Böblingen",
+    "card4_name": "Zitadelle",
+    "card4_cuisine": "Jemenitisch-arabische Küche",
+    "card4_city": "Stuttgart-Bad Cannstatt",
     "view_live": "Live ansehen"
   },
   "customer_order": {
     "title": "So bestellen Ihre Gäste.",
     "subtitle": "Direkt bei Ihnen. Keine Provision. Keine Umwege über Lieferplattformen.",
     "caption": "Echte Bestellung bei dOmO Restaurant in Reutlingen.",
-    "footnote": "Side Kebap nutzt GastroHub als reine Speisekarten-Anzeige ohne Online-Bestellung. dOmO nutzt den vollen Bestellfluss inklusive Stripe. Sie wählen das Modell, das zu Ihrem Restaurant passt."
+    "footnote": "dOmO und Roma & Damaskus nutzen den vollen Bestellfluss inklusive Stripe. Side Kebap nutzt GastroHub als reine Speisekarten-Anzeige, Zitadelle zusätzlich mit Tischreservierung und Abholung. Sie wählen das Modell, das zu Ihrem Restaurant passt."
   },
   "admin_view": {
     "title": "So führen Sie Ihr Restaurant.",

@@ -133,6 +133,8 @@ export default function Home() {
             {[
               { name: "card1_name", cuisine: "card1_cuisine", city: "card1_city", img: "/screenshots/domo-home.jpg", url: "https://domo-rt.de" },
               { name: "card2_name", cuisine: "card2_cuisine", city: "card2_city", img: "/screenshots/side-kebap-home.jpg", url: "https://kebap-cannstatt.de" },
+              { name: "card3_name", cuisine: "card3_cuisine", city: "card3_city", img: "/screenshots/roma-home.jpg", url: "https://roma-damaskus.de" },
+              { name: "card4_name", cuisine: "card4_cuisine", city: "card4_city", img: "/screenshots/zitadelle-home.jpg", url: "https://zitadelle-stuttgart.de" },
             ].map((r, idx) => (
               <motion.a
                 key={r.name}
