@@ -40,9 +40,9 @@ const ROUTES = [
   },
   {
     path: "/preise",
-    de: { title: "Preise | GastroHub", description: "Drei Preismodelle für die GastroHub Restaurantplattform: Digital (300 € einmalig plus 25 € im Monat), Einstieg (50 € im Monat) oder Flatrate (75 € im Monat, Tablet und Drucker inklusive)." },
-    en: { title: "Pricing | GastroHub", description: "Three pricing models for the GastroHub restaurant platform: Digital (€300 one-off plus €25/month), Entry (€50/month) or Flatrate (€75/month, tablet and printer included)." },
-    ar: { title: "الأسعار | GastroHub", description: "ثلاث خطط أسعار لمنصة مطاعم GastroHub: ديجيتال (300 € لمرة واحدة زائد 25 € شهرياً)، أو انطلاقة (50 € شهرياً)، أو الباقة الشاملة (75 € شهرياً، مع جهاز لوحي وطابعة)." },
+    de: { title: `${homeDe.pricing.meta_title} | GastroHub`, description: homeDe.pricing.meta_description },
+    en: { title: `${homeEn.pricing.meta_title} | GastroHub`, description: homeEn.pricing.meta_description },
+    ar: { title: `${homeAr.pricing.meta_title} | GastroHub`, description: homeAr.pricing.meta_description },
   },
   {
     path: "/faq",
@@ -52,15 +52,15 @@ const ROUTES = [
   },
   {
     path: "/kontakt",
-    de: { title: "Kontakt | GastroHub", description: "Kontaktieren Sie GastroHub. Wir helfen Ihnen beim Aufbau Ihres eigenen Restaurant-Bestellsystems ohne Provision. Antwort werktags am selben oder nächsten Tag." },
-    en: { title: "Contact | GastroHub", description: "Get in touch with GastroHub. We help you build your own restaurant ordering system without commissions. We reply on working days, same or next day." },
-    ar: { title: "تواصل معنا | GastroHub", description: "تواصل مع GastroHub. نساعدك في بناء نظام طلبات خاص بمطعمك دون عمولة. نرد في أيام العمل في نفس اليوم أو في اليوم التالي." },
+    de: { title: "Kontakt | GastroHub", description: "Kontaktieren Sie GastroHub. Wir bauen Ihrem Restaurant eine eigene Bestell-Website. Antwort werktags am selben oder nächsten Tag." },
+    en: { title: "Contact | GastroHub", description: "Get in touch with GastroHub. We build your restaurant its own ordering website. We reply on working days, same or next day." },
+    ar: { title: "تواصل معنا | GastroHub", description: "تواصل مع GastroHub. نبني لمطعمك موقع طلبات خاصاً به. نرد في أيام العمل في نفس اليوم أو في اليوم التالي." },
   },
   {
     path: "/impressum",
-    de: { title: "Impressum | GastroHub", description: "Impressum von GastroHub, Anbieter für eigene Restaurant-Bestellsysteme ohne Provision." },
-    en: { title: "Imprint | GastroHub", description: "Imprint of GastroHub, provider of restaurant ordering systems without commissions." },
-    ar: { title: "بيانات الناشر | GastroHub", description: "بيانات الناشر الخاصة بـ GastroHub، مزوّد أنظمة طلب خاصة بالمطاعم دون عمولة." },
+    de: { title: "Impressum | GastroHub", description: "Impressum von GastroHub, Anbieter eigener Bestell-Websites für Restaurants." },
+    en: { title: "Imprint | GastroHub", description: "Imprint of GastroHub, provider of restaurants' own ordering websites." },
+    ar: { title: "بيانات الناشر | GastroHub", description: "بيانات الناشر الخاصة بـ GastroHub، مزوّد مواقع طلبات خاصة بالمطاعم." },
   },
   {
     path: "/datenschutz",

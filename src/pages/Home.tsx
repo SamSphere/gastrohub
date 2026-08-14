@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { motion, type Variants } from "framer-motion";
-import { ArrowRight, CheckCircle2, TrendingUp, ShieldCheck, Clock, Check, PackageOpen, Globe, UserRound, Settings, ShoppingCart, Languages, LayoutDashboard, Sparkles, ExternalLink, Search, Users, Heart, CalendarCheck } from "lucide-react";
+import { ArrowRight, CheckCircle2, TrendingUp, ShieldCheck, Check, PackageOpen, UserRound, Settings, Languages, LayoutDashboard, Sparkles, ExternalLink, Search, Users, Heart, CalendarCheck } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -39,16 +39,11 @@ export default function Home() {
 
   const featureItems = [
     { icon: Sparkles, k: "ki" },
-    { icon: Globe, k: "website" },
     { icon: LayoutDashboard, k: "menu" },
-    { icon: ShoppingCart, k: "order" },
-    { icon: UserRound, k: "account" },
     { icon: Settings, k: "admin" },
     { icon: Languages, k: "lang" },
-    { icon: TrendingUp, k: "mobile" },
     { icon: Check, k: "pay" },
-    { icon: CheckCircle2, k: "law" },
-    { icon: ArrowRight, k: "contact" },
+    { icon: ShieldCheck, k: "law" },
   ] as const;
 
   return (
@@ -261,54 +256,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Value props */}
-      <section className="py-20 lg:py-32 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("valueprop.title")}</h2>
-            <p className="text-lg text-slate-600">{t("valueprop.subtitle")}</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { icon: TrendingUp, title: t("valueprop.card1_title"), body: t("valueprop.card1_body") },
-              { icon: ShieldCheck, title: t("valueprop.card2_title"), body: t("valueprop.card2_body") },
-              { icon: Clock, title: t("valueprop.card3_title"), body: t("valueprop.card3_body") },
-            ].map((card, idx) => (
-              <motion.div key={idx} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: idx * 0.1 }}>
-                <Card className="p-8 h-full border-none shadow-md hover:shadow-lg transition-shadow bg-white">
-                  <div className="h-12 w-12 bg-sky-100 rounded-xl flex items-center justify-center text-sky-600 mb-6">
-                    <card.icon className="h-6 w-6" />
-                  </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">{card.title}</h3>
-                  <p className="text-slate-600 leading-relaxed">{card.body}</p>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Features grid */}
-      <section className="py-20 lg:py-32 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("features.title")}</h2>
-            <p className="text-lg text-slate-600">{t("features.subtitle")}</p>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {featureItems.map((feature) => (
-              <Card key={feature.k} className="p-6 border-slate-200 shadow-sm hover:shadow-md transition-shadow bg-slate-50/80">
-                <feature.icon className="h-6 w-6 text-primary mb-4" />
-                <h3 className="text-lg font-semibold text-slate-900 mb-2">{t(`features.${feature.k}_title`)}</h3>
-                <p className="text-slate-600 leading-relaxed">{t(`features.${feature.k}_text`)}</p>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Why it pays off — benefits */}
+      {/* Why GastroHub — benefits */}
       <section className="py-20 lg:py-32 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -397,8 +345,27 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How it works */}
+      {/* Features grid */}
       <section className="py-20 lg:py-32 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("features.title")}</h2>
+            <p className="text-lg text-slate-600">{t("features.subtitle")}</p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {featureItems.map((feature) => (
+              <Card key={feature.k} className="p-6 border-slate-200 shadow-sm hover:shadow-md transition-shadow bg-slate-50/80">
+                <feature.icon className="h-6 w-6 text-primary mb-4" />
+                <h3 className="text-lg font-semibold text-slate-900 mb-2">{t(`features.${feature.k}_title`)}</h3>
+                <p className="text-slate-600 leading-relaxed">{t(`features.${feature.k}_text`)}</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section className="py-20 lg:py-32 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
