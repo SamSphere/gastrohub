@@ -1,3 +1,13 @@
 node_modules
 dist
 .env
+.DS_Store
+CLAUDE.md
+STAGING.md
+Setup.md
+06_Gastrohub-Flatrate-Template/
+gastrohub-demo/
+--full-page
+_capture/
+docs/
+gastrohub logo/
