@@ -252,3 +252,52 @@
     text-align: right;
   }
 }
+
+/* Motion — in-brand liveliness. Continuous animation only when the user
+   hasn't asked for reduced motion; .gh-lift degrades to its shadow change. */
+@layer utilities {
+  .gh-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .gh-lift:hover {
+      transform: translateY(-6px);
+    }
+    .gh-float {
+      animation: gh-float 7s ease-in-out infinite;
+    }
+    .gh-float-slow {
+      animation: gh-float 11s ease-in-out infinite;
+    }
+    .gh-spin-slow {
+      animation: gh-spin 45s linear infinite;
+    }
+    .gh-gradient-anim {
+      background-size: 200% 100%;
+      animation: gh-gradient 6s ease-in-out infinite;
+    }
+  }
+  @keyframes gh-float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-14px);
+    }
+  }
+  @keyframes gh-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes gh-gradient {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+}

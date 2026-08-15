@@ -51,6 +51,8 @@ export default function Home() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-b from-secondary/40 via-background to-background pt-24 pb-32 lg:pt-36 lg:pb-40 text-foreground">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#cbd5e11a_1px,transparent_1px),linear-gradient(to_bottom,#cbd5e11a_1px,transparent_1px)] bg-[size:18px_28px]"></div>
+        <div aria-hidden="true" className="pointer-events-none absolute -top-24 -left-24 h-96 w-96 rounded-full bg-primary/10 blur-3xl gh-float"></div>
+        <div aria-hidden="true" className="pointer-events-none absolute -bottom-32 -right-24 h-[28rem] w-[28rem] rounded-full bg-secondary/70 blur-3xl gh-float-slow"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div initial="hidden" animate="visible" variants={containerVariants} className="max-w-2xl">
@@ -60,13 +62,13 @@ export default function Home() {
               </motion.div>
               <motion.h1 variants={itemVariants} className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6">
                 {t("hero.headline_line1")}<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-hover">{t("hero.headline_line2")}</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-hover to-primary gh-gradient-anim">{t("hero.headline_line2")}</span>
               </motion.h1>
               <motion.p variants={itemVariants} className="text-lg md:text-xl text-slate-700 mb-8 max-w-xl leading-relaxed">
                 {t("hero.subline")}
               </motion.p>
               <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="h-14 px-8 text-base font-semibold">
+                <Button asChild size="lg" className="h-14 px-8 text-base font-semibold motion-safe:transition-transform motion-safe:hover:scale-[1.03]">
                   <Link href="/demo" data-testid="button-hero-demo">
                     {t("hero.cta_primary")} <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
@@ -93,7 +95,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative mx-auto w-full max-w-[600px] lg:ml-auto"
             >
-              <div className="rounded-2xl border border-slate-200 bg-white shadow-2xl overflow-hidden">
+              <div className="rounded-2xl border border-slate-200 bg-white shadow-2xl overflow-hidden gh-float-slow">
                 <picture>
                   <source type="image/avif" srcSet="/images/hero-1280.avif" />
                   <source
@@ -113,6 +115,42 @@ export default function Home() {
                 </picture>
               </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Your benefits */}
+      <section className="py-20 lg:py-32 bg-white">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-center max-w-3xl mx-auto mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("benefits.title")}</h2>
+            <p className="text-lg text-slate-600">{t("benefits.subtitle")}</p>
+          </motion.div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              { icon: Users, k: "card6" },
+              { icon: TrendingUp, k: "card1" },
+              { icon: UserRound, k: "card2" },
+              { icon: Search, k: "card3" },
+              { icon: Heart, k: "card4" },
+              { icon: CalendarCheck, k: "card5" },
+            ].map((card, idx) => (
+              <motion.div key={card.k} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: idx * 0.1 }}>
+                <Card className="p-8 h-full border-none shadow-md hover:shadow-lg gh-lift bg-white group">
+                  <div className="h-12 w-12 bg-secondary rounded-xl flex items-center justify-center text-primary-hover mb-6 transition-transform duration-300 group-hover:scale-110">
+                    <card.icon className="h-6 w-6" />
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-3">{t(`benefits.${card.k}_title`)}</h3>
+                  <p className="text-slate-600 leading-relaxed">{t(`benefits.${card.k}_body`)}</p>
+                </Card>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
@@ -140,7 +178,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="block group rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-md hover:shadow-xl transition-shadow"
+                className="block group rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-md hover:shadow-xl gh-lift"
               >
                 <div className="flex items-center gap-1.5 bg-slate-100 px-3 py-2 border-b border-slate-200">
                   <span className="h-2.5 w-2.5 rounded-full bg-rose-400/80"></span>
@@ -172,45 +210,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why GastroHub — benefits */}
-      <section className="py-20 lg:py-32 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("benefits.title")}</h2>
-            <p className="text-lg text-slate-600">{t("benefits.subtitle")}</p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { icon: Users, k: "card6" },
-              { icon: TrendingUp, k: "card1" },
-              { icon: UserRound, k: "card2" },
-              { icon: Search, k: "card3" },
-              { icon: Heart, k: "card4" },
-              { icon: CalendarCheck, k: "card5" },
-            ].map((card, idx) => (
-              <motion.div key={card.k} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: idx * 0.1 }}>
-                <Card className="p-8 h-full border-none shadow-md hover:shadow-lg transition-shadow bg-white">
-                  <div className="h-12 w-12 bg-sky-100 rounded-xl flex items-center justify-center text-sky-600 mb-6">
-                    <card.icon className="h-6 w-6" />
-                  </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">{t(`benefits.${card.k}_title`)}</h3>
-                  <p className="text-slate-600 leading-relaxed">{t(`benefits.${card.k}_body`)}</p>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Pricing */}
-      <section className="py-20 lg:py-28 bg-slate-50">
+      <section className="py-20 lg:py-28 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("pricing.title")}</h2>
             <p className="text-lg text-slate-600 mb-10">{t("pricing.subtitle")}</p>
             <div className="grid md:grid-cols-3 gap-6 mb-8 max-w-5xl mx-auto items-stretch">
               {/* Digital */}
-              <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-7 text-left flex flex-col">
+              <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-7 text-left flex flex-col gh-lift">
                 <div className="text-xl font-extrabold text-slate-900 mb-1">{t("pricing.einmal_label")}</div>
                 <div className="text-3xl font-extrabold text-primary mt-2 mb-1"><span dir="ltr">{t("pricing.einmal_price")}</span></div>
                 <div className="text-slate-500 text-sm mb-5">{t("pricing.einmal_suffix")}</div>
@@ -224,7 +232,7 @@ export default function Home() {
                 </ul>
               </div>
               {/* Einstieg */}
-              <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-7 text-left flex flex-col">
+              <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-7 text-left flex flex-col gh-lift">
                 <div className="text-xl font-extrabold text-slate-900 mb-1">{t("pricing.p5_label")}</div>
                 <div className="text-3xl font-extrabold text-primary mt-2 mb-1"><span dir="ltr">{t("pricing.p5_price")}</span></div>
                 <div className="text-slate-500 text-sm mb-5">{t("pricing.p5_suffix")}</div>
@@ -238,7 +246,7 @@ export default function Home() {
                 </ul>
               </div>
               {/* Flatrate (recommended) */}
-              <div className="bg-white rounded-2xl shadow-lg border-2 border-primary p-7 text-left flex flex-col relative md:-mt-2">
+              <div className="bg-white rounded-2xl shadow-lg border-2 border-primary p-7 text-left flex flex-col relative md:-mt-2 gh-lift">
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">{t("pricing.recommended")}</div>
                 <div className="text-xl font-extrabold text-slate-900 mb-1">{t("pricing.flat_label")}</div>
                 <div className="text-3xl font-extrabold text-primary mt-2 mb-1"><span dir="ltr">{t("pricing.flat_price")}</span></div>
@@ -254,7 +262,7 @@ export default function Home() {
               </div>
             </div>
             <p className="text-slate-500 text-sm mb-6">{t("pricing.footnote")}</p>
-            <Button asChild size="lg" className="h-14 px-10 text-base font-semibold">
+            <Button asChild size="lg" className="h-14 px-10 text-base font-semibold motion-safe:transition-transform motion-safe:hover:scale-[1.03]">
               <Link href="/kontakt">{t("pricing.cta")}</Link>
             </Button>
           </div>
@@ -262,7 +270,7 @@ export default function Home() {
       </section>
 
       {/* Features grid */}
-      <section className="py-20 lg:py-32 bg-white">
+      <section className="py-20 lg:py-32 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("features.title")}</h2>
@@ -270,7 +278,7 @@ export default function Home() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {featureItems.map((feature) => (
-              <Card key={feature.k} className="p-6 border-slate-200 shadow-sm hover:shadow-md transition-shadow bg-slate-50/80">
+              <Card key={feature.k} className="p-6 border-slate-200 shadow-sm hover:shadow-md gh-lift bg-white">
                 <feature.icon className="h-6 w-6 text-primary mb-4" />
                 <h3 className="text-lg font-semibold text-slate-900 mb-2">{t(`features.${feature.k}_title`)}</h3>
                 <p className="text-slate-600 leading-relaxed">{t(`features.${feature.k}_text`)}</p>
@@ -281,7 +289,7 @@ export default function Home() {
       </section>
 
       {/* How it works */}
-      <section className="py-20 lg:py-32 bg-slate-50">
+      <section className="py-20 lg:py-32 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -303,7 +311,7 @@ export default function Home() {
 
             <div className="relative">
               <div className="aspect-square max-w-md mx-auto bg-slate-100 rounded-full flex items-center justify-center relative shadow-inner overflow-hidden">
-                <div className="absolute inset-4 rounded-full border-4 border-dashed border-primary/20"></div>
+                <div className="absolute inset-4 rounded-full border-4 border-dashed border-primary/20 gh-spin-slow"></div>
                 <div className="absolute inset-12 rounded-full border-4 border-primary/30"></div>
                 <div className="w-48 h-48 bg-white shadow-xl rounded-2xl z-10 flex flex-col items-center justify-center p-6 text-center rotate-3 hover:rotate-0 transition-transform">
                   <PackageOpen className="w-16 h-16 text-primary mb-4" />
@@ -322,7 +330,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">{t("final_cta.title")}</h2>
           <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">{t("final_cta.subline")}</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button asChild size="lg" className="h-14 px-8 text-lg font-semibold bg-sky-700 text-white hover:bg-sky-800">
+            <Button asChild size="lg" className="h-14 px-8 text-lg font-semibold bg-sky-700 text-white hover:bg-sky-800 motion-safe:transition-transform motion-safe:hover:scale-[1.03]">
               <Link href="/demo" data-testid="button-cta-demo">{t("final_cta.primary")}</Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="h-14 px-8 text-lg font-semibold bg-white border-slate-200 text-slate-900 hover:bg-slate-50 hover:text-slate-900">
