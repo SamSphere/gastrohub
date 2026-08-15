@@ -363,7 +363,7 @@ export default function Home() {
               <p className="text-lg text-slate-600 mb-8 leading-relaxed">{t("how.subtitle")}</p>
 
               <div className="space-y-8">
-                {[1, 2, 3].map((n) => (
+                {[1, 2, 3, 4].map((n) => (
                   <motion.div
                     key={n}
                     initial={{ opacity: 0, y: 20 }}

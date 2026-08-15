@@ -90,10 +90,12 @@
     "step1_body": "Drop us a short message. In the first call we sort out your setup and the right model, no commitment and no cost.",
     "step2_title": "Set up",
     "step2_body": "We take over your menu, photos and texts, build your website and set up your tablet and printer. After 2 to 4 weeks everything is online.",
-    "step3_title": "Start receiving orders",
-    "step3_body": "Your guests order their favorite food through your website, you manage everything in the dashboard.",
     "illustration_title": "Ready quickly",
-    "illustration_subtitle": "We walk you through the setup"
+    "illustration_subtitle": "We walk you through the setup",
+    "step4_title": "Start receiving orders",
+    "step4_body": "Your guests order their favorite food through your website, you manage everything in the dashboard.",
+    "step3_title": "Spread the word",
+    "step3_body": "Start telling your customers about your new site. We add it to your Google Business profile and design a brochure with a QR code you hand out with every order, so next time guests scan it and feel motivated to order through your site instead of delivery apps."
   },
   "final_cta": {
     "title": "What are you waiting for?",
