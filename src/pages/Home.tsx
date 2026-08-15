@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { motion, type Variants } from "framer-motion";
-import { ArrowRight, CheckCircle2, ShieldCheck, Check, PackageOpen, UserRound, Settings, Languages, LayoutDashboard, Sparkles, ExternalLink, Search, Users, Heart, CalendarCheck } from "lucide-react";
+import { ArrowRight, CheckCircle2, ShieldCheck, Check, PackageOpen, UserRound, Settings, Languages, LayoutDashboard, Sparkles, ExternalLink, Search, Users, Heart, CalendarCheck, Printer, BarChart3 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -39,6 +39,8 @@ export default function Home() {
 
   const featureItems = [
     { icon: Sparkles, k: "ki" },
+    { icon: Printer, k: "printer" },
+    { icon: BarChart3, k: "reports" },
     { icon: LayoutDashboard, k: "menu" },
     { icon: Settings, k: "admin" },
     { icon: Languages, k: "lang" },

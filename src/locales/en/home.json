@@ -32,11 +32,11 @@
   },
   "features": {
     "title": "And everything that comes with it",
-    "subtitle": "GastroHub covers day-to-day restaurant work, from the menu to billing.",
+    "subtitle": "Extra features on your own website.",
     "ki_title": "AI supplier ordering",
     "ki_text": "One click in the dashboard: the AI writes the full order to your supplier, as email or WhatsApp, in the right language.",
     "menu_title": "Menu management",
-    "menu_text": "Categories, variants, allergens, photos and daily specials, all maintained by you, no technical skills needed.",
+    "menu_text": "Manage dishes, photos and daily specials yourself, no technical skills needed.",
     "admin_title": "Admin on your phone",
     "admin_text": "Accept orders, manage delivery zones, opening hours, coupons and staff, all from your phone.",
     "lang_title": "Multilingual",
@@ -44,7 +44,11 @@
     "pay_title": "Payments",
     "pay_text": "Online payments via Stripe (credit card, PayPal), optional cash on delivery or pickup.",
     "law_title": "Legal & GDPR",
-    "law_text": "Imprint, terms and a GDPR-compliant privacy policy are built in."
+    "law_text": "Imprint, terms and a GDPR-compliant privacy policy are built in.",
+    "printer_title": "Tablet and thermal printer",
+    "printer_text": "Your restaurant gets its own tablet with a thermal printer. When an order comes in, you see it on the tablet, print it right away, and the money goes straight to your account.",
+    "reports_title": "Weekly sales reports",
+    "reports_text": "A weekly report on your sales by email, ready to print or forward to your accountant."
   },
   "pricing": {
     "meta_title": "Pricing",
@@ -81,13 +85,13 @@
   },
   "how": {
     "title": "How it works",
-    "subtitle": "You focus on the kitchen, we take care of the tech.",
+    "subtitle": "You focus on the kitchen, we take care of the rest.",
     "step1_title": "Get in touch",
     "step1_body": "Drop us a short message. In the first call we sort out your setup and the right model, no commitment and no cost.",
     "step2_title": "Set up",
-    "step2_body": "We take over your menu, photos and texts and build your website. After 2 to 4 weeks everything is online.",
+    "step2_body": "We take over your menu, photos and texts, build your website and set up your tablet and printer. After 2 to 4 weeks everything is online.",
     "step3_title": "Start receiving orders",
-    "step3_body": "Your guests order and reserve through your website, you manage everything in the dashboard.",
+    "step3_body": "Your guests order their favorite food through your website, you manage everything in the dashboard.",
     "illustration_title": "Ready quickly",
     "illustration_subtitle": "We walk you through the setup"
   },

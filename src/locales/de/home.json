@@ -32,11 +32,11 @@
   },
   "features": {
     "title": "Und alles, was dazugehört",
-    "subtitle": "GastroHub deckt den Restaurantalltag ab, von der Speisekarte bis zur Abrechnung.",
+    "subtitle": "Zusätzliche Funktionen auf Ihrer eigenen Website.",
     "ki_title": "KI-Lieferantenbestellung",
     "ki_text": "Ein Klick im Dashboard: Die KI schreibt die komplette Bestellung an Ihren Lieferanten, als E-Mail oder WhatsApp, in der passenden Sprache.",
     "menu_title": "Menüverwaltung",
-    "menu_text": "Kategorien, Varianten, Allergene, Fotos und Tagesangebote pflegen Sie selbst, ohne technische Kenntnisse.",
+    "menu_text": "Gerichte, Fotos und Tagesangebote pflegen Sie selbst, ohne technische Kenntnisse.",
     "admin_title": "Admin auf dem Handy",
     "admin_text": "Bestellungen annehmen, Lieferzonen, Öffnungszeiten, Gutscheine und Personal, alles direkt am Telefon.",
     "lang_title": "Mehrsprachig",
@@ -44,7 +44,11 @@
     "pay_title": "Zahlungen",
     "pay_text": "Online-Zahlungen über Stripe (Kreditkarte, PayPal), optional Barzahlung bei Lieferung oder Abholung.",
     "law_title": "Recht & DSGVO",
-    "law_text": "Impressum, AGB und DSGVO-konforme Datenschutzerklärung sind direkt eingebunden."
+    "law_text": "Impressum, AGB und DSGVO-konforme Datenschutzerklärung sind direkt eingebunden.",
+    "printer_title": "Tablet und Thermodrucker",
+    "printer_text": "Ein eigenes Tablet mit Thermodrucker für Ihr Restaurant. Kommt eine Bestellung, sehen Sie sie auf dem Tablet, drucken sie direkt aus, und der Betrag geht direkt auf Ihr Konto.",
+    "reports_title": "Wöchentliche Verkaufsberichte",
+    "reports_text": "Jede Woche ein Bericht über Ihre Verkäufe per E-Mail, zum Ausdrucken und Weiterleiten an Ihren Steuerberater."
   },
   "pricing": {
     "meta_title": "Preise",
@@ -81,13 +85,13 @@
   },
   "how": {
     "title": "So einfach geht es",
-    "subtitle": "Sie konzentrieren sich auf die Küche, wir kümmern uns um die Technik.",
+    "subtitle": "Sie konzentrieren sich auf die Küche, wir kümmern uns um den Rest.",
     "step1_title": "Anfragen",
     "step1_body": "Schreiben Sie uns kurz. Im Erstgespräch klären wir Ihr Setup und das passende Modell, unverbindlich und kostenlos.",
     "step2_title": "Einrichten",
-    "step2_body": "Wir übernehmen Ihre Speisekarte, Fotos und Texte und bauen Ihre Website auf. Nach 2 bis 4 Wochen ist alles online.",
+    "step2_body": "Wir übernehmen Ihre Speisekarte, Fotos und Texte, bauen Ihre Website auf und richten Tablet und Drucker für Sie ein. Nach 2 bis 4 Wochen ist alles online.",
     "step3_title": "Bestellungen empfangen",
-    "step3_body": "Ihre Gäste bestellen und reservieren über Ihre Website, Sie verwalten alles im Dashboard.",
+    "step3_body": "Ihre Gäste bestellen ihr Lieblingsessen über Ihre Website, Sie verwalten alles im Dashboard.",
     "illustration_title": "Schnell startklar",
     "illustration_subtitle": "Wir begleiten Sie beim Setup"
   },
