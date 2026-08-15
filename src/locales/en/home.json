@@ -30,18 +30,6 @@
     "card4_city": "Stuttgart-Bad Cannstatt",
     "view_live": "View live"
   },
-  "customer_order": {
-    "title": "This is how your guests order.",
-    "subtitle": "On your own website, directly with you. No detour through a delivery platform.",
-    "caption": "Real order at dOmO Restaurant in Reutlingen.",
-    "footnote": "Some restaurants use the full order flow with online payment, like dOmO and Roma & Damaskus. Others start with a menu, table reservations and pickup, like Zitadelle. You choose what fits your business."
-  },
-  "admin_view": {
-    "title": "This is how you run it.",
-    "subtitle": "Accept orders, manage the menu, keep an eye on staff and stats. One login, from a laptop or a phone.",
-    "caption_desktop": "Admin dashboard, dOmO Restaurant",
-    "caption_mobile": "The same dashboard on a phone"
-  },
   "features": {
     "title": "And everything that comes with it",
     "subtitle": "GastroHub covers day-to-day restaurant work, from the menu to billing.",

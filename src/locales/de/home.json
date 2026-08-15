@@ -30,18 +30,6 @@
     "card4_city": "Stuttgart-Bad Cannstatt",
     "view_live": "Live ansehen"
   },
-  "customer_order": {
-    "title": "So bestellen Ihre Gäste.",
-    "subtitle": "Auf Ihrer eigenen Website, direkt bei Ihnen. Ohne Umweg über eine Lieferplattform.",
-    "caption": "Echte Bestellung bei dOmO Restaurant in Reutlingen.",
-    "footnote": "Manche Restaurants nutzen den vollen Bestellfluss mit Online-Zahlung, etwa dOmO und Roma & Damaskus. Andere starten mit Speisekarte, Tischreservierung und Abholung, etwa Zitadelle. Sie wählen, was zu Ihrem Betrieb passt."
-  },
-  "admin_view": {
-    "title": "So führen Sie Ihr Restaurant.",
-    "subtitle": "Bestellungen annehmen, Speisekarte pflegen, Personal und Statistiken im Blick. Ein Login, vom Laptop oder vom Handy.",
-    "caption_desktop": "Admin-Dashboard, dOmO Restaurant",
-    "caption_mobile": "Dasselbe Dashboard auf dem Handy"
-  },
   "features": {
     "title": "Und alles, was dazugehört",
     "subtitle": "GastroHub deckt den Restaurantalltag ab, von der Speisekarte bis zur Abrechnung.",
