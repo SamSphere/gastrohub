@@ -301,6 +301,13 @@
     }
   }
 
+  .scrollbar-none {
+    scrollbar-width: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
   .gh-shine {
     position: relative;
     overflow: hidden;

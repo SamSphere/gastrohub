@@ -64,7 +64,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-secondary/40 via-background to-background pt-24 pb-32 lg:pt-36 lg:pb-40 text-foreground">
+      <section className="relative overflow-hidden bg-gradient-to-b from-secondary/40 via-background to-background pt-14 pb-16 sm:pt-24 sm:pb-32 lg:pt-36 lg:pb-40 text-foreground">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#cbd5e11a_1px,transparent_1px),linear-gradient(to_bottom,#cbd5e11a_1px,transparent_1px)] bg-[size:18px_28px]"></div>
         <div aria-hidden="true" className="pointer-events-none absolute -top-24 -left-24 h-96 w-96 rounded-full bg-primary/10 blur-3xl gh-float"></div>
         <div aria-hidden="true" className="pointer-events-none absolute -bottom-32 -right-24 h-[28rem] w-[28rem] rounded-full bg-secondary/70 blur-3xl gh-float-slow"></div>
@@ -111,30 +111,43 @@ export default function Home() {
               style={{ y: prefersReducedMotion ? undefined : heroImgY }}
               className="relative mx-auto w-full max-w-[600px] lg:ml-auto"
             >
-              <div className="rounded-2xl border border-slate-200 bg-white shadow-2xl overflow-hidden gh-float-slow">
-                <div className="flex items-center gap-1.5 bg-slate-100 px-3 py-2 border-b border-slate-200">
-                  <span className="h-2.5 w-2.5 rounded-full bg-rose-400/80"></span>
-                  <span className="h-2.5 w-2.5 rounded-full bg-amber-400/80"></span>
-                  <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/80"></span>
+              <div className="hidden sm:block">
+                <div className="rounded-2xl border border-slate-200 bg-white shadow-2xl overflow-hidden gh-float-slow">
+                  <div className="flex items-center gap-1.5 bg-slate-100 px-3 py-2 border-b border-slate-200">
+                    <span className="h-2.5 w-2.5 rounded-full bg-rose-400/80"></span>
+                    <span className="h-2.5 w-2.5 rounded-full bg-amber-400/80"></span>
+                    <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/80"></span>
+                  </div>
+                  <img
+                    src="/images/hero-product-desktop.jpg"
+                    alt=""
+                    role="presentation"
+                    width={1280}
+                    height={633}
+                    fetchPriority="high"
+                    className="w-full h-auto object-cover"
+                  />
                 </div>
-                <img
-                  src="/images/hero-product-desktop.jpg"
-                  alt=""
-                  role="presentation"
-                  width={1280}
-                  height={633}
-                  fetchPriority="high"
-                  className="w-full h-auto object-cover"
-                />
+                <div className="absolute -bottom-10 -start-6 w-[150px] rounded-[1.75rem] border-[7px] border-slate-900 bg-slate-900 shadow-2xl overflow-hidden gh-float">
+                  <img
+                    src="/images/hero-product-phone.jpg"
+                    alt=""
+                    role="presentation"
+                    width={390}
+                    height={844}
+                    className="w-full h-auto block rounded-[1.35rem]"
+                  />
+                </div>
               </div>
-              <div className="absolute -bottom-10 -start-6 w-[150px] rounded-[1.75rem] border-[7px] border-slate-900 bg-slate-900 shadow-2xl overflow-hidden gh-float">
+              <div className="sm:hidden mx-auto w-[220px] rounded-[2.5rem] border-[8px] border-slate-900 bg-slate-900 shadow-2xl overflow-hidden gh-float-slow">
                 <img
                   src="/images/hero-product-phone.jpg"
                   alt=""
                   role="presentation"
                   width={390}
                   height={844}
-                  className="w-full h-auto block rounded-[1.35rem]"
+                  fetchPriority="high"
+                  className="w-full h-auto block rounded-[2rem]"
                 />
               </div>
             </motion.div>
@@ -143,14 +156,14 @@ export default function Home() {
       </section>
 
       {/* Your benefits */}
-      <section className="py-20 lg:py-32 bg-white">
+      <section className="py-14 lg:py-32 bg-white">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-center max-w-3xl mx-auto mb-16"
+            className="text-center max-w-3xl mx-auto mb-10 sm:mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("benefits.title")}</h2>
             <HeadingAccent />
@@ -166,11 +179,11 @@ export default function Home() {
               { icon: CalendarCheck, k: "card5" },
             ].map((card, idx) => (
               <motion.div key={card.k} initial={{ opacity: 0, y: 28, scale: 0.97 }} whileInView={{ opacity: 1, y: 0, scale: 1 }} viewport={{ once: true }} transition={{ type: "spring", stiffness: 90, damping: 16, delay: (idx % 3) * 0.1 }}>
-                <Card className="p-8 h-full border-none shadow-md hover:shadow-lg gh-lift bg-white group">
-                  <div className="h-12 w-12 bg-secondary rounded-xl flex items-center justify-center text-primary-hover mb-6 transition-transform duration-300 group-hover:scale-110">
+                <Card className="p-6 sm:p-8 h-full border-none shadow-md hover:shadow-lg gh-lift bg-white group">
+                  <div className="h-11 w-11 sm:h-12 sm:w-12 bg-secondary rounded-xl flex items-center justify-center text-primary-hover mb-4 sm:mb-6 transition-transform duration-300 group-hover:scale-110">
                     <card.icon className="h-6 w-6" />
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">{t(`benefits.${card.k}_title`)}</h3>
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">{t(`benefits.${card.k}_title`)}</h3>
                   <p className="text-slate-600 leading-relaxed">{t(`benefits.${card.k}_body`)}</p>
                 </Card>
               </motion.div>
@@ -180,14 +193,14 @@ export default function Home() {
       </section>
 
       {/* Live restaurants — proof strip */}
-      <section className="py-20 lg:py-28 bg-slate-50">
+      <section className="py-14 lg:py-28 bg-slate-50">
         <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto mb-12">
+          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("live_restaurants.title")}</h2>
             <HeadingAccent />
             <p className="text-lg text-slate-600">{t("live_restaurants.subtitle")}</p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-none -mx-4 px-4 pb-2 md:mx-auto md:grid md:grid-cols-2 md:gap-8 md:overflow-visible md:px-0 md:pb-0 max-w-5xl">
             {[
               { name: "card1_name", cuisine: "card1_cuisine", city: "card1_city", img: "/screenshots/domo-home.jpg", url: "https://domo-rt.de" },
               { name: "card4_name", cuisine: "card4_cuisine", city: "card4_city", img: "/screenshots/zitadelle-home.jpg", url: "https://zitadelle-stuttgart.de" },
@@ -204,7 +217,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="block group rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-md hover:shadow-xl gh-lift"
+                className="block group rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-md hover:shadow-xl gh-lift snap-center shrink-0 w-[85%] md:w-auto"
               >
                 <div className="flex items-center gap-1.5 bg-slate-100 px-3 py-2 border-b border-slate-200">
                   <span className="h-2.5 w-2.5 rounded-full bg-rose-400/80"></span>
@@ -241,6 +254,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
+              className="snap-center shrink-0 w-[85%] md:w-auto"
             >
               <Link
                 href="/kontakt"
@@ -259,7 +273,7 @@ export default function Home() {
       </section>
 
       {/* Features grid */}
-      <section className="py-20 lg:py-32 bg-white">
+      <section className="py-14 lg:py-32 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("features.title")}</h2>
@@ -281,7 +295,7 @@ export default function Home() {
       </section>
 
       {/* Pricing */}
-      <section className="py-20 lg:py-28 bg-slate-50">
+      <section className="py-14 lg:py-28 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("pricing.title")}</h2>
@@ -341,9 +355,9 @@ export default function Home() {
       </section>
 
       {/* How it works */}
-      <section className="py-20 lg:py-32 bg-white">
+      <section className="py-14 lg:py-32 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">{t("how.title")}</h2>
               <p className="text-lg text-slate-600 mb-8 leading-relaxed">{t("how.subtitle")}</p>
@@ -376,7 +390,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative">
+            <div className="relative hidden lg:block">
               <div className="aspect-square max-w-md mx-auto bg-slate-100 rounded-full flex items-center justify-center relative shadow-inner overflow-hidden">
                 <div className="absolute inset-4 rounded-full border-4 border-dashed border-primary/20 gh-spin-slow"></div>
                 <div className="absolute inset-12 rounded-full border-4 border-primary/30"></div>
@@ -392,7 +406,7 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 bg-white text-center text-slate-900">
+      <section className="py-16 sm:py-24 bg-white text-center text-slate-900">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">{t("final_cta.title")}</h2>
           <HeadingAccent />
