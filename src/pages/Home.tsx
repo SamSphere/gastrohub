@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { motion, type Variants } from "framer-motion";
-import { ArrowRight, CheckCircle2, TrendingUp, ShieldCheck, Check, PackageOpen, UserRound, Settings, Languages, LayoutDashboard, Sparkles, ExternalLink, Search, Users, Heart, CalendarCheck } from "lucide-react";
+import { ArrowRight, CheckCircle2, ShieldCheck, Check, PackageOpen, UserRound, Settings, Languages, LayoutDashboard, Sparkles, ExternalLink, Search, Users, Heart, CalendarCheck } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -135,7 +135,6 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { icon: Users, k: "card6" },
-              { icon: TrendingUp, k: "card1" },
               { icon: UserRound, k: "card2" },
               { icon: Search, k: "card3" },
               { icon: Heart, k: "card4" },
@@ -210,8 +209,27 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Features grid */}
+      <section className="py-20 lg:py-32 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("features.title")}</h2>
+            <p className="text-lg text-slate-600">{t("features.subtitle")}</p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {featureItems.map((feature) => (
+              <Card key={feature.k} className="p-6 border-slate-200 shadow-sm hover:shadow-md gh-lift bg-white">
+                <feature.icon className="h-6 w-6 text-primary mb-4" />
+                <h3 className="text-lg font-semibold text-slate-900 mb-2">{t(`features.${feature.k}_title`)}</h3>
+                <p className="text-slate-600 leading-relaxed">{t(`features.${feature.k}_text`)}</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Pricing */}
-      <section className="py-20 lg:py-28 bg-white">
+      <section className="py-20 lg:py-28 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("pricing.title")}</h2>
@@ -265,25 +283,6 @@ export default function Home() {
             <Button asChild size="lg" className="h-14 px-10 text-base font-semibold motion-safe:transition-transform motion-safe:hover:scale-[1.03]">
               <Link href="/kontakt">{t("pricing.cta")}</Link>
             </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Features grid */}
-      <section className="py-20 lg:py-32 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("features.title")}</h2>
-            <p className="text-lg text-slate-600">{t("features.subtitle")}</p>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {featureItems.map((feature) => (
-              <Card key={feature.k} className="p-6 border-slate-200 shadow-sm hover:shadow-md gh-lift bg-white">
-                <feature.icon className="h-6 w-6 text-primary mb-4" />
-                <h3 className="text-lg font-semibold text-slate-900 mb-2">{t(`features.${feature.k}_title`)}</h3>
-                <p className="text-slate-600 leading-relaxed">{t(`features.${feature.k}_text`)}</p>
-              </Card>
-            ))}
           </div>
         </div>
       </section>
