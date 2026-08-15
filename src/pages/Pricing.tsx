@@ -56,7 +56,7 @@ export default function Pricing() {
             </div>
 
             {/* Flatrate (recommended) */}
-            <div className="bg-white rounded-2xl shadow-lg border-2 border-primary p-7 text-left flex flex-col relative md:-mt-2">
+            <div className="bg-gradient-to-b from-secondary/40 to-white rounded-2xl shadow-xl border-2 border-primary p-7 text-left flex flex-col relative md:-mt-3 md:scale-[1.04]">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">{tk("recommended")}</div>
               <div className="text-xl font-extrabold text-slate-900 mb-1">{tk("flat_label")}</div>
               <div className="text-3xl font-extrabold text-primary mt-2 mb-1"><span dir="ltr">{tk("flat_price")}</span></div>

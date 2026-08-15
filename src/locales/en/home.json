@@ -11,7 +11,7 @@
     "cta_primary": "View demo",
     "cta_secondary": "Get in touch",
     "check1": "From €50 per month",
-    "check2": "Online in 2 to 4 weeks"
+    "check2": "We handle the entire setup"
   },
   "live_restaurants": {
     "title": "Already running in real restaurants.",
@@ -31,23 +31,20 @@
     "view_live": "View live",
     "card5_name": "Toledo Lounge",
     "card5_cuisine": "Cocktail & shisha bar",
-    "card5_city": "Waiblingen"
+    "card5_city": "Waiblingen",
+    "live_badge": "Live",
+    "cta_card_title": "Your restaurant next?",
+    "cta_card_body": "Free first call, online within a few weeks."
   },
   "features": {
     "title": "And everything that comes with it",
     "subtitle": "Extra features on your own website.",
     "ki_title": "AI supplier ordering",
     "ki_text": "One click in the dashboard: the AI writes the full order to your supplier, as email or WhatsApp, in the right language.",
-    "menu_title": "Menu management",
-    "menu_text": "Manage dishes, photos and daily specials yourself, no technical skills needed.",
     "admin_title": "Admin on your phone",
     "admin_text": "Accept orders, manage delivery zones, opening hours, coupons and staff, all from your phone.",
     "lang_title": "Multilingual",
     "lang_text": "Available in German, English, Arabic and Turkish, more languages on request.",
-    "pay_title": "Payments",
-    "pay_text": "Online payments via Stripe (credit card, PayPal), optional cash on delivery or pickup.",
-    "law_title": "Legal & GDPR",
-    "law_text": "Imprint, terms and a GDPR-compliant privacy policy are built in.",
     "printer_title": "Tablet and thermal printer",
     "printer_text": "Your restaurant gets its own tablet with a thermal printer. When an order comes in, you see it on the tablet, print it right away, and the money goes straight to your account.",
     "reports_title": "Weekly sales reports",
@@ -82,7 +79,7 @@
     "p5_b3": "Your own website, menu, QR code and email address included",
     "p5_b4": "Support included",
     "p5_b5": "Upgrade to Flatrate anytime",
-    "recommended": "Recommended",
+    "recommended": "Most popular",
     "footnote": "*Flatrate: above €1,000 of monthly online order revenue, €25 is added per further €1,000 started. For comparison: delivery apps take 13 to 30% of every order.",
     "cta": "Contact us now"
   },

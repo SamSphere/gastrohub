@@ -1,6 +1,68 @@
 {
   "sections": [
     {
+      "id": "wichtigste-fragen",
+      "title": {
+        "de": "Die wichtigsten Fragen zuerst",
+        "en": "The most important questions first",
+        "ar": "الأسئلة الأهم أولاً"
+      },
+      "items": [
+        {
+          "slug": "kunden-von-apps-mitnehmen",
+          "q": {
+            "de": "Wie bekomme ich meine Gäste von den Liefer-Apps auf meine eigene Website?",
+            "en": "How do I move my guests from the delivery apps to my own website?",
+            "ar": "كيف أنقل زبائني من تطبيقات التوصيل إلى موقعي؟"
+          },
+          "a": {
+            "de": "Mit einfachen, bewährten Mitteln: QR-Codes auf Tischen, Flyern und jeder Tüte, die das Haus verlässt, Ihr Google-Unternehmensprofil verlinkt direkt auf Ihre Bestellseite, und Ihre Social-Media-Profile zeigen auf Ihre eigene Speisekarte. Dazu können Sie Stammkunden mit einer Aktion belohnen, etwa einem kleinen Rabatt auf die erste Direktbestellung. Wir liefern die QR-Aufkleber mit und begleiten den Start. Der Wechsel passiert nicht über Nacht, aber jede Bestellung, die direkt bei Ihnen landet, spart sofort Provision.",
+            "en": "With simple, proven tools: QR codes on tables, flyers and every bag that leaves your kitchen, your Google Business profile linking straight to your ordering page, and your social media pointing to your own menu. You can also reward regulars with a small discount on their first direct order. We supply the QR stickers and help you launch. The shift doesn't happen overnight, but every order that lands directly with you saves commission immediately.",
+            "ar": "بوسائل بسيطة ومجرّبة: رموز QR على الطاولات والمنشورات وعلى كل كيس يخرج من مطبخك، وربط ملفك التجاري في Google مباشرة بصفحة الطلبات، وتوجيه حساباتك على وسائل التواصل إلى قائمتك الخاصة. ويمكنك أيضاً مكافأة زبائنك الدائمين بخصم بسيط على أول طلب مباشر. نوفر لك ملصقات QR ونرافقك في الانطلاقة. التحول لا يحدث بين ليلة وضحاها، لكن كل طلب يصلك مباشرة يوفر عليك العمولة فوراً."
+          }
+        },
+        {
+          "slug": "wann-kommt-das-geld",
+          "q": {
+            "de": "Wann und wie kommt das Geld aus Online-Zahlungen auf mein Konto?",
+            "en": "When and how does the money from online payments reach my account?",
+            "ar": "متى وكيف تصل أموال المبيعات إلى حسابي البنكي؟"
+          },
+          "a": {
+            "de": "Online-Zahlungen laufen über Ihr eigenes Stripe-Konto, nicht über uns. Stripe überweist die Einnahmen automatisch auf Ihr Bankkonto, täglich oder wöchentlich, je nachdem, wie Sie es einstellen. Barzahlungen bei Abholung oder Lieferung bleiben ohnehin direkt bei Ihnen. GastroHub hat zu keinem Zeitpunkt Zugriff auf Ihr Geld.",
+            "en": "Online payments run through your own Stripe account, not through us. Stripe transfers the money to your bank account automatically, daily or weekly, however you set it. Cash payments on pickup or delivery stay with you anyway. GastroHub never has access to your money.",
+            "ar": "تمر المدفوعات الإلكترونية عبر حساب Stripe الخاص بك، لا عبرنا. يحوّل Stripe الإيرادات تلقائياً إلى حسابك البنكي، يومياً أو أسبوعياً كما تختار. أما الدفع نقداً عند الاستلام أو التوصيل فيبقى عندك مباشرة. لا يملك GastroHub في أي لحظة وصولاً إلى أموالك."
+          }
+        },
+        {
+          "slug": "technische-kenntnisse",
+          "q": {
+            "de": "Brauche ich für den laufenden Betrieb technische Kenntnisse?",
+            "en": "Do I need any technical skills for day-to-day operation?",
+            "ar": "هل أحتاج إلى معرفة تقنية للتشغيل اليومي؟"
+          },
+          "a": {
+            "de": "Nein. Im Dashboard bearbeiten Sie Gerichte, Preise und Öffnungszeiten so einfach wie in einer Notiz-App. Bestellungen nehmen Sie mit einem Klick an oder ab. Status-Updates für den Kunden gehen automatisch raus. Wenn etwas Komplexeres nötig ist (neue Lieferzone, Kategorie umbenennen), erledigen wir das auf Zuruf, ohne Aufpreis im Wartungs-Modell.",
+            "en": "No. In the dashboard you edit dishes, prices and opening hours as easily as in a notes app. You accept or decline orders with one click. Status updates to the customer go out automatically. If something more complex is needed (new delivery zone, rename a category), we handle it on request, no extra charge in the maintenance model.",
+            "ar": "لا. في لوحة التحكم تحرّر الأطباق والأسعار وساعات العمل بسهولة كما في تطبيق ملاحظات. تقبل الطلب أو ترفضه بنقرة واحدة. وتُرسَل تحديثات الحالة إلى العميل تلقائياً. وإذا احتجت إلى أمر أكثر تعقيداً (منطقة توصيل جديدة أو إعادة تسمية فئة)، نتولّاه عند الطلب، دون رسوم إضافية ضمن باقات الدعم."
+          }
+        },
+        {
+          "slug": "versteckte-kosten",
+          "q": {
+            "de": "Gibt es versteckte Kosten?",
+            "en": "Are there any hidden costs?",
+            "ar": "هل هناك تكاليف خفية؟"
+          },
+          "a": {
+            "de": "Nein. Was im Angebot steht, ist der vollständige Preis von uns. Zusätzlich fallen Stripe-Gebühren an, etwa 1,5% plus 25 Cent pro erfolgreicher Kartentransaktion. Diese gehen direkt an Stripe und sind in jedem Online-Bezahlsystem üblich. Sie sehen jede einzelne Gebühr in Ihrem Stripe-Dashboard. In der Flatrate sind 1.000 € Online-Bestellumsatz pro Monat enthalten; darüber kommen 25 € je weitere angefangene 1.000 € dazu, wie im Angebot ausgewiesen. Es gibt keine Sponsored-Listings, keine Premium-Platzierung-Aufpreise, keine verpflichtenden Werbebudgets. Im Digital-Modell sind Updates und Support nicht enthalten und werden gesondert nach Aufwand abgerechnet; bei Einstieg und Flatrate ist der Support inklusive.",
+            "en": "No. What's in the offer is our full price. On top, Stripe fees apply, roughly 1.5% plus 25 cents per successful card transaction. Those go directly to Stripe and are standard in any online payment system. You see every single fee in your Stripe dashboard. The Flatrate includes €1,000 of online order revenue per month; above that, €25 is added per further €1,000 started, as stated in the offer. There are no sponsored listings, no premium-placement surcharges, no mandatory ad budgets. In the Digital model, updates and support are not included and are billed separately on a time-and-materials basis; with Entry and Flatrate, support is included.",
+            "ar": "لا. ما تراه في العرض هو سعرنا الكامل. تُضاف إليه رسوم Stripe فقط، نحو ⁦١٫٥٪⁩ زائد ٢٥ سنتاً لكل عملية بطاقة ناجحة. هذه تذهب مباشرة إلى Stripe وهي معتادة في أي نظام دفع إلكتروني، وترى كل رسم منها على حدة في لوحة تحكم Stripe لديك. وتشمل الباقة الشاملة ⁦١٬٠٠٠ €⁩ من مبيعات الموقع شهرياً؛ وما زاد على ذلك تُضاف عنه ⁦٢٥ €⁩ عن كل ⁦١٬٠٠٠ €⁩ إضافية أو جزء منها، كما هو مبيّن في العرض. لا قوائم مموّلة، ولا رسوم إضافية مقابل الظهور المميّز، ولا ميزانيات إعلانية إلزامية. في باقة ديجيتال لا تكون التحديثات والدعم مشمولة وتُحتسب على حدة حسب الجهد؛ أما في انطلاقة والباقة الشاملة فالدعم مشمول."
+          }
+        }
+      ]
+    },
+    {
       "id": "was-ist-das",
       "title": {
         "de": "Was ist GastroHub eigentlich?",
@@ -107,19 +169,6 @@
             "de": "Digital passt, wenn Sie vor allem online sichtbar sein wollen: eine eigene Website mit digitaler Speisekarte, QR-Codes und E-Mail-Adresse, ohne Bestellsystem, für 300 € einmalig plus 25 € im Monat. Einstieg passt, wenn Sie Bestellungen und Reservierungen annehmen wollen, aber noch keine Hardware brauchen: 50 € im Monat, alles per E-Mail, jederzeit auf Flatrate erweiterbar. Flatrate passt, wenn Sie voll durchstarten wollen: 100 € im Monat, Tablet und Drucker inklusive, 1.000 € Online-Umsatz pro Monat bereits enthalten. Im Erstgespräch schauen wir gemeinsam, welches Modell zu Ihrem Restaurant passt.",
             "en": "Digital fits if you mainly want to be visible online: your own website with a digital menu, QR codes and email address, without an ordering system, for €300 one-off plus €25 per month. Entry fits if you want to take orders and reservations but don't need hardware yet: €50 per month, everything by email, upgradable to Flatrate any time. Flatrate fits if you want to go all in: €100 per month, tablet and printer included, €1,000 of monthly online revenue already covered. In the first call we look together at which model fits your restaurant.",
             "ar": "اختر ديجيتال إذا كان همّك الأول أن تظهر على الإنترنت: موقع خاص بك مع قائمة طعام رقمية ورموز QR وبريد إلكتروني، دون نظام طلبات، مقابل ⁦٣٠٠ €⁩ لمرة واحدة زائد ⁦٢٥ €⁩ شهرياً. اختر انطلاقة إذا أردت استقبال الطلبات والحجوزات لكنك لا تحتاج بعد إلى أجهزة: ⁦٥٠ €⁩ شهرياً، كل شيء عبر البريد الإلكتروني، مع إمكانية الترقية إلى الباقة الشاملة في أي وقت. اختر الباقة الشاملة إذا أردت الانطلاق بكامل قوتك: ⁦١٠٠ €⁩ شهرياً، مع جهاز لوحي وطابعة، وتشمل ⁦١٬٠٠٠ €⁩ من مبيعات الموقع شهرياً. في المكالمة الأولى ننظر معاً في الباقة الأنسب لمطعمك."
-          }
-        },
-        {
-          "slug": "versteckte-kosten",
-          "q": {
-            "de": "Gibt es versteckte Kosten?",
-            "en": "Are there any hidden costs?",
-            "ar": "هل هناك تكاليف خفية؟"
-          },
-          "a": {
-            "de": "Nein. Was im Angebot steht, ist der vollständige Preis von uns. Zusätzlich fallen Stripe-Gebühren an, etwa 1,5% plus 25 Cent pro erfolgreicher Kartentransaktion. Diese gehen direkt an Stripe und sind in jedem Online-Bezahlsystem üblich. Sie sehen jede einzelne Gebühr in Ihrem Stripe-Dashboard. In der Flatrate sind 1.000 € Online-Bestellumsatz pro Monat enthalten; darüber kommen 25 € je weitere angefangene 1.000 € dazu, wie im Angebot ausgewiesen. Es gibt keine Sponsored-Listings, keine Premium-Platzierung-Aufpreise, keine verpflichtenden Werbebudgets. Im Digital-Modell sind Updates und Support nicht enthalten und werden gesondert nach Aufwand abgerechnet; bei Einstieg und Flatrate ist der Support inklusive.",
-            "en": "No. What's in the offer is our full price. On top, Stripe fees apply, roughly 1.5% plus 25 cents per successful card transaction. Those go directly to Stripe and are standard in any online payment system. You see every single fee in your Stripe dashboard. The Flatrate includes €1,000 of online order revenue per month; above that, €25 is added per further €1,000 started, as stated in the offer. There are no sponsored listings, no premium-placement surcharges, no mandatory ad budgets. In the Digital model, updates and support are not included and are billed separately on a time-and-materials basis; with Entry and Flatrate, support is included.",
-            "ar": "لا. ما تراه في العرض هو سعرنا الكامل. تُضاف إليه رسوم Stripe فقط، نحو ⁦١٫٥٪⁩ زائد ٢٥ سنتاً لكل عملية بطاقة ناجحة. هذه تذهب مباشرة إلى Stripe وهي معتادة في أي نظام دفع إلكتروني، وترى كل رسم منها على حدة في لوحة تحكم Stripe لديك. وتشمل الباقة الشاملة ⁦١٬٠٠٠ €⁩ من مبيعات الموقع شهرياً؛ وما زاد على ذلك تُضاف عنه ⁦٢٥ €⁩ عن كل ⁦١٬٠٠٠ €⁩ إضافية أو جزء منها، كما هو مبيّن في العرض. لا قوائم مموّلة، ولا رسوم إضافية مقابل الظهور المميّز، ولا ميزانيات إعلانية إلزامية. في باقة ديجيتال لا تكون التحديثات والدعم مشمولة وتُحتسب على حدة حسب الجهد؛ أما في انطلاقة والباقة الشاملة فالدعم مشمول."
           }
         }
       ]
@@ -280,19 +329,6 @@
             "de": "Ihre aktuelle Speisekarte (PDF, Excel, oder eine bestehende Webseite genügt), Fotos der wichtigsten Gerichte (auch Handy-Fotos reichen, falls keine Profi-Bilder vorhanden sind), Ihre Öffnungszeiten, die Postleitzahlen, in die Sie liefern, Ihre Logo-Datei und die Rechtsangaben (Impressum-Daten). Wenn Ihnen einzelne Punkte fehlen, helfen wir.",
             "en": "Your current menu (PDF, Excel or an existing website is fine), photos of your main dishes (phone photos are fine if you don't have professional shots), your opening hours, the postcodes you deliver to, your logo file and your legal details (imprint information). If any pieces are missing, we help.",
             "ar": "قائمة طعامك الحالية (يكفي ملف PDF أو Excel أو موقع قائم)، وصور لأهم الأطباق (تكفي صور الهاتف إن لم تتوفّر صور احترافية)، وساعات عملك، والرموز البريدية التي توصّل إليها، وملف شعارك، والبيانات القانونية (بيانات Impressum). وإن نقصك شيء منها، نساعدك في تجهيزه."
-          }
-        },
-        {
-          "slug": "technische-kenntnisse",
-          "q": {
-            "de": "Brauche ich für den laufenden Betrieb technische Kenntnisse?",
-            "en": "Do I need any technical skills for day-to-day operation?",
-            "ar": "هل أحتاج إلى معرفة تقنية للتشغيل اليومي؟"
-          },
-          "a": {
-            "de": "Nein. Im Dashboard bearbeiten Sie Gerichte, Preise und Öffnungszeiten so einfach wie in einer Notiz-App. Bestellungen nehmen Sie mit einem Klick an oder ab. Status-Updates für den Kunden gehen automatisch raus. Wenn etwas Komplexeres nötig ist (neue Lieferzone, Kategorie umbenennen), erledigen wir das auf Zuruf, ohne Aufpreis im Wartungs-Modell.",
-            "en": "No. In the dashboard you edit dishes, prices and opening hours as easily as in a notes app. You accept or decline orders with one click. Status updates to the customer go out automatically. If something more complex is needed (new delivery zone, rename a category), we handle it on request, no extra charge in the maintenance model.",
-            "ar": "لا. في لوحة التحكم تحرّر الأطباق والأسعار وساعات العمل بسهولة كما في تطبيق ملاحظات. تقبل الطلب أو ترفضه بنقرة واحدة. وتُرسَل تحديثات الحالة إلى العميل تلقائياً. وإذا احتجت إلى أمر أكثر تعقيداً (منطقة توصيل جديدة أو إعادة تسمية فئة)، نتولّاه عند الطلب، دون رسوم إضافية ضمن باقات الدعم."
           }
         }
       ]

@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { motion, useReducedMotion, useScroll, useTransform, type Variants } from "framer-motion";
-import { ArrowRight, CheckCircle2, ShieldCheck, Check, PackageOpen, UserRound, Settings, Languages, LayoutDashboard, Sparkles, ExternalLink, Search, Users, Heart, CalendarCheck, Printer, BarChart3, TrendingUp } from "lucide-react";
+import { ArrowRight, CheckCircle2, Check, PackageOpen, UserRound, Settings, Languages, Sparkles, ExternalLink, Search, Users, Heart, CalendarCheck, Printer, BarChart3, TrendingUp } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -57,11 +57,8 @@ export default function Home() {
     { icon: Sparkles, k: "ki" },
     { icon: Printer, k: "printer" },
     { icon: BarChart3, k: "reports" },
-    { icon: LayoutDashboard, k: "menu" },
     { icon: Settings, k: "admin" },
     { icon: Languages, k: "lang" },
-    { icon: Check, k: "pay" },
-    { icon: ShieldCheck, k: "law" },
   ] as const;
 
   return (
@@ -87,12 +84,12 @@ export default function Home() {
               </motion.p>
               <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="h-14 px-8 text-base font-semibold motion-safe:transition-transform motion-safe:hover:scale-[1.03] gh-shine">
-                  <Link href="/demo" data-testid="button-hero-demo">
-                    {t("hero.cta_primary")} <ArrowRight className="ml-2 h-5 w-5" />
+                  <Link href="/kontakt" data-testid="button-hero-contact">
+                    {t("hero.cta_secondary")} <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="h-14 px-8 text-base font-semibold bg-white border-slate-200 text-slate-900 hover:bg-slate-50 hover:text-slate-900">
-                  <Link href="/kontakt" data-testid="button-hero-contact">{t("hero.cta_secondary")}</Link>
+                  <Link href="/demo" data-testid="button-hero-demo">{t("hero.cta_primary")}</Link>
                 </Button>
               </motion.div>
               <motion.div variants={itemVariants} className="mt-8 flex items-center gap-6 text-sm text-slate-600">
@@ -115,23 +112,30 @@ export default function Home() {
               className="relative mx-auto w-full max-w-[600px] lg:ml-auto"
             >
               <div className="rounded-2xl border border-slate-200 bg-white shadow-2xl overflow-hidden gh-float-slow">
-                <picture>
-                  <source type="image/avif" srcSet="/images/hero-1280.avif" />
-                  <source
-                    type="image/webp"
-                    srcSet="/images/hero-640.webp 640w, /images/hero-1280.webp 1280w, /images/hero-1920.webp 1920w"
-                    sizes="(max-width: 768px) 100vw, 600px"
-                  />
-                  <img
-                    src="/images/hero-1280.webp"
-                    alt=""
-                    role="presentation"
-                    width={1280}
-                    height={698}
-                    fetchPriority="high"
-                    className="w-full h-auto object-cover"
-                  />
-                </picture>
+                <div className="flex items-center gap-1.5 bg-slate-100 px-3 py-2 border-b border-slate-200">
+                  <span className="h-2.5 w-2.5 rounded-full bg-rose-400/80"></span>
+                  <span className="h-2.5 w-2.5 rounded-full bg-amber-400/80"></span>
+                  <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/80"></span>
+                </div>
+                <img
+                  src="/images/hero-product-desktop.jpg"
+                  alt=""
+                  role="presentation"
+                  width={1280}
+                  height={633}
+                  fetchPriority="high"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-10 -start-6 w-[150px] rounded-[1.75rem] border-[7px] border-slate-900 bg-slate-900 shadow-2xl overflow-hidden gh-float">
+                <img
+                  src="/images/hero-product-phone.jpg"
+                  alt=""
+                  role="presentation"
+                  width={390}
+                  height={844}
+                  className="w-full h-auto block rounded-[1.35rem]"
+                />
               </div>
             </motion.div>
           </div>
@@ -207,7 +211,7 @@ export default function Home() {
                   <span className="h-2.5 w-2.5 rounded-full bg-amber-400/80"></span>
                   <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/80"></span>
                 </div>
-                <div className="aspect-[4/3] overflow-hidden bg-slate-100">
+                <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
                   <img
                     src={r.img}
                     alt={t(`live_restaurants.${r.name}`)}
@@ -215,6 +219,10 @@ export default function Home() {
                     loading="lazy"
                     decoding="async"
                   />
+                  <span className="absolute top-3 end-3 inline-flex items-center gap-1.5 rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold text-emerald-700 shadow-sm">
+                    <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    {t("live_restaurants.live_badge")}
+                  </span>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-slate-900 mb-1">{t(`live_restaurants.${r.name}`)}</h3>
@@ -228,6 +236,24 @@ export default function Home() {
                 </div>
               </motion.a>
             ))}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <Link
+                href="/kontakt"
+                data-testid="card-your-restaurant"
+                className="flex h-full min-h-[280px] flex-col items-center justify-center gap-4 rounded-2xl border-2 border-dashed border-primary/40 bg-white/60 p-8 text-center transition-colors hover:border-primary hover:bg-white gh-lift"
+              >
+                <span className="flex h-14 w-14 items-center justify-center rounded-full bg-secondary text-primary-hover">
+                  <ArrowRight className="h-6 w-6 rtl:rotate-180" />
+                </span>
+                <span className="text-xl font-bold text-slate-900">{t("live_restaurants.cta_card_title")}</span>
+                <span className="text-slate-600">{t("live_restaurants.cta_card_body")}</span>
+              </Link>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -291,7 +317,7 @@ export default function Home() {
                 </ul>
               </div>
               {/* Flatrate (recommended) */}
-              <div className="bg-white rounded-2xl shadow-lg border-2 border-primary p-7 text-left flex flex-col relative md:-mt-2 gh-lift">
+              <div className="bg-gradient-to-b from-secondary/40 to-white rounded-2xl shadow-xl border-2 border-primary p-7 text-left flex flex-col relative md:-mt-3 md:scale-[1.04] gh-lift">
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">{t("pricing.recommended")}</div>
                 <div className="text-xl font-extrabold text-slate-900 mb-1">{t("pricing.flat_label")}</div>
                 <div className="text-3xl font-extrabold text-primary mt-2 mb-1"><span dir="ltr">{t("pricing.flat_price")}</span></div>

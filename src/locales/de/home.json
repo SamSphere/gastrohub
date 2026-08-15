@@ -11,7 +11,7 @@
     "cta_primary": "Demo ansehen",
     "cta_secondary": "Jetzt kontaktieren",
     "check1": "Ab 50 € im Monat",
-    "check2": "In 2 bis 4 Wochen online"
+    "check2": "Komplette Einrichtung durch uns"
   },
   "live_restaurants": {
     "title": "Läuft bereits in echten Restaurants.",
@@ -31,23 +31,20 @@
     "view_live": "Live ansehen",
     "card5_name": "Toledo Lounge",
     "card5_cuisine": "Cocktail- & Shisha-Bar",
-    "card5_city": "Waiblingen"
+    "card5_city": "Waiblingen",
+    "live_badge": "Live",
+    "cta_card_title": "Ihr Restaurant als Nächstes?",
+    "cta_card_body": "Unverbindliches Erstgespräch, in wenigen Wochen online."
   },
   "features": {
     "title": "Und alles, was dazugehört",
     "subtitle": "Zusätzliche Funktionen auf Ihrer eigenen Website.",
     "ki_title": "KI-Lieferantenbestellung",
     "ki_text": "Ein Klick im Dashboard: Die KI schreibt die komplette Bestellung an Ihren Lieferanten, als E-Mail oder WhatsApp, in der passenden Sprache.",
-    "menu_title": "Menüverwaltung",
-    "menu_text": "Gerichte, Fotos und Tagesangebote pflegen Sie selbst, ohne technische Kenntnisse.",
     "admin_title": "Admin auf dem Handy",
     "admin_text": "Bestellungen annehmen, Lieferzonen, Öffnungszeiten, Gutscheine und Personal, alles direkt am Telefon.",
     "lang_title": "Mehrsprachig",
     "lang_text": "Verfügbar auf Deutsch, Englisch, Arabisch und Türkisch, weitere Sprachen auf Anfrage.",
-    "pay_title": "Zahlungen",
-    "pay_text": "Online-Zahlungen über Stripe (Kreditkarte, PayPal), optional Barzahlung bei Lieferung oder Abholung.",
-    "law_title": "Recht & DSGVO",
-    "law_text": "Impressum, AGB und DSGVO-konforme Datenschutzerklärung sind direkt eingebunden.",
     "printer_title": "Tablet und Thermodrucker",
     "printer_text": "Ein eigenes Tablet mit Thermodrucker für Ihr Restaurant. Kommt eine Bestellung, sehen Sie sie auf dem Tablet, drucken sie direkt aus, und der Betrag geht direkt auf Ihr Konto.",
     "reports_title": "Wöchentliche Verkaufsberichte",
@@ -82,7 +79,7 @@
     "p5_b3": "Eigene Website, Speisekarte, QR-Code und E-Mail-Adresse inklusive",
     "p5_b4": "Support inklusive",
     "p5_b5": "Jederzeit Upgrade auf Flatrate",
-    "recommended": "Empfohlen",
+    "recommended": "Am beliebtesten",
     "footnote": "*Flatrate: Ab 1.000 € Online-Bestellumsatz im Monat kommen 25 € je weitere angefangene 1.000 € dazu. Zum Vergleich: Liefer-Apps nehmen 13 bis 30 % von jedem Umsatz.",
     "cta": "Jetzt kontaktieren"
   },
