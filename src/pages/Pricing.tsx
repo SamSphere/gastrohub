@@ -28,10 +28,10 @@ export default function Pricing() {
             {/* Digital */}
             <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-7 text-left flex flex-col">
               <div className="text-xl font-extrabold text-slate-900 mb-1">{tk("einmal_label")}</div>
-              <div className="text-3xl font-extrabold text-primary mt-2 mb-1"><span dir="ltr">{tk("einmal_price")}</span></div>
+              <div className="text-3xl font-extrabold text-primary mt-2 mb-1"><bdi>{tk("einmal_price")}</bdi></div>
               <div className="text-slate-500 text-sm mb-5">{tk("einmal_suffix")}</div>
               <ul className="space-y-2.5 text-sm text-slate-700 flex-1">
-                {["einmal_b1", "einmal_b2", "einmal_b3", "einmal_b4", "einmal_b5"].map((k) => (
+                {["einmal_b1", "einmal_b2", "einmal_b3", "einmal_b4", "einmal_b5", "einmal_b6", "einmal_b7"].map((k) => (
                   <li key={k} className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
                     <span>{tk(k)}</span>
@@ -43,7 +43,7 @@ export default function Pricing() {
             {/* Einstieg */}
             <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-7 text-left flex flex-col">
               <div className="text-xl font-extrabold text-slate-900 mb-1">{tk("p5_label")}</div>
-              <div className="text-3xl font-extrabold text-primary mt-2 mb-1"><span dir="ltr">{tk("p5_price")}</span></div>
+              <div className="text-3xl font-extrabold text-primary mt-2 mb-1"><bdi>{tk("p5_price")}</bdi></div>
               <div className="text-slate-500 text-sm mb-5">{tk("p5_suffix")}</div>
               <ul className="space-y-2.5 text-sm text-slate-700 flex-1">
                 {["p5_b1", "p5_b2", "p5_b3", "p5_b4", "p5_b5"].map((k) => (
@@ -59,7 +59,7 @@ export default function Pricing() {
             <div className="bg-gradient-to-b from-secondary/40 to-white rounded-2xl shadow-xl border-2 border-primary p-7 text-left flex flex-col relative md:-mt-3 md:scale-[1.04]">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">{tk("recommended")}</div>
               <div className="text-xl font-extrabold text-slate-900 mb-1">{tk("flat_label")}</div>
-              <div className="text-3xl font-extrabold text-primary mt-2 mb-1"><span dir="ltr">{tk("flat_price")}</span></div>
+              <div className="text-3xl font-extrabold text-primary mt-2 mb-1"><bdi>{tk("flat_price")}</bdi></div>
               <div className="text-slate-500 text-sm mb-5">{tk("flat_suffix")}</div>
               <ul className="space-y-2.5 text-sm text-slate-700 flex-1">
                 {["flat_b1", "flat_b2", "flat_b3", "flat_b4", "flat_b5"].map((k) => (
