@@ -28,7 +28,10 @@
     "card4_name": "Zitadelle",
     "card4_cuisine": "Yemeni-Arabic cuisine",
     "card4_city": "Stuttgart-Bad Cannstatt",
-    "view_live": "View live"
+    "view_live": "View live",
+    "card5_name": "Toledo Lounge",
+    "card5_cuisine": "Cocktail & shisha bar",
+    "card5_city": "Waiblingen"
   },
   "features": {
     "title": "And everything that comes with it",
@@ -115,6 +118,8 @@
     "card5_title": "Let your guests book their table",
     "card5_body": "Table reservations run directly through your site, without phone chaos at peak times, in the language you prefer.",
     "card6_title": "Corporate and group orders",
-    "card6_body": "Larger orders from offices and groups land directly with you. A proper website with a clear menu looks professional, especially to business customers."
+    "card6_body": "Larger orders from offices and groups land directly with you. A proper website with a clear menu looks professional, especially to business customers.",
+    "card1_title": "Higher revenue",
+    "card1_body": "On delivery apps, €1,000 in sales currently costs you at least €160. With your own website, nobody shares your profits."
   }
 }

@@ -1,13 +1,29 @@
 import { Link } from "wouter";
-import { motion, type Variants } from "framer-motion";
-import { ArrowRight, CheckCircle2, ShieldCheck, Check, PackageOpen, UserRound, Settings, Languages, LayoutDashboard, Sparkles, ExternalLink, Search, Users, Heart, CalendarCheck, Printer, BarChart3 } from "lucide-react";
+import { motion, useReducedMotion, useScroll, useTransform, type Variants } from "framer-motion";
+import { ArrowRight, CheckCircle2, ShieldCheck, Check, PackageOpen, UserRound, Settings, Languages, LayoutDashboard, Sparkles, ExternalLink, Search, Users, Heart, CalendarCheck, Printer, BarChart3, TrendingUp } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useEffect } from "react";
 
+function HeadingAccent() {
+  return (
+    <motion.div
+      aria-hidden="true"
+      initial={{ scaleX: 0 }}
+      whileInView={{ scaleX: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
+      className="mx-auto mb-5 h-1 w-16 origin-center rounded-full bg-gradient-to-r from-primary to-primary-hover"
+    />
+  );
+}
+
 export default function Home() {
   const { t } = useTranslation("home");
+  const prefersReducedMotion = useReducedMotion();
+  const { scrollY } = useScroll();
+  const heroImgY = useTransform(scrollY, [0, 600], [0, -60]);
 
   useEffect(() => {
     document.title = t("meta.title");
@@ -70,7 +86,7 @@ export default function Home() {
                 {t("hero.subline")}
               </motion.p>
               <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="h-14 px-8 text-base font-semibold motion-safe:transition-transform motion-safe:hover:scale-[1.03]">
+                <Button asChild size="lg" className="h-14 px-8 text-base font-semibold motion-safe:transition-transform motion-safe:hover:scale-[1.03] gh-shine">
                   <Link href="/demo" data-testid="button-hero-demo">
                     {t("hero.cta_primary")} <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
@@ -95,6 +111,7 @@ export default function Home() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
+              style={{ y: prefersReducedMotion ? undefined : heroImgY }}
               className="relative mx-auto w-full max-w-[600px] lg:ml-auto"
             >
               <div className="rounded-2xl border border-slate-200 bg-white shadow-2xl overflow-hidden gh-float-slow">
@@ -132,17 +149,19 @@ export default function Home() {
             className="text-center max-w-3xl mx-auto mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("benefits.title")}</h2>
+            <HeadingAccent />
             <p className="text-lg text-slate-600">{t("benefits.subtitle")}</p>
           </motion.div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
+              { icon: TrendingUp, k: "card1" },
               { icon: Users, k: "card6" },
               { icon: UserRound, k: "card2" },
               { icon: Search, k: "card3" },
               { icon: Heart, k: "card4" },
               { icon: CalendarCheck, k: "card5" },
             ].map((card, idx) => (
-              <motion.div key={card.k} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: idx * 0.1 }}>
+              <motion.div key={card.k} initial={{ opacity: 0, y: 28, scale: 0.97 }} whileInView={{ opacity: 1, y: 0, scale: 1 }} viewport={{ once: true }} transition={{ type: "spring", stiffness: 90, damping: 16, delay: (idx % 3) * 0.1 }}>
                 <Card className="p-8 h-full border-none shadow-md hover:shadow-lg gh-lift bg-white group">
                   <div className="h-12 w-12 bg-secondary rounded-xl flex items-center justify-center text-primary-hover mb-6 transition-transform duration-300 group-hover:scale-110">
                     <card.icon className="h-6 w-6" />
@@ -161,14 +180,16 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("live_restaurants.title")}</h2>
+            <HeadingAccent />
             <p className="text-lg text-slate-600">{t("live_restaurants.subtitle")}</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {[
               { name: "card1_name", cuisine: "card1_cuisine", city: "card1_city", img: "/screenshots/domo-home.jpg", url: "https://domo-rt.de" },
+              { name: "card4_name", cuisine: "card4_cuisine", city: "card4_city", img: "/screenshots/zitadelle-home.jpg", url: "https://zitadelle-stuttgart.de" },
               { name: "card2_name", cuisine: "card2_cuisine", city: "card2_city", img: "/screenshots/side-kebap-home.jpg", url: "https://kebap-cannstatt.de" },
               { name: "card3_name", cuisine: "card3_cuisine", city: "card3_city", img: "/screenshots/roma-home.jpg", url: "https://roma-damaskus.de" },
-              { name: "card4_name", cuisine: "card4_cuisine", city: "card4_city", img: "/screenshots/zitadelle-home.jpg", url: "https://zitadelle-stuttgart.de" },
+              { name: "card5_name", cuisine: "card5_cuisine", city: "card5_city", img: "/screenshots/toledo-home.jpg", url: "https://toledo-lounge.de" },
             ].map((r, idx) => (
               <motion.a
                 key={r.name}
@@ -190,7 +211,7 @@ export default function Home() {
                   <img
                     src={r.img}
                     alt={t(`live_restaurants.${r.name}`)}
-                    className="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-500"
+                    className="w-full h-full object-cover object-top group-hover:scale-[1.05] transition-transform duration-700"
                     loading="lazy"
                     decoding="async"
                   />
@@ -216,15 +237,18 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("features.title")}</h2>
+            <HeadingAccent />
             <p className="text-lg text-slate-600">{t("features.subtitle")}</p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {featureItems.map((feature) => (
-              <Card key={feature.k} className="p-6 border-slate-200 shadow-sm hover:shadow-md gh-lift bg-white">
-                <feature.icon className="h-6 w-6 text-primary mb-4" />
-                <h3 className="text-lg font-semibold text-slate-900 mb-2">{t(`features.${feature.k}_title`)}</h3>
-                <p className="text-slate-600 leading-relaxed">{t(`features.${feature.k}_text`)}</p>
-              </Card>
+            {featureItems.map((feature, idx) => (
+              <motion.div key={feature.k} initial={{ opacity: 0, y: 24, scale: 0.97 }} whileInView={{ opacity: 1, y: 0, scale: 1 }} viewport={{ once: true }} transition={{ type: "spring", stiffness: 90, damping: 16, delay: (idx % 3) * 0.08 }}>
+                <Card className="p-6 h-full border-slate-200 shadow-sm hover:shadow-md gh-lift bg-white">
+                  <feature.icon className="h-6 w-6 text-primary mb-4" />
+                  <h3 className="text-lg font-semibold text-slate-900 mb-2">{t(`features.${feature.k}_title`)}</h3>
+                  <p className="text-slate-600 leading-relaxed">{t(`features.${feature.k}_text`)}</p>
+                </Card>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -235,6 +259,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("pricing.title")}</h2>
+            <HeadingAccent />
             <p className="text-lg text-slate-600 mb-10">{t("pricing.subtitle")}</p>
             <div className="grid md:grid-cols-3 gap-6 mb-8 max-w-5xl mx-auto items-stretch">
               {/* Digital */}
@@ -299,13 +324,28 @@ export default function Home() {
 
               <div className="space-y-8">
                 {[1, 2, 3].map((n) => (
-                  <div key={n} className="flex gap-4">
-                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg">{n}</div>
+                  <motion.div
+                    key={n}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: (n - 1) * 0.15 }}
+                    className="flex gap-4"
+                  >
+                    <motion.div
+                      initial={{ scale: 0 }}
+                      whileInView={{ scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ type: "spring", stiffness: 200, damping: 15, delay: (n - 1) * 0.15 + 0.1 }}
+                      className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg"
+                    >
+                      {n}
+                    </motion.div>
                     <div>
                       <h3 className="text-xl font-bold text-slate-900 mb-2">{t(`how.step${n}_title`)}</h3>
                       <p className="text-slate-600">{t(`how.step${n}_body`)}</p>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
@@ -329,12 +369,10 @@ export default function Home() {
       <section className="py-24 bg-white text-center text-slate-900">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">{t("final_cta.title")}</h2>
+          <HeadingAccent />
           <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">{t("final_cta.subline")}</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button asChild size="lg" className="h-14 px-8 text-lg font-semibold bg-sky-700 text-white hover:bg-sky-800 motion-safe:transition-transform motion-safe:hover:scale-[1.03]">
-              <Link href="/demo" data-testid="button-cta-demo">{t("final_cta.primary")}</Link>
-            </Button>
-            <Button asChild variant="outline" size="lg" className="h-14 px-8 text-lg font-semibold bg-white border-slate-200 text-slate-900 hover:bg-slate-50 hover:text-slate-900">
+            <Button asChild size="lg" className="h-14 px-8 text-lg font-semibold bg-sky-700 text-white hover:bg-sky-800 motion-safe:transition-transform motion-safe:hover:scale-[1.03] gh-shine">
               <Link href="/kontakt" data-testid="button-cta-contact">{t("final_cta.secondary")}</Link>
             </Button>
           </div>

@@ -48,7 +48,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h2 className="font-semibold text-slate-900">{t("phone_label")}</h2>
-                  <p className="mt-1 text-sm text-primary">+49 179 1600038</p>
+                  <p className="mt-1 text-sm text-primary">{t("phone_display")}</p>
                 </div>
               </a>
             </div>
